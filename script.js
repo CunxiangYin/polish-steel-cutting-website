@@ -145,6 +145,11 @@ contactForm.addEventListener('submit', async (e) => {
         // Show success message
         showNotification('Thank you! Your message has been sent successfully.', 'success');
         
+        // Track form submission with Google Analytics
+        if (typeof trackContactFormSubmission === 'function') {
+            trackContactFormSubmission();
+        }
+        
         // Reset button after delay
         setTimeout(() => {
             submitButton.textContent = originalText;

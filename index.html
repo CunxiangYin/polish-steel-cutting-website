@@ -101,6 +101,36 @@
         ]
     }
     </script>
+
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        
+        // Enhanced eCommerce tracking for contact form submissions
+        function trackContactFormSubmission() {
+            gtag('event', 'contact_form_submit', {
+                'event_category': 'engagement',
+                'event_label': 'contact_form',
+                'value': 1
+            });
+        }
+        
+        // Track button clicks
+        function trackButtonClick(buttonName) {
+            gtag('event', 'click', {
+                'event_category': 'engagement',
+                'event_label': buttonName,
+                'value': 1
+            });
+        }
+    </script>
+
+    <!-- Google Search Console Verification (Replace with your verification code) -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
 </head>
 <body>
     <!-- Navigation -->
