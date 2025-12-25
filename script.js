@@ -244,33 +244,8 @@ function showNotification(message, type = 'info') {
     });
 }
 
-// Language selector functionality
-const languageSelector = document.getElementById('language');
-
-languageSelector.addEventListener('change', (e) => {
-    const selectedLanguage = e.target.value;
-    
-    // Store language preference
-    localStorage.setItem('preferredLanguage', selectedLanguage);
-    
-    // Show notification about language change
-    const languageNames = {
-        en: 'English',
-        es: 'Español',
-        de: 'Deutsch',
-        fr: 'Français'
-    };
-    
-    showNotification(`Language changed to ${languageNames[selectedLanguage]}. Full translation coming soon!`, 'info');
-});
-
-// Load saved language preference
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('preferredLanguage');
-    if (savedLanguage) {
-        languageSelector.value = savedLanguage;
-    }
-});
+// Language selector functionality is now handled by language.js
+// Removed to prevent conflicts
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {

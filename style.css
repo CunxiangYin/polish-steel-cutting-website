@@ -222,6 +222,20 @@ p {
     color: var(--text-primary);
     font-weight: 500;
     cursor: pointer;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.language-selector select:focus {
+    color: var(--primary-color);
+}
+
+.language-selector {
+    transition: transform 0.2s ease;
+}
+
+.language-selector:hover {
+    transform: scale(1.05);
 }
 
 .hamburger {
