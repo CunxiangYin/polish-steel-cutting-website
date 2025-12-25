@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Performance Optimization */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Preload critical fonts */
+@font-display: swap;
+
 :root {
     --primary-color: #2563eb;
     --secondary-color: #1e40af;
