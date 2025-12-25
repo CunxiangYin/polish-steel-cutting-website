@@ -296,6 +296,756 @@ const translations = {
                 cookie: "Cookie政策"
             }
         }
+    },
+    
+    // Spanish (Latin America)
+    es: {
+        // Navegación
+        nav: {
+            home: "Inicio",
+            about: "Nosotros",
+            products: "Productos",
+            features: "Servicios",
+            contact: "Contacto"
+        },
+        
+        // Sección Principal
+        hero: {
+            title: "Fabricante Profesional de <span class='highlight'>Equipos de Corte</span> de Acero",
+            subtitle: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Desde 2005, especializada en placas de acero, equipos de procesamiento de placas de acero, equipos auxiliares y maquinaria de precisión Taiwan Ronghua para industrias globales de fabricación de metales.",
+            getQuote: "Solicitar Cotización",
+            watchDemo: "Ver Demostración",
+            stats: {
+                partners: "Socios Regionales",
+                experience: "Años de Experiencia",
+                quality: "Garantía de Calidad"
+            },
+            scrollDown: "Desplazar Hacia Abajo"
+        },
+        
+        // Sobre Nosotros
+        about: {
+            title: "Líder en Tecnología de Corte de Acero Desde 2005",
+            description: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. se especializa en la venta de placas de acero, equipos de procesamiento de placas de acero, equipos auxiliares, piezas y materiales periféricos. Proporcionamos servicios de mantenimiento técnico y consultoría, destacando la maquinaria de precisión Taiwan Ronghua para industrias de fabricación de metales a nivel mundial.",
+            features: {
+                quality: {
+                    title: "Equipos de Calidad",
+                    desc: "Equipos profesionales de procesamiento de acero de fabricantes confiables, incluyendo maquinaria Taiwan Ronghua."
+                },
+                service: {
+                    title: "Servicio Profesional",
+                    desc: "Soporte integral de ventas con consultoría técnica, orientación de mantenimiento y suministro de repuestos."
+                },
+                support: {
+                    title: "Soporte Local",
+                    desc: "Con sede en Shenzhen, profundo conocimiento de las necesidades del mercado regional y capacidades de respuesta rápida."
+                }
+            }
+        },
+        
+        // Productos
+        products: {
+            title: "Portafolio de Equipos de Procesamiento de Acero",
+            subtitle: "Gama completa de sistemas de corte de precisión, máquinas rebanadoras Taiwan Ronghua y equipos de procesamiento de acero para fabricación de metales y aplicaciones industriales",
+            items: {
+                steelPlate: {
+                    title: "Equipos de Procesamiento de Placas de Acero",
+                    desc: "Gama completa de equipos de procesamiento de placas de acero incluyendo máquinas cortadoras, equipos auxiliares y repuestos.",
+                    features: ["Varios espesores de placas de acero", "Soporte técnico profesional", "Equipos de calidad asegurada"]
+                },
+                conveyor: {
+                    title: "Cintas Transportadoras y Plataformas Móviles",
+                    desc: "Sistemas transportadores industriales, máquinas volcadoras de bobinas de acero y carros de plataforma móvil para manejo de materiales.",
+                    features: ["Construcción robusta", "Configuraciones personalizables", "Operación confiable"]
+                },
+                ronghua: {
+                    title: "Máquinas Rebanadoras Taiwan Ronghua",
+                    desc: "Equipos profesionales de rebabado de bobinas de acero y cizallas voladoras para procesamiento de materiales de precisión y operaciones continuas de acero.",
+                    features: ["Capacidad de rebabado de alta velocidad", "Corte de tiras de acero de precisión", "Garantía de calidad Taiwan"]
+                }
+            },
+            learnMore: "Saber Más"
+        },
+        
+        // Características
+        features: {
+            title: "¿Por Qué Elegir las Soluciones de Equipos Punaise?",
+            subtitle: "Nuestro compromiso con la distribución de equipos de calidad y el servicio profesional nos ha convertido en un socio confiable para empresas de procesamiento de acero en toda la región de Guangdong.",
+            items: {
+                partnership: {
+                    title: "Alianza Confiable",
+                    desc: "Distribuidor autorizado de equipos Taiwan Ronghua con soporte técnico integral y cobertura de garantía."
+                },
+                coverage: {
+                    title: "Cobertura Regional",
+                    desc: "Entrega eficiente en toda la Provincia de Guangdong y regiones vecinas con soporte técnico local."
+                },
+                consulting: {
+                    title: "Consultoría Técnica",
+                    desc: "Servicios profesionales de mantenimiento y consultoría con la experiencia del Gerente Fu en equipos de procesamiento de acero."
+                }
+            },
+            stats: {
+                quality: "Calidad del Equipo",
+                satisfaction: "Satisfacción del Cliente",
+                coverage: "Cobertura Regional"
+            }
+        },
+        
+        // Testimonios
+        testimonials: {
+            title: "Lo Que Dicen Nuestros Clientes",
+            subtitle: "Confianza de líderes de la industria en todo el mundo"
+        },
+        
+        // Contacto
+        contact: {
+            title: "Póngase en Contacto",
+            subtitle: "¿Listo para mejorar sus capacidades de procesamiento de acero? Contacte a los expertos de Punaise para soluciones profesionales de equipos de procesamiento de placas de acero y maquinaria Taiwan Ronghua. Sirviendo a clientes desde 2005.",
+            form: {
+                name: "Nombre Completo *",
+                email: "Dirección de Correo Electrónico *",
+                company: "Nombre de la Empresa",
+                phone: "Número de Teléfono",
+                service: "Interés en Servicio",
+                selectProduct: "Seleccionar un producto",
+                message: "Mensaje *",
+                messagePlaceholder: "Por favor describa sus requerimientos...",
+                submit: "Enviar Mensaje",
+                services: {
+                    plasma: "Corte por Plasma CNC",
+                    laser: "Sistemas de Corte Láser",
+                    flame: "Equipos de Corte por Llama",
+                    consultation: "Consultoría Técnica",
+                    support: "Soporte y Mantenimiento"
+                }
+            },
+            info: {
+                address: "Dirección de la Empresa",
+                phone: "Teléfono",
+                email: "Correo Electrónico"
+            }
+        },
+        
+        // Pie de Página
+        footer: {
+            sections: {
+                products: "Productos",
+                services: "Servicios",
+                company: "Empresa",
+                resources: "Recursos"
+            },
+            productLinks: ["Corte por Plasma CNC", "Sistemas de Corte Láser", "Equipos de Corte por Llama", "Accesorios de Corte", "Soluciones Personalizadas"],
+            serviceLinks: ["Soporte Técnico", "Instalación", "Mantenimiento", "Capacitación", "Consultoría"],
+            companyLinks: ["Nosotros", "Carreras", "Noticias y Eventos", "Estudios de Caso", "Contacto"],
+            resourceLinks: ["Documentación", "Descargas", "Documentos Técnicos", "Seminarios Web", "Preguntas Frecuentes"],
+            copyright: "© 2024 Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. Todos los derechos reservados. | Código de Crédito Social Unificado: 914403007703327657",
+            legal: {
+                privacy: "Política de Privacidad",
+                terms: "Términos de Servicio",
+                cookie: "Política de Cookies"
+            }
+        }
+    },
+    
+    // Portuguese (Brazil)
+    pt: {
+        // Navegação
+        nav: {
+            home: "Início",
+            about: "Sobre",
+            products: "Produtos",
+            features: "Serviços",
+            contact: "Contato"
+        },
+        
+        // Seção Principal
+        hero: {
+            title: "Fabricante Profissional de <span class='highlight'>Equipamentos de Corte</span> de Aço",
+            subtitle: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Desde 2005, especializada em chapas de aço, equipamentos de processamento de chapas de aço, equipamentos auxiliares e máquinas de precisão Taiwan Ronghua para indústrias globais de fabricação de metais.",
+            getQuote: "Solicitar Orçamento",
+            watchDemo: "Assistir Demonstração",
+            stats: {
+                partners: "Parceiros Regionais",
+                experience: "Anos de Experiência",
+                quality: "Garantia de Qualidade"
+            },
+            scrollDown: "Rolar Para Baixo"
+        },
+        
+        // Sobre Nós
+        about: {
+            title: "Líder em Tecnologia de Corte de Aço Desde 2005",
+            description: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. especializa-se na venda de chapas de aço, equipamentos de processamento de chapas de aço, equipamentos auxiliares, peças e materiais periféricos. Fornecemos serviços de manutenção técnica e consultoria, destacando máquinas de precisão Taiwan Ronghua para indústrias de fabricação de metais mundialmente.",
+            features: {
+                quality: {
+                    title: "Equipamentos de Qualidade",
+                    desc: "Equipamentos profissionais de processamento de aço de fabricantes confiáveis, incluindo máquinas Taiwan Ronghua."
+                },
+                service: {
+                    title: "Serviço Profissional",
+                    desc: "Suporte abrangente de vendas com consultoria técnica, orientação de manutenção e fornecimento de peças de reposição."
+                },
+                support: {
+                    title: "Suporte Local",
+                    desc: "Baseada em Shenzhen, com profundo conhecimento das necessidades do mercado regional e capacidades de resposta rápida."
+                }
+            }
+        },
+        
+        // Produtos
+        products: {
+            title: "Portfólio de Equipamentos de Processamento de Aço",
+            subtitle: "Gama completa de sistemas de corte de precisão, máquinas de corte Taiwan Ronghua e equipamentos de processamento de aço para fabricação de metais e aplicações industriais",
+            items: {
+                steelPlate: {
+                    title: "Equipamentos de Processamento de Chapas de Aço",
+                    desc: "Gama completa de equipamentos de processamento de chapas de aço incluindo máquinas de corte, equipamentos auxiliares e peças de reposição.",
+                    features: ["Várias espessuras de chapas de aço", "Suporte técnico profissional", "Equipamentos com qualidade garantida"]
+                },
+                conveyor: {
+                    title: "Correias Transportadoras e Plataformas Móveis",
+                    desc: "Sistemas transportadores industriais, máquinas de tombamento de bobinas de aço e carros de plataforma móvel para manuseio de materiais.",
+                    features: ["Construção robusta", "Configurações personalizáveis", "Operação confiável"]
+                },
+                ronghua: {
+                    title: "Máquinas de Corte Taiwan Ronghua",
+                    desc: "Equipamentos profissionais de corte de bobinas de aço e tesouras voadoras para processamento de materiais de precisão e operações contínuas de aço.",
+                    features: ["Capacidade de corte de alta velocidade", "Corte de tiras de aço de precisão", "Garantia de qualidade Taiwan"]
+                }
+            },
+            learnMore: "Saiba Mais"
+        },
+        
+        // Características
+        features: {
+            title: "Por Que Escolher as Soluções de Equipamentos Punaise?",
+            subtitle: "Nosso compromisso com a distribuição de equipamentos de qualidade e serviço profissional nos tornou um parceiro confiável para empresas de processamento de aço em toda a região de Guangdong.",
+            items: {
+                partnership: {
+                    title: "Parceria Confiável",
+                    desc: "Distribuidor autorizado de equipamentos Taiwan Ronghua com suporte técnico abrangente e cobertura de garantia."
+                },
+                coverage: {
+                    title: "Cobertura Regional",
+                    desc: "Entrega eficiente em toda a Província de Guangdong e regiões vizinhas com suporte técnico local."
+                },
+                consulting: {
+                    title: "Consultoria Técnica",
+                    desc: "Serviços profissionais de manutenção e consultoria com a expertise do Gerente Fu em equipamentos de processamento de aço."
+                }
+            },
+            stats: {
+                quality: "Qualidade do Equipamento",
+                satisfaction: "Satisfação do Cliente",
+                coverage: "Cobertura Regional"
+            }
+        },
+        
+        // Depoimentos
+        testimonials: {
+            title: "O Que Nossos Clientes Dizem",
+            subtitle: "Confiança de líderes da indústria mundialmente"
+        },
+        
+        // Contato
+        contact: {
+            title: "Entre em Contato",
+            subtitle: "Pronto para melhorar suas capacidades de processamento de aço? Entre em contato com os especialistas da Punaise para soluções profissionais de equipamentos de processamento de chapas de aço e máquinas Taiwan Ronghua. Servindo clientes desde 2005.",
+            form: {
+                name: "Nome Completo *",
+                email: "Endereço de E-mail *",
+                company: "Nome da Empresa",
+                phone: "Número de Telefone",
+                service: "Interesse em Serviço",
+                selectProduct: "Selecionar um produto",
+                message: "Mensagem *",
+                messagePlaceholder: "Por favor descreva seus requisitos...",
+                submit: "Enviar Mensagem",
+                services: {
+                    plasma: "Corte por Plasma CNC",
+                    laser: "Sistemas de Corte a Laser",
+                    flame: "Equipamentos de Corte a Chama",
+                    consultation: "Consultoria Técnica",
+                    support: "Suporte e Manutenção"
+                }
+            },
+            info: {
+                address: "Endereço da Empresa",
+                phone: "Telefone",
+                email: "E-mail"
+            }
+        },
+        
+        // Rodapé
+        footer: {
+            sections: {
+                products: "Produtos",
+                services: "Serviços",
+                company: "Empresa",
+                resources: "Recursos"
+            },
+            productLinks: ["Corte por Plasma CNC", "Sistemas de Corte a Laser", "Equipamentos de Corte a Chama", "Acessórios de Corte", "Soluções Personalizadas"],
+            serviceLinks: ["Suporte Técnico", "Instalação", "Manutenção", "Treinamento", "Consultoria"],
+            companyLinks: ["Sobre Nós", "Carreiras", "Notícias e Eventos", "Estudos de Caso", "Contato"],
+            resourceLinks: ["Documentação", "Downloads", "White Papers", "Webinars", "FAQ"],
+            copyright: "© 2024 Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. Todos os direitos reservados. | Código de Crédito Social Unificado: 914403007703327657",
+            legal: {
+                privacy: "Política de Privacidade",
+                terms: "Termos de Serviço",
+                cookie: "Política de Cookies"
+            }
+        }
+    },
+    
+    // Thai (Thailand)
+    th: {
+        // การนำทาง
+        nav: {
+            home: "หน้าหลัก",
+            about: "เกี่ยวกับเรา",
+            products: "ผลิตภัณฑ์",
+            features: "บริการ",
+            contact: "ติดต่อเรา"
+        },
+        
+        // หัวข้อหลัก
+        hero: {
+            title: "ผู้ผลิต<span class='highlight'>อุปกรณ์ตัดเหล็ก</span>มืออาชีพ",
+            subtitle: "บริษัท เซินเจิ้น ปูไนส์ เมคคานิคอล แอนด์ อิเล็กทริคอล อีควิปเมนท์ จำกัด - ตั้งแต่ปี 2005 เชี่ยวชาญด้านแผ่นเหล็ก อุปกรณ์ประมวลผลแผ่นเหล็ก อุปกรณ์เสริม และเครื่องจักรความแม่นยำไต้หวันรงฮัว สำหรับอุตสาหกรรมการผลิตโลหะทั่วโลก",
+            getQuote: "ขอใบเสนอราคา",
+            watchDemo: "ดูการสาธิต",
+            stats: {
+                partners: "พันธมิตรในภูมิภาค",
+                experience: "ปีของประสบการณ์",
+                quality: "การรับประกันคุณภาพ"
+            },
+            scrollDown: "เลื่อนลง"
+        },
+        
+        // เกี่ยวกับเรา
+        about: {
+            title: "ผู้นำเทคโนโลยีการตัดเหล็กตั้งแต่ปี 2005",
+            description: "บริษัท เซินเจิ้น ปูไนส์ เมคคานิคอล แอนด์ อิเล็กทริคอล อีควิปเมนท์ จำกัด เชี่ยวชาญในการจำหน่ายแผ่นเหล็ก อุปกรณ์ประมวลผลแผ่นเหล็ก อุปกรณ์เสริม ชิ้นส่วน และวัสดุโดยรอบ เราให้บริการซ่อมบำรุงทางเทคนิคและให้คำปรึกษา โดยมีเครื่องจักรความแม่นยำไต้หวันรงฮัวสำหรับอุตสาหกรรมการผลิตโลหะทั่วโลก",
+            features: {
+                quality: {
+                    title: "อุปกรณ์คุณภาพ",
+                    desc: "อุปกรณ์ประมวลผลเหล็กมืออาชีพจากผู้ผลิตที่เชื่อถือได้ รวมถึงเครื่องจักรไต้หวันรงฮัว"
+                },
+                service: {
+                    title: "บริการมืออาชีพ",
+                    desc: "การสนับสนุนการขายที่ครอบคลุมพร้อมคำปรึกษาทางเทคนิค คำแนะนำการบำรุงรักษา และการจัดหาอะไหล่"
+                },
+                support: {
+                    title: "การสนับสนุนในท้องถิ่น",
+                    desc: "ตั้งอยู่ในเซินเจิ้น มีความเข้าใจลึกซึ้งเกี่ยวกับความต้องการของตลาดในภูมิภาคและความสามารถในการตอบสนองอย่างรวดเร็ว"
+                }
+            }
+        },
+        
+        // ผลิตภัณฑ์
+        products: {
+            title: "ผลิตภัณฑ์อุปกรณ์ประมวลผลเหล็ก",
+            subtitle: "ระบบตัดความแม่นยำ เครื่องตัดชิ้นไต้หวันรงฮัว และอุปกรณ์ประมวลผลเหล็กครบครันสำหรับการผลิตโลหะและการใช้งานอุตสาหกรรม",
+            items: {
+                steelPlate: {
+                    title: "อุปกรณ์ประมวลผลแผ่นเหล็ก",
+                    desc: "อุปกรณ์ประมวลผลแผ่นเหล็กครบครัน รวมถึงเครื่องตัด อุปกรณ์เสริม และอะไหล่",
+                    features: ["แผ่นเหล็กหนาหลายขนาด", "การสนับสนุนทางเทคนิคมืออาชีพ", "อุปกรณ์คุณภาพมีการรับประกัน"]
+                },
+                conveyor: {
+                    title: "สายพานลำเลียงและแพลตฟอร์มเคลื่อนที่",
+                    desc: "ระบบลำเลียงอุตสาหกรรม เครื่องพลิกม้วนเหล็ก และรถแพลตฟอร์มเคลื่อนที่สำหรับการจัดการวัสดุ",
+                    features: ["โครงสร้างทนทาน", "การกำหนดค่าที่ปรับแต่งได้", "การทำงานที่เชื่อถือได้"]
+                },
+                ronghua: {
+                    title: "เครื่องตัดชิ้นไต้หวันรงฮัว",
+                    desc: "อุปกรณ์ตัดชิ้นม้วนเหล็กมืออาชีพและกรรไกรบินสำหรับการประมวลผลวัสดุความแม่นยำและการทำงานเหล็กต่อเนื่อง",
+                    features: ["ความสามารถในการตัดชิ้นความเร็วสูง", "การตัดแถบเหล็กความแม่นยำ", "การรับประกันคุณภาพไต้หวัน"]
+                }
+            },
+            learnMore: "เรียนรู้เพิ่มเติม"
+        },
+        
+        // คุณสมบัติ
+        features: {
+            title: "ทำไมต้องเลือกโซลูชันอุปกรณ์ปูไนส์?",
+            subtitle: "ความมุ่งมั่นของเราในการจัดจำหน่ายอุปกรณ์คุณภาพและบริการมืออาชีพทำให้เราเป็นพันธมิตรที่เชื่อถือได้สำหรับบริษัทประมวลผลเหล็กในภูมิภาคกวางตุ้ง",
+            items: {
+                partnership: {
+                    title: "พันธมิตรที่เชื่อถือได้",
+                    desc: "ตัวแทนจำหน่ายที่ได้รับอนุญาตของอุปกรณ์ไต้หวันรงฮัว พร้อมการสนับสนุนทางเทคนิคที่ครอบคลุมและการรับประกัน"
+                },
+                coverage: {
+                    title: "การครอบคลุมในภูมิภาค",
+                    desc: "การจัดส่งที่มีประสิทธิภาพทั่วมณฑลกวางตุ้งและภูมิภาคใกล้เคียงพร้อมการสนับสนุนทางเทคนิคในท้องถิ่น"
+                },
+                consulting: {
+                    title: "คำปรึกษาทางเทคนิค",
+                    desc: "บริการบำรุงรักษาและคำปรึกษามืออาชีพด้วยความเชี่ยวชาญของผู้จัดการฟูในอุปกรณ์ประมวลผลเหล็ก"
+                }
+            },
+            stats: {
+                quality: "คุณภาพอุปกรณ์",
+                satisfaction: "ความพึงพอใจของลูกค้า",
+                coverage: "การครอบคลุมภูมิภาค"
+            }
+        },
+        
+        // คำรับรอง
+        testimonials: {
+            title: "สิ่งที่ลูกค้าพูดถึงเรา",
+            subtitle: "ได้รับความไว้วางใจจากผู้นำอุตสาหกรรมทั่วโลก"
+        },
+        
+        // ติดต่อ
+        contact: {
+            title: "ติดต่อเรา",
+            subtitle: "พร้อมที่จะอัพเกรดความสามารถในการประมวลผลเหล็กของคุณหรือไม่? ติดต่อผู้เชี่ยวชาญปูไนส์สำหรับโซลูชันอุปกรณ์ประมวลผลแผ่นเหล็กมืออาชีพและเครื่องจักรไต้หวันรงฮัว บริการลูกค้าตั้งแต่ปี 2005",
+            form: {
+                name: "ชื่อ-นามสกุล *",
+                email: "ที่อยู่อีเมล *",
+                company: "ชื่อบริษัท",
+                phone: "หมายเลขโทรศัพท์",
+                service: "ความสนใจในบริการ",
+                selectProduct: "เลือกผลิตภัณฑ์",
+                message: "ข้อความ *",
+                messagePlaceholder: "โปรดอธิบายความต้องการของคุณ...",
+                submit: "ส่งข้อความ",
+                services: {
+                    plasma: "การตัดด้วยพลาสมา CNC",
+                    laser: "ระบบการตัดด้วยเลเซอร์",
+                    flame: "อุปกรณ์ตัดด้วยเปลวไฟ",
+                    consultation: "คำปรึกษาทางเทคนิค",
+                    support: "การสนับสนุนและบำรุงรักษา"
+                }
+            },
+            info: {
+                address: "ที่อยู่บริษัท",
+                phone: "โทรศัพท์",
+                email: "อีเมล"
+            }
+        },
+        
+        // ส่วนท้าย
+        footer: {
+            sections: {
+                products: "ผลิตภัณฑ์",
+                services: "บริการ",
+                company: "บริษัท",
+                resources: "ทรัพยากร"
+            },
+            productLinks: ["การตัดพลาสมา CNC", "ระบบการตัดเลเซอร์", "อุปกรณ์ตัดเปลวไฟ", "อุปกรณ์เสริมการตัด", "โซลูชันที่กำหนดเอง"],
+            serviceLinks: ["การสนับสนุนทางเทคนิค", "การติดตั้ง", "การบำรุงรักษา", "การฝึกอบรม", "คำปรึกษา"],
+            companyLinks: ["เกี่ยวกับเรา", "อาชีพ", "ข่าวและกิจกรรม", "กรณีศึกษา", "ติดต่อ"],
+            resourceLinks: ["เอกสาร", "ดาวน์โหลด", "เอกสารทางเทคนิค", "เว็บินาร์", "คำถามที่พบบ่อย"],
+            copyright: "© 2024 Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. สงวนลิขสิทธิ์ทั้งหมด | รหัสเครดิตสังคมแบบรวม: 914403007703327657",
+            legal: {
+                privacy: "นโยบายความเป็นส่วนตัว",
+                terms: "เงื่อนไขการบริการ",
+                cookie: "นโยบายคุกกี้"
+            }
+        }
+    },
+    
+    // Vietnamese (Vietnam)
+    vi: {
+        // Điều hướng
+        nav: {
+            home: "Trang chủ",
+            about: "Giới thiệu",
+            products: "Sản phẩm",
+            features: "Dịch vụ",
+            contact: "Liên hệ"
+        },
+        
+        // Phần chính
+        hero: {
+            title: "Nhà sản xuất <span class='highlight'>Thiết bị cắt thép</span> chuyên nghiệp",
+            subtitle: "Công ty TNHH Thiết bị Cơ khí và Điện Shenzhen Punaise - Từ năm 2005, chuyên về tấm thép, thiết bị gia công tấm thép, thiết bị phụ trợ và máy móc chính xác Taiwan Ronghua cho các ngành chế tạo kim loại toàn cầu.",
+            getQuote: "Yêu cầu báo giá",
+            watchDemo: "Xem demo",
+            stats: {
+                partners: "Đối tác khu vực",
+                experience: "Năm kinh nghiệm",
+                quality: "Đảm bảo chất lượng"
+            },
+            scrollDown: "Cuộn xuống"
+        },
+        
+        // Giới thiệu
+        about: {
+            title: "Dẫn đầu công nghệ cắt thép từ năm 2005",
+            description: "Công ty TNHH Thiết bị Cơ khí và Điện Shenzhen Punaise chuyên bán tấm thép, thiết bị gia công tấm thép, thiết bị phụ trợ, phụ tùng và vật liệu ngoại vi. Chúng tôi cung cấp dịch vụ bảo trì kỹ thuật và tư vấn, với máy móc chính xác Taiwan Ronghua cho các ngành chế tạo kim loại trên toàn thế giới.",
+            features: {
+                quality: {
+                    title: "Thiết bị chất lượng",
+                    desc: "Thiết bị gia công thép chuyên nghiệp từ các nhà sản xuất đáng tin cậy, bao gồm máy móc Taiwan Ronghua."
+                },
+                service: {
+                    title: "Dịch vụ chuyên nghiệp",
+                    desc: "Hỗ trợ bán hàng toàn diện với tư vấn kỹ thuật, hướng dẫn bảo trì và cung cấp phụ tùng."
+                },
+                support: {
+                    title: "Hỗ trợ địa phương",
+                    desc: "Có trụ sở tại Shenzhen với hiểu biết sâu sắc về nhu cầu thị trường khu vực và khả năng phản ứng nhanh."
+                }
+            }
+        },
+        
+        // Sản phẩm
+        products: {
+            title: "Danh mục Thiết bị Gia công Thép",
+            subtitle: "Dải sản phẩm đầy đủ các hệ thống cắt chính xác, máy cắt lát Taiwan Ronghua và thiết bị gia công thép cho chế tạo kim loại và ứng dụng công nghiệp",
+            items: {
+                steelPlate: {
+                    title: "Thiết bị Gia công Tấm thép",
+                    desc: "Dải sản phẩm đầy đủ thiết bị gia công tấm thép bao gồm máy cắt, thiết bị phụ trợ và phụ tùng.",
+                    features: ["Nhiều độ dày tấm thép khác nhau", "Hỗ trợ kỹ thuật chuyên nghiệp", "Thiết bị chất lượng được bảo đảm"]
+                },
+                conveyor: {
+                    title: "Băng tải và Nền tảng di động",
+                    desc: "Hệ thống băng tải công nghiệp, máy lật cuộn thép và xe nền tảng di động để xử lý vật liệu.",
+                    features: ["Cấu trúc chắc chắn", "Cấu hình có thể tùy chỉnh", "Hoạt động đáng tin cậy"]
+                },
+                ronghua: {
+                    title: "Máy cắt lát Taiwan Ronghua",
+                    desc: "Thiết bị cắt lát cuộn thép chuyên nghiệp và kéo bay cho gia công vật liệu chính xác và hoạt động thép liên tục.",
+                    features: ["Khả năng cắt lát tốc độ cao", "Cắt dải thép chính xác", "Bảo đảm chất lượng Taiwan"]
+                }
+            },
+            learnMore: "Tìm hiểu thêm"
+        },
+        
+        // Đặc điểm
+        features: {
+            title: "Tại sao chọn Giải pháp Thiết bị Punaise?",
+            subtitle: "Cam kết của chúng tôi về phân phối thiết bị chất lượng và dịch vụ chuyên nghiệp đã khiến chúng tôi trở thành đối tác đáng tin cậy cho các công ty gia công thép trong toàn khu vực Guangdong.",
+            items: {
+                partnership: {
+                    title: "Đối tác đáng tin cậy",
+                    desc: "Nhà phân phối được ủy quyền của thiết bị Taiwan Ronghua với hỗ trợ kỹ thuật toàn diện và bảo hành."
+                },
+                coverage: {
+                    title: "Phủ sóng khu vực",
+                    desc: "Giao hàng hiệu quả trên toàn tỉnh Guangdong và các khu vực lân cận với hỗ trợ kỹ thuật địa phương."
+                },
+                consulting: {
+                    title: "Tư vấn kỹ thuật",
+                    desc: "Dịch vụ bảo trì và tư vấn chuyên nghiệp với chuyên môn của Quản lý Fu trong thiết bị gia công thép."
+                }
+            },
+            stats: {
+                quality: "Chất lượng thiết bị",
+                satisfaction: "Sự hài lòng của khách hàng",
+                coverage: "Phủ sóng khu vực"
+            }
+        },
+        
+        // Lời chứng thực
+        testimonials: {
+            title: "Khách hàng nói gì về chúng tôi",
+            subtitle: "Được tin tưởng bởi các nhà lãnh đạo ngành trên toàn thế giới"
+        },
+        
+        // Liên hệ
+        contact: {
+            title: "Liên hệ",
+            subtitle: "Sẵn sàng nâng cấp khả năng gia công thép của bạn? Liên hệ với các chuyên gia Punaise cho giải pháp thiết bị gia công tấm thép chuyên nghiệp và máy móc Taiwan Ronghua. Phục vụ khách hàng từ năm 2005.",
+            form: {
+                name: "Họ và tên *",
+                email: "Địa chỉ email *",
+                company: "Tên công ty",
+                phone: "Số điện thoại",
+                service: "Quan tâm dịch vụ",
+                selectProduct: "Chọn sản phẩm",
+                message: "Tin nhắn *",
+                messagePlaceholder: "Vui lòng mô tả yêu cầu của bạn...",
+                submit: "Gửi tin nhắn",
+                services: {
+                    plasma: "Cắt plasma CNC",
+                    laser: "Hệ thống cắt laser",
+                    flame: "Thiết bị cắt ngọn lửa",
+                    consultation: "Tư vấn kỹ thuật",
+                    support: "Hỗ trợ và bảo trì"
+                }
+            },
+            info: {
+                address: "Địa chỉ công ty",
+                phone: "Điện thoại",
+                email: "Email"
+            }
+        },
+        
+        // Chân trang
+        footer: {
+            sections: {
+                products: "Sản phẩm",
+                services: "Dịch vụ",
+                company: "Công ty",
+                resources: "Tài nguyên"
+            },
+            productLinks: ["Cắt plasma CNC", "Hệ thống cắt laser", "Thiết bị cắt ngọn lửa", "Phụ kiện cắt", "Giải pháp tùy chỉnh"],
+            serviceLinks: ["Hỗ trợ kỹ thuật", "Lắp đặt", "Bảo trì", "Đào tạo", "Tư vấn"],
+            companyLinks: ["Giới thiệu", "Tuyển dụng", "Tin tức & Sự kiện", "Nghiên cứu trường hợp", "Liên hệ"],
+            resourceLinks: ["Tài liệu", "Tải xuống", "Báo cáo kỹ thuật", "Hội thảo trực tuyến", "Câu hỏi thường gặp"],
+            copyright: "© 2024 Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. Tất cả quyền được bảo lưu. | Mã tín dụng xã hội thống nhất: 914403007703327657",
+            legal: {
+                privacy: "Chính sách bảo mật",
+                terms: "Điều khoản dịch vụ",
+                cookie: "Chính sách cookie"
+            }
+        }
+    },
+    
+    // Indonesian (Indonesia)
+    id: {
+        // Navigasi
+        nav: {
+            home: "Beranda",
+            about: "Tentang Kami",
+            products: "Produk",
+            features: "Layanan",
+            contact: "Kontak"
+        },
+        
+        // Bagian Utama
+        hero: {
+            title: "Produsen <span class='highlight'>Peralatan Pemotong Baja</span> Profesional",
+            subtitle: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Sejak 2005, mengkhususkan diri dalam pelat baja, peralatan pemrosesan pelat baja, peralatan tambahan dan mesin presisi Taiwan Ronghua untuk industri fabrikasi logam global.",
+            getQuote: "Minta Penawaran",
+            watchDemo: "Lihat Demo",
+            stats: {
+                partners: "Mitra Regional",
+                experience: "Tahun Pengalaman",
+                quality: "Jaminan Kualitas"
+            },
+            scrollDown: "Gulir ke Bawah"
+        },
+        
+        // Tentang Kami
+        about: {
+            title: "Memimpin Teknologi Pemotongan Baja Sejak 2005",
+            description: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. mengkhususkan diri dalam penjualan pelat baja, peralatan pemrosesan pelat baja, peralatan tambahan, suku cadang, dan bahan periferal. Kami menyediakan layanan pemeliharaan teknis dan konsultasi, menampilkan mesin presisi Taiwan Ronghua untuk industri fabrikasi logam di seluruh dunia.",
+            features: {
+                quality: {
+                    title: "Peralatan Berkualitas",
+                    desc: "Peralatan pemrosesan baja profesional dari produsen terpercaya, termasuk mesin Taiwan Ronghua."
+                },
+                service: {
+                    title: "Layanan Profesional",
+                    desc: "Dukungan penjualan komprehensif dengan konsultasi teknis, panduan pemeliharaan dan pasokan suku cadang."
+                },
+                support: {
+                    title: "Dukungan Lokal",
+                    desc: "Berbasis di Shenzhen dengan pemahaman mendalam tentang kebutuhan pasar regional dan kemampuan respons cepat."
+                }
+            }
+        },
+        
+        // Produk
+        products: {
+            title: "Portofolio Peralatan Pemrosesan Baja",
+            subtitle: "Rangkaian lengkap sistem pemotongan presisi, mesin slitting Taiwan Ronghua, dan peralatan pemrosesan baja untuk fabrikasi logam dan aplikasi industri",
+            items: {
+                steelPlate: {
+                    title: "Peralatan Pemrosesan Pelat Baja",
+                    desc: "Rangkaian lengkap peralatan pemrosesan pelat baja termasuk mesin potong, peralatan tambahan dan suku cadang.",
+                    features: ["Berbagai ketebalan pelat baja", "Dukungan teknis profesional", "Peralatan kualitas terjamin"]
+                },
+                conveyor: {
+                    title: "Sabuk Konveyor & Platform Bergerak",
+                    desc: "Sistem konveyor industri, mesin pemilik gulungan baja dan kereta platform bergerak untuk penanganan material.",
+                    features: ["Konstruksi tahan berat", "Konfigurasi yang dapat disesuaikan", "Operasi handal"]
+                },
+                ronghua: {
+                    title: "Mesin Slitting Taiwan Ronghua",
+                    desc: "Peralatan slitting gulungan baja profesional dan gunting terbang untuk pemrosesan material presisi dan operasi baja berkelanjutan.",
+                    features: ["Kemampuan slitting kecepatan tinggi", "Pemotongan strip baja presisi", "Jaminan kualitas Taiwan"]
+                }
+            },
+            learnMore: "Pelajari Lebih Lanjut"
+        },
+        
+        // Fitur
+        features: {
+            title: "Mengapa Memilih Solusi Peralatan Punaise?",
+            subtitle: "Komitmen kami terhadap distribusi peralatan berkualitas dan layanan profesional telah menjadikan kami mitra terpercaya untuk perusahaan pemrosesan baja di seluruh wilayah Guangdong.",
+            items: {
+                partnership: {
+                    title: "Kemitraan Terpercaya",
+                    desc: "Distributor resmi peralatan Taiwan Ronghua dengan dukungan teknis komprehensif dan cakupan garansi."
+                },
+                coverage: {
+                    title: "Cakupan Regional",
+                    desc: "Pengiriman efisien ke seluruh Provinsi Guangdong dan wilayah tetangga dengan dukungan teknis lokal."
+                },
+                consulting: {
+                    title: "Konsultasi Teknis",
+                    desc: "Layanan pemeliharaan dan konsultasi profesional dengan keahlian Manajer Fu dalam peralatan pemrosesan baja."
+                }
+            },
+            stats: {
+                quality: "Kualitas Peralatan",
+                satisfaction: "Kepuasan Pelanggan",
+                coverage: "Cakupan Regional"
+            }
+        },
+        
+        // Testimoni
+        testimonials: {
+            title: "Apa Kata Klien Kami",
+            subtitle: "Dipercaya oleh pemimpin industri di seluruh dunia"
+        },
+        
+        // Kontak
+        contact: {
+            title: "Hubungi Kami",
+            subtitle: "Siap meningkatkan kemampuan pemrosesan baja Anda? Hubungi ahli Punaise untuk solusi peralatan pemrosesan pelat baja profesional dan mesin Taiwan Ronghua. Melayani klien sejak 2005.",
+            form: {
+                name: "Nama Lengkap *",
+                email: "Alamat Email *",
+                company: "Nama Perusahaan",
+                phone: "Nomor Telepon",
+                service: "Minat Layanan",
+                selectProduct: "Pilih produk",
+                message: "Pesan *",
+                messagePlaceholder: "Silakan jelaskan kebutuhan Anda...",
+                submit: "Kirim Pesan",
+                services: {
+                    plasma: "Pemotongan Plasma CNC",
+                    laser: "Sistem Pemotongan Laser",
+                    flame: "Peralatan Pemotongan Api",
+                    consultation: "Konsultasi Teknis",
+                    support: "Dukungan & Pemeliharaan"
+                }
+            },
+            info: {
+                address: "Alamat Perusahaan",
+                phone: "Telepon",
+                email: "Email"
+            }
+        },
+        
+        // Footer
+        footer: {
+            sections: {
+                products: "Produk",
+                services: "Layanan",
+                company: "Perusahaan",
+                resources: "Sumber Daya"
+            },
+            productLinks: ["Pemotongan Plasma CNC", "Sistem Pemotongan Laser", "Peralatan Pemotongan Api", "Aksesoris Pemotongan", "Solusi Kustom"],
+            serviceLinks: ["Dukungan Teknis", "Instalasi", "Pemeliharaan", "Pelatihan", "Konsultasi"],
+            companyLinks: ["Tentang Kami", "Karir", "Berita & Acara", "Studi Kasus", "Kontak"],
+            resourceLinks: ["Dokumentasi", "Unduhan", "Makalah Teknis", "Webinar", "FAQ"],
+            copyright: "© 2024 Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. Semua hak dilindungi. | Kode Kredit Sosial Terpadu: 914403007703327657",
+            legal: {
+                privacy: "Kebijakan Privasi",
+                terms: "Syarat Layanan",
+                cookie: "Kebijakan Cookie"
+            }
+        }
     }
 };
 
@@ -573,9 +1323,17 @@ class LanguageManager {
                 this.updateLanguage(selectedLang);
                 
                 // Show notification
-                const message = selectedLang === 'zh' 
-                    ? '已切换到中文版' 
-                    : 'Switched to English version';
+                const messages = {
+                    en: 'Switched to English version',
+                    zh: '已切换到中文版',
+                    es: 'Cambiado a versión en español',
+                    pt: 'Alterado para versão em português',
+                    th: 'เปลี่ยนเป็นเวอร์ชันภาษาไทย',
+                    vi: 'Đã chuyển sang phiên bản tiếng Việt',
+                    id: 'Beralih ke versi bahasa Indonesia'
+                };
+                
+                const message = messages[selectedLang] || messages.en;
                 
                 if (typeof showNotification === 'function') {
                     showNotification(message, 'success');
@@ -591,17 +1349,23 @@ class LanguageManager {
             // Clear existing options
             languageSelector.innerHTML = '';
             
-            // Add EN and ZH options only
-            const enOption = document.createElement('option');
-            enOption.value = 'en';
-            enOption.textContent = 'EN';
+            // Add all language options
+            const languages = [
+                { value: 'en', text: 'EN' },
+                { value: 'zh', text: '中文' },
+                { value: 'es', text: 'ES' },
+                { value: 'pt', text: 'PT' },
+                { value: 'th', text: 'TH' },
+                { value: 'vi', text: 'VI' },
+                { value: 'id', text: 'ID' }
+            ];
             
-            const zhOption = document.createElement('option');
-            zhOption.value = 'zh';
-            zhOption.textContent = '中文';
-            
-            languageSelector.appendChild(enOption);
-            languageSelector.appendChild(zhOption);
+            languages.forEach(lang => {
+                const option = document.createElement('option');
+                option.value = lang.value;
+                option.textContent = lang.text;
+                languageSelector.appendChild(option);
+            });
             
             // Set current language
             languageSelector.value = this.currentLang;
@@ -612,36 +1376,46 @@ class LanguageManager {
     updateMetaData(lang) {
         const titles = {
             en: "CNC Steel Cutting Equipment Manufacturer | Shenzhen Punaise Mechanical Equipment Co., Ltd.",
-            zh: "CNC钢板切割设备制造商 | 深圳市普耐斯机电设备有限公司"
+            zh: "CNC钢板切割设备制造商 | 深圳市普耐斯机电设备有限公司",
+            es: "Fabricante de Equipos de Corte de Acero CNC | Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+            pt: "Fabricante de Equipamentos de Corte de Aço CNC | Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+            th: "ผู้ผลิตอุปกรณ์ตัดเหล็ก CNC | บริษัท เซินเจิ้น ปูไนส์ เมคคานิคอล อีควิปเมนท์ จำกัด",
+            vi: "Nhà sản xuất Thiết bị Cắt Thép CNC | Công ty TNHH Thiết bị Cơ khí và Điện Shenzhen Punaise",
+            id: "Produsen Peralatan Pemotong Baja CNC | Shenzhen Punaise Mechanical Equipment Co., Ltd."
         };
         
         const descriptions = {
             en: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Professional steel plate cutting equipment manufacturer since 2005. CNC plasma, laser cutting systems with precision engineering.",
-            zh: "深圳市普耐斯机电设备有限公司 - 自2005年以来专业的钢板切割设备制造商。CNC等离子体、激光切割系统，精密工程技术。"
+            zh: "深圳市普耐斯机电设备有限公司 - 自2005年以来专业的钢板切割设备制造商。CNC等离子体、激光切割系统，精密工程技术。",
+            es: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Fabricante profesional de equipos de corte de placas de acero desde 2005. Sistemas de corte por plasma CNC, láser con ingeniería de precisión.",
+            pt: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Fabricante profissional de equipamentos de corte de chapas de aço desde 2005. Sistemas de corte a plasma CNC, laser com engenharia de precisão.",
+            th: "บริษัท เซินเจิ้น ปูไนส์ เมคคานิคอล แอนด์ อิเล็กทริคอล อีควิปเมนท์ จำกัด - ผู้ผลิตอุปกรณ์ตัดแผ่นเหล็กมืออาชีพตั้งแต่ปี 2005 ระบบตัดพลาสมา CNC เลเซอร์ด้วยวิศวกรรมความแม่นยำ",
+            vi: "Công ty TNHH Thiết bị Cơ khí và Điện Shenzhen Punaise - Nhà sản xuất thiết bị cắt tấm thép chuyên nghiệp từ năm 2005. Hệ thống cắt plasma CNC, laser với kỹ thuật chính xác.",
+            id: "Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Produsen peralatan pemotong pelat baja profesional sejak 2005. Sistem pemotongan plasma CNC, laser dengan teknik presisi."
         };
         
         // Update title
-        document.title = titles[lang];
+        document.title = titles[lang] || titles.en;
         
         // Update meta description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.content = descriptions[lang];
+            metaDescription.content = descriptions[lang] || descriptions.en;
         }
         
         // Update Open Graph title and description
         const ogTitle = document.querySelector('meta[property="og:title"]');
         const ogDescription = document.querySelector('meta[property="og:description"]');
         
-        if (ogTitle) ogTitle.content = titles[lang];
-        if (ogDescription) ogDescription.content = descriptions[lang];
+        if (ogTitle) ogTitle.content = titles[lang] || titles.en;
+        if (ogDescription) ogDescription.content = descriptions[lang] || descriptions.en;
         
         // Update Twitter Card
         const twitterTitle = document.querySelector('meta[property="twitter:title"]');
         const twitterDescription = document.querySelector('meta[property="twitter:description"]');
         
-        if (twitterTitle) twitterTitle.content = titles[lang];
-        if (twitterDescription) twitterDescription.content = descriptions[lang];
+        if (twitterTitle) twitterTitle.content = titles[lang] || titles.en;
+        if (twitterDescription) twitterDescription.content = descriptions[lang] || descriptions.en;
     }
 }
 
