@@ -144,6 +144,23 @@ p {
     height: 70px;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo h2 {
     color: var(--primary-color);
     margin: 0;

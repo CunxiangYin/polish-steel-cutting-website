@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Logo Design for Punaise Mechanical Equipment -->
+  
+  <!-- Background gradient for depth -->
+  <defs>
+    <!-- Industrial blue gradient -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Steel metallic gradient -->
+    <linearGradient id="steelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0c0c0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Tech accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main logo icon - Industrial gear with cutting blade -->
+  <g id="logo-icon">
+    <!-- Outer gear -->
+    <g transform="translate(30, 30)">
+      <!-- Gear teeth -->
+      <path d="M 0,-28 L 3,-23 L 8,-25 L 8,-19 L 13,-19 L 11,-14 L 16,-11 L 13,-6 L 18,-3 L 14,0 L 18,3 L 13,6 L 16,11 L 11,14 L 13,19 L 8,19 L 8,25 L 3,23 L 0,28 L -3,23 L -8,25 L -8,19 L -13,19 L -11,14 L -16,11 L -13,6 L -18,3 L -14,0 L -18,-3 L -13,-6 L -16,-11 L -11,-14 L -13,-19 L -8,-19 L -8,-25 L -3,-23 Z" 
+            fill="url(#steelGradient)" 
+            stroke="#1e3c72" 
+            stroke-width="1.5"/>
+      
+      <!-- Inner circle -->
+      <circle cx="0" cy="0" r="12" fill="#ffffff" stroke="#1e3c72" stroke-width="1.5"/>
+      
+      <!-- Cutting blade element (stylized) -->
+      <g transform="rotate(45)">
+        <rect x="-1.5" y="-18" width="3" height="36" fill="url(#blueGradient)"/>
+        <polygon points="-6,-8 0,-14 6,-8 0,-2" fill="url(#accentGradient)"/>
+      </g>
+      
+      <!-- Center hub -->
+      <circle cx="0" cy="0" r="4" fill="url(#blueGradient)"/>
+    </g>
+  </g>
+  
+  <!-- Company name text -->
+  <g id="company-text">
+    <!-- English name -->
+    <text x="65" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#blueGradient)">
+      PUNAISE
+    </text>
+    
+    <!-- Tech line accent -->
+    <rect x="65" y="36" width="80" height="2" fill="url(#accentGradient)"/>
+    
+    <!-- Tagline -->
+    <text x="65" y="48" font-family="Arial, sans-serif" font-size="9" fill="#666666">
+      STEEL PROCESSING EQUIPMENT
+    </text>
+  </g>
+  
+  <!-- Tech grid pattern (subtle background) -->
+  <g opacity="0.1">
+    <pattern id="grid" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="10" height="10" fill="none" stroke="#1e3c72" stroke-width="0.2"/>
+    </pattern>
+    <rect x="0" y="0" width="200" height="60" fill="url(#grid)"/>
+  </g>
+</svg>

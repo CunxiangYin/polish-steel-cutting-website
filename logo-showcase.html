@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punaise Logo Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0052cc;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .logo-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .logo-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .logo-item h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        .logo-display {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo-display.dark {
+            background: #1a1a1a;
+        }
+        
+        .logo-display.gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .logo-specs {
+            font-size: 0.9em;
+            color: #666;
+            text-align: left;
+        }
+        
+        .logo-specs span {
+            display: inline-block;
+            background: #e0e0e0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px;
+        }
+        
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .features {
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+            border-radius: 12px;
+            color: white;
+        }
+        
+        .features h2 {
+            margin-bottom: 20px;
+        }
+        
+        .features ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .features li {
+            padding: 10px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .features li::before {
+            content: "✓ ";
+            color: #00ff88;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Punaise Logo System</h1>
+        <p class="subtitle">工业科技感设计 | Industrial Tech Design</p>
+        
+        <div class="logo-grid">
+            <!-- Main Logo -->
+            <div class="logo-item">
+                <h3>主Logo | Main Logo</h3>
+                <div class="logo-display">
+                    <img src="logo-main.svg" alt="Main Logo" style="height: 60px;">
+                </div>
+                <div class="logo-specs">
+                    <span>240x80px</span>
+                    <span>SVG</span>
+                    <span>Full Color</span>
+                </div>
+            </div>
+            
+            <!-- Simplified Logo -->
+            <div class="logo-item">
+                <h3>简化版 | Simplified</h3>
+                <div class="logo-display">
+                    <img src="logo.svg" alt="Simplified Logo" style="height: 50px;">
+                </div>
+                <div class="logo-specs">
+                    <span>200x60px</span>
+                    <span>SVG</span>
+                    <span>Horizontal</span>
+                </div>
+            </div>
+            
+            <!-- Icon Version -->
+            <div class="logo-item">
+                <h3>图标版 | Icon</h3>
+                <div class="logo-display">
+                    <img src="favicon.svg" alt="Icon" style="height: 48px;">
+                </div>
+                <div class="logo-specs">
+                    <span>32x32px</span>
+                    <span>SVG</span>
+                    <span>Favicon</span>
+                </div>
+            </div>
+            
+            <!-- Dark Background -->
+            <div class="logo-item">
+                <h3>深色背景 | Dark BG</h3>
+                <div class="logo-display dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" height="50">
+                        <text x="10" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="white">
+                            PUNAISE
+                        </text>
+                        <text x="10" y="50" font-family="Arial" font-size="10" fill="#aaa">
+                            STEEL PROCESSING EQUIPMENT
+                        </text>
+                    </svg>
+                </div>
+                <div class="logo-specs">
+                    <span>White Text</span>
+                    <span>Dark Mode</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Color Palette -->
+        <div class="color-palette">
+            <div class="color-swatch" style="background: #0052cc;">#0052CC</div>
+            <div class="color-swatch" style="background: #003d99;">#003D99</div>
+            <div class="color-swatch" style="background: #00a8ff;">#00A8FF</div>
+            <div class="color-swatch" style="background: #0078d4;">#0078D4</div>
+            <div class="color-swatch" style="background: #666; color: white;">#666666</div>
+        </div>
+        
+        <!-- Features -->
+        <div class="features">
+            <h2>Logo设计特点 | Design Features</h2>
+            <ul>
+                <li>齿轮元素象征机械工业 | Gear symbolizes machinery</li>
+                <li>切割刀片代表核心业务 | Blade represents core business</li>
+                <li>蓝色调传达专业可靠 | Blue conveys professionalism</li>
+                <li>渐变效果增加科技感 | Gradients add tech feeling</li>
+                <li>简洁设计适合多场景 | Clean design for versatility</li>
+                <li>中英文结合国际化 | Bilingual for international use</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
