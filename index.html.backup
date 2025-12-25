@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC Steel Plate Cutting Equipment Manufacturer | Polish Precision Machinery China</title>
+    <meta name="description" content="Professional CNC plasma, laser & flame cutting equipment from Shenzhen Polish. ±0.1mm precision, CE certified. Global shipping. Get quote for steel fabrication solutions.">
+    <meta name="keywords" content="steel plate cutting, CNC cutting equipment, plasma cutting, laser cutting, flame cutting, metal fabrication, industrial cutting, Polish machinery">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://polish-equipment.com/">
+    <meta property="og:title" content="CNC Steel Plate Cutting Equipment Manufacturer | Polish Precision Machinery">
+    <meta property="og:description" content="Professional CNC plasma, laser & flame cutting equipment from Shenzhen Polish. ±0.1mm precision, CE certified.">
+    <meta property="og:image" content="https://polish-equipment.com/images/polish-cutting-equipment.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://polish-equipment.com/">
+    <meta property="twitter:title" content="CNC Steel Plate Cutting Equipment Manufacturer | Polish Precision Machinery">
+    <meta property="twitter:description" content="Professional CNC plasma, laser & flame cutting equipment from Shenzhen Polish. ±0.1mm precision, CE certified.">
+    <meta property="twitter:image" content="https://polish-equipment.com/images/polish-cutting-equipment.jpg">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Shenzhen Polish Electromechanical Equipment Co., Ltd.">
+    <meta name="geo.region" content="CN-GD">
+    <meta name="geo.placename" content="Shenzhen">
+    <meta name="geo.position" content="22.543096;114.057865">
+    <meta name="ICBM" content="22.543096, 114.057865">
+    
+    <link rel="canonical" href="https://polish-equipment.com/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Shenzhen Polish Electromechanical Equipment Co., Ltd.",
+        "alternateName": "Polish Precision Machinery",
+        "description": "Leading manufacturer of precision steel plate cutting equipment including CNC plasma, laser and flame cutting systems.",
+        "url": "https://polish-equipment.com",
+        "logo": "https://polish-equipment.com/logo.png",
+        "image": "https://polish-equipment.com/images/polish-cutting-equipment.jpg",
+        "telephone": "+86-755-8888-9999",
+        "email": "info@polish-equipment.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Industrial Park",
+            "addressLocality": "Shenzhen",
+            "addressRegion": "Guangdong",
+            "addressCountry": "CN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "22.543096",
+            "longitude": "114.057865"
+        },
+        "foundingDate": "2008",
+        "numberOfEmployees": "50-100",
+        "industry": "Industrial Equipment Manufacturing",
+        "products": [
+            {
+                "@type": "Product",
+                "name": "CNC Plasma Cutting Equipment",
+                "description": "High-precision plasma cutting systems for steel plates up to 200mm thickness",
+                "category": "Industrial Cutting Equipment",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Polish"
+                }
+            },
+            {
+                "@type": "Product", 
+                "name": "Laser Cutting Systems",
+                "description": "Advanced fiber laser cutting equipment for precision work on various steel grades",
+                "category": "Industrial Cutting Equipment",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Polish"
+                }
+            },
+            {
+                "@type": "Product",
+                "name": "Flame Cutting Equipment", 
+                "description": "Heavy-duty flame cutting systems for thick steel plates up to 300mm",
+                "category": "Industrial Cutting Equipment",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Polish"
+                }
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/company/polish-equipment",
+            "https://www.youtube.com/channel/polish-equipment"
+        ]
+    }
+    </script>
+
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        
+        // Enhanced eCommerce tracking for contact form submissions
+        function trackContactFormSubmission() {
+            gtag('event', 'contact_form_submit', {
+                'event_category': 'engagement',
+                'event_label': 'contact_form',
+                'value': 1
+            });
+        }
+        
+        // Track button clicks
+        function trackButtonClick(buttonName) {
+            gtag('event', 'click', {
+                'event_category': 'engagement',
+                'event_label': buttonName,
+                'value': 1
+            });
+        }
+    </script>
+
+    <!-- Google Search Console Verification (Replace with your verification code) -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Polish<span class="logo-subtitle">普耐斯</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <div class="language-selector">
+                        <i class="fas fa-globe"></i>
+                        <select id="language">
+                            <option value="en">EN</option>
+                            <option value="es">ES</option>
+                            <option value="de">DE</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Professional <span class="highlight">Steel Plate</span> Cutting Equipment
+                </h1>
+                <p class="hero-subtitle">
+                    Precision CNC cutting solutions for metal fabrication industries. 
+                    Polish delivers high-performance plasma, laser and flame cutting systems trusted worldwide.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Quote</button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Global Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.5%</span>
+                        <span class="stat-label">Cutting Precision</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-visual">
+                    <div class="gear gear-1"></div>
+                    <div class="gear gear-2"></div>
+                    <div class="gear gear-3"></div>
+                    <div class="circuit-board"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Leading Steel Plate Cutting Technology</h2>
+                <p>Shenzhen Polish Electromechanical Equipment specializes in designing and manufacturing precision steel cutting equipment that revolutionizes metal fabrication processes worldwide.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <h3>Precision Cutting</h3>
+                        <p>Advanced CNC technology ensures cutting accuracy within ±0.1mm tolerance for superior quality results.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Heavy-Duty Performance</h3>
+                        <p>Robust construction designed for continuous operation in demanding metal fabrication environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Complete Solutions</h3>
+                        <p>From installation to training and maintenance - comprehensive support for your cutting operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Steel Cutting Equipment Portfolio</h2>
+                <p>Comprehensive range of precision cutting systems for metal fabrication and industrial applications</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bolt" aria-label="CNC Plasma Cutting Equipment Icon"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>CNC Plasma Cutting</h3>
+                        <p>High-precision plasma cutting systems for steel plates up to 200mm thickness with superior edge quality.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> ±0.1mm cutting precision</li>
+                            <li><i class="fas fa-check"></i> Automatic height control</li>
+                            <li><i class="fas fa-check"></i> Multi-torch capability</li>
+                        </ul>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-laser"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Laser Cutting Systems</h3>
+                        <p>Advanced fiber laser cutting equipment for precision work on various steel grades and thicknesses.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Fiber laser technology</li>
+                            <li><i class="fas fa-check"></i> High-speed cutting</li>
+                            <li><i class="fas fa-check"></i> Minimal heat distortion</li>
+                        </ul>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Flame Cutting Equipment</h3>
+                        <p>Heavy-duty flame cutting systems for thick steel plates and large-scale fabrication projects.</p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i> Up to 300mm thickness</li>
+                            <li><i class="fas fa-check"></i> Multi-gas support</li>
+                            <li><i class="fas fa-check"></i> Robust construction</li>
+                        </ul>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text">
+                    <h2>Why Choose Polish Steel Cutting Equipment?</h2>
+                    <p>Our commitment to precision cutting technology and quality manufacturing has made us a trusted partner for metal fabrication companies worldwide.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon-small">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>CE Certified</h4>
+                                <p>European CE safety certification and ISO 9001:2015 quality management standards.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-small">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Global Shipping</h4>
+                                <p>Worldwide delivery from Shenzhen with complete installation and commissioning support.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon-small">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>24/7 Technical Support</h4>
+                                <p>Expert engineers providing remote diagnostics, on-site service and operator training.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-visual">
+                    <div class="feature-chart">
+                        <div class="chart-container">
+                            <div class="chart-bar" data-percentage="99">
+                                <span class="chart-label">Cutting Accuracy</span>
+                                <span class="chart-value">99%</span>
+                            </div>
+                            <div class="chart-bar" data-percentage="96">
+                                <span class="chart-label">Customer Satisfaction</span>
+                                <span class="chart-value">96%</span>
+                            </div>
+                            <div class="chart-bar" data-percentage="98">
+                                <span class="chart-label">On-time Delivery</span>
+                                <span class="chart-value">98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by industry leaders worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Polish's CNC plasma cutting system has transformed our steel fabrication capabilities. The precision and speed have dramatically improved our productivity."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Robert Johnson</h4>
+                            <span>Production Manager, SteelCraft Industries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding build quality and technical support. Polish has been our trusted partner for steel cutting equipment for over 8 years."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Rodriguez</h4>
+                            <span>Engineering Director, MetalWorks Ltd</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The laser cutting system from Polish delivers exceptional edge quality with minimal waste. Perfect for our precision requirements."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Chen Wei</h4>
+                            <span>Operations Manager, Precision Metals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to upgrade your steel cutting capabilities? Contact Polish experts for a customized cutting solution.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Company Address</h4>
+                                <p>Shenzhen Polish Electromechanical Equipment Co., Ltd.<br>Shenzhen, Guangdong Province<br>People's Republic of China</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+86 (755) 8888-9999<br>+86 138-0000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@polish-equipment.com<br>sales@polish-equipment.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a product</option>
+                                <option value="plasma-cutting">CNC Plasma Cutting</option>
+                                <option value="laser-cutting">Laser Cutting Systems</option>
+                                <option value="flame-cutting">Flame Cutting Equipment</option>
+                                <option value="consultation">Technical Consultation</option>
+                                <option value="support">Support & Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Please describe your requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Polish</h3>
+                    <p>Shenzhen Polish Electromechanical Equipment Co., Ltd. - Leading manufacturer of precision steel plate cutting equipment and solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">CNC Plasma Cutting</a></li>
+                        <li><a href="#">Laser Cutting Systems</a></li>
+                        <li><a href="#">Flame Cutting Equipment</a></li>
+                        <li><a href="#">Cutting Accessories</a></li>
+                        <li><a href="#">Custom Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Installation</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">White Papers</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Shenzhen Polish Electromechanical Equipment Co., Ltd. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
