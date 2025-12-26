@@ -209,6 +209,9 @@
                 <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                 <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                 <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="compare.html" class="nav-link">Compare</a></li>
+                <li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-item">
                     <div class="language-selector">
@@ -244,10 +247,17 @@
                     Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Since 2005, specializing in steel plates, steel plate processing equipment, auxiliary equipment and Taiwan Ronghua precision machinery for global metal fabrication industries.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Get Quote</button>
-                    <button class="btn btn-secondary">
-                        <i class="fas fa-play"></i>
-                        Watch Demo
+                    <button class="btn btn-primary hero-cta" onclick="scrollToContact()">
+                        <i class="fas fa-envelope"></i>
+                        Get Free Quote
+                    </button>
+                    <button class="btn btn-secondary" onclick="openProductComparison()">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare Products
+                    </button>
+                    <button class="btn btn-outline" onclick="window.open('blog.html', '_blank')">
+                        <i class="fas fa-book"></i>
+                        Technical Blog
                     </button>
                 </div>
                 <div class="hero-stats">
@@ -337,7 +347,12 @@
                             <li><i class="fas fa-check"></i> Professional technical support</li>
                             <li><i class="fas fa-check"></i> Quality assured equipment</li>
                         </ul>
-                        <button class="btn btn-outline">Learn More</button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary product-cta" data-product="steel-plate">Get Quote</button>
+                            <a href="downloads.html" class="btn btn-outline download-specs">
+                                <i class="fas fa-download"></i> Specs PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
@@ -354,7 +369,12 @@
                             <li><i class="fas fa-check"></i> Customizable configurations</li>
                             <li><i class="fas fa-check"></i> Reliable operation</li>
                         </ul>
-                        <button class="btn btn-outline">Learn More</button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary product-cta" data-product="steel-plate">Get Quote</button>
+                            <a href="downloads.html" class="btn btn-outline download-specs">
+                                <i class="fas fa-download"></i> Specs PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
@@ -371,7 +391,12 @@
                             <li><i class="fas fa-check"></i> Precision steel strip cutting</li>
                             <li><i class="fas fa-check"></i> Taiwan quality assurance</li>
                         </ul>
-                        <button class="btn btn-outline">Learn More</button>
+                        <div class="product-actions">
+                            <button class="btn btn-primary product-cta" data-product="steel-plate">Get Quote</button>
+                            <a href="downloads.html" class="btn btn-outline download-specs">
+                                <i class="fas fa-download"></i> Specs PDF
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -586,6 +611,92 @@
         </div>
     </section>
 
+    <!-- Trust Indicators Section -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="trust-content">
+                <h2>Why 1000+ Companies Trust Punaise Equipment</h2>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Authorized Distributor</h4>
+                        <p>Official Taiwan Ronghua distributor with genuine products and full warranty support</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h4>Fast Delivery</h4>
+                        <p>2-4 weeks standard delivery across Guangdong Province and neighboring regions</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Technical consultation and maintenance support with Manager Fu's expertise</p>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>19+ Years Experience</h4>
+                        <p>Serving steel processing industry since 2005 with proven track record</p>
+                    </div>
+                </div>
+                <div class="urgency-banner">
+                    <i class="fas fa-clock"></i>
+                    <span>Limited Time: Free technical consultation for new customers</span>
+                    <button class="btn btn-warning claim-offer" onclick="scrollToContact()">
+                        Claim Offer Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Center Promotion -->
+    <section class="download-center-promo" style="background: var(--background-white); padding: 80px 0;">
+        <div class="container">
+            <div class="promo-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <div class="promo-icon" style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; margin: 0 auto 2rem;">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h2>Free Technical Resources & Documentation</h2>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 2rem;">Access comprehensive technical specifications, CAD files, operation manuals, and safety guides for all our equipment. Over 150+ professional documents available for immediate download.</p>
+                <div class="promo-features" style="display: flex; justify-content: center; gap: 3rem; margin: 3rem 0; flex-wrap: wrap;">
+                    <div class="promo-feature" style="text-align: center;">
+                        <i class="fas fa-file-pdf" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                        <h4>Technical Specs</h4>
+                        <p style="color: var(--text-secondary);">Detailed specifications for all equipment models</p>
+                    </div>
+                    <div class="promo-feature" style="text-align: center;">
+                        <i class="fas fa-drafting-compass" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                        <h4>CAD Files</h4>
+                        <p style="color: var(--text-secondary);">2D/3D drawings for installation planning</p>
+                    </div>
+                    <div class="promo-feature" style="text-align: center;">
+                        <i class="fas fa-tools" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem; display: block;"></i>
+                        <h4>Operation Guides</h4>
+                        <p style="color: var(--text-secondary);">Step-by-step operation and maintenance manuals</p>
+                    </div>
+                </div>
+                <div class="promo-buttons" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="downloads.html" class="btn btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-download"></i>
+                        Access Download Center
+                    </a>
+                    <a href="compare.html" class="btn btn-outline" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-balance-scale"></i>
+                        Compare Equipment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -733,7 +844,135 @@
         </div>
     </footer>
 
+    <!-- Floating CTA for Mobile -->
+    <button class="floating-cta" onclick="scrollToContact()" title="Get Free Quote">
+        <i class="fas fa-comments"></i>
+    </button>
+    
     <script src="script.min.js" defer></script>
     <script src="language.min.js" defer></script>
+    
+    <!-- Enhanced CTA Functions -->
+    <script>
+        // Scroll to contact section
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Track CTA click
+            if (typeof gtag === 'function') {
+                gtag('event', 'cta_click', {
+                    'event_category': 'conversion',
+                    'event_label': 'scroll_to_contact',
+                    'value': 1
+                });
+            }
+        }
+        
+        // Open product comparison (placeholder)
+        function openProductComparison() {
+            alert('Product comparison tool coming soon! Contact us for detailed equipment specifications.');
+            
+            // Track comparison interest
+            if (typeof gtag === 'function') {
+                gtag('event', 'product_comparison_interest', {
+                    'event_category': 'engagement',
+                    'event_label': 'comparison_tool',
+                    'value': 1
+                });
+            }
+        }
+        
+        // Enhanced CTA tracking
+        document.addEventListener('DOMContentLoaded', () => {
+            // Track product CTA clicks
+            document.querySelectorAll('.product-cta').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const product = e.target.getAttribute('data-product');
+                    
+                    // Scroll to contact form
+                    scrollToContact();
+                    
+                    // Pre-fill service selector if possible
+                    setTimeout(() => {
+                        const serviceSelect = document.getElementById('service');
+                        if (serviceSelect && product) {
+                            switch(product) {
+                                case 'steel-plate':
+                                    serviceSelect.value = 'consultation';
+                                    break;
+                                case 'conveyor':
+                                    serviceSelect.value = 'consultation';
+                                    break;
+                                case 'ronghua':
+                                    serviceSelect.value = 'consultation';
+                                    break;
+                            }
+                        }
+                    }, 1000);
+                    
+                    // Track specific product interest
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'product_quote_request', {
+                            'event_category': 'conversion',
+                            'event_label': product,
+                            'value': 1
+                        });
+                    }
+                });
+            });
+            
+            // Track spec download clicks
+            document.querySelectorAll('.download-specs').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const product = e.target.getAttribute('data-product');
+                    
+                    // Simulate PDF download
+                    alert(`Downloading ${product} specifications PDF...`);
+                    
+                    // Track download
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'spec_download', {
+                            'event_category': 'engagement',
+                            'event_label': product,
+                            'value': 1
+                        });
+                    }
+                });
+            });
+            
+            // Track urgency banner clicks
+            document.querySelectorAll('.claim-offer').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'urgency_offer_click', {
+                            'event_category': 'conversion',
+                            'event_label': 'free_consultation',
+                            'value': 1
+                        });
+                    }
+                });
+            });
+            
+            // Floating CTA visibility based on scroll
+            const floatingCTA = document.querySelector('.floating-cta');
+            const heroSection = document.querySelector('.hero');
+            
+            if (floatingCTA && heroSection) {
+                window.addEventListener('scroll', () => {
+                    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+                    const scrollPosition = window.pageYOffset;
+                    
+                    if (scrollPosition > heroBottom) {
+                        floatingCTA.style.display = 'flex';
+                    } else {
+                        floatingCTA.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

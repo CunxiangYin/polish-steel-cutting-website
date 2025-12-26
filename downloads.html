@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Downloads | Equipment Specifications & Resources - Punaise</title>
+    <meta name="description" content="Download technical specifications, CAD files, operation manuals, and safety guides for Punaise steel cutting equipment. Free resources for industrial professionals.">
+    <meta name="keywords" content="steel cutting equipment manuals, CNC specifications, technical downloads, CAD files, operation guides, maintenance manuals">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cute-jelly-dc03bf.netlify.app/downloads.html">
+    <meta property="og:title" content="Technical Downloads | Equipment Specifications & Resources - Punaise">
+    <meta property="og:description" content="Download technical specifications, CAD files, operation manuals, and safety guides for steel cutting equipment.">
+    <meta property="og:image" content="https://cute-jelly-dc03bf.netlify.app/logo-main.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cute-jelly-dc03bf.netlify.app/downloads.html">
+    <meta property="twitter:title" content="Technical Downloads | Equipment Specifications & Resources">
+    <meta property="twitter:description" content="Free technical resources for industrial steel cutting equipment professionals.">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cute-jelly-dc03bf.netlify.app/downloads.html">
+    <link rel="stylesheet" href="style.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Structured Data for Download Center -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "name": "Punaise Technical Download Center",
+        "description": "Technical specifications and resources for steel cutting equipment",
+        "url": "https://cute-jelly-dc03bf.netlify.app/downloads.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cute-jelly-dc03bf.netlify.app/logo-main.svg"
+            }
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Steel Cutting Equipment"
+        }
+    }
+    </script>
+
+    <style>
+        /* Download Center Specific Styles */
+        .downloads-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .downloads-hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .downloads-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .downloads-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .download-stat {
+            text-align: center;
+        }
+        
+        .download-stat .number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .download-stat .label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .downloads-container {
+            padding: 80px 0;
+            background: var(--background-light);
+        }
+        
+        .download-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .category-filter {
+            padding: 12px 24px;
+            border: 2px solid var(--border-color);
+            background: white;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .category-filter:hover,
+        .category-filter.active {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .download-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .download-header {
+            background: var(--gradient-secondary);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .download-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .download-title h3 {
+            color: white;
+            margin: 0 0 0.5rem 0;
+        }
+        
+        .download-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        .download-content {
+            padding: 1.5rem;
+        }
+        
+        .download-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .download-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--background-light);
+            border-radius: var(--border-radius);
+        }
+        
+        .file-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .file-type {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+        
+        .file-size {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+        
+        .download-date {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+        
+        .download-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .btn-download {
+            flex: 1;
+            background: var(--success-color);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .btn-download:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+        
+        .btn-preview {
+            padding: 12px;
+            background: transparent;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-preview:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .download-requirements {
+            background: var(--background-white);
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .requirement-card {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+        
+        .requirement-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .requirement-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .requirement-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .download-support {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .support-content h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .support-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .support-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-support {
+            background: white;
+            color: var(--primary-color);
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-support:hover {
+            background: var(--background-light);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .downloads-stats {
+                gap: 1.5rem;
+            }
+            
+            .download-stat .number {
+                font-size: 2rem;
+            }
+            
+            .download-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .downloads-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .download-actions {
+                flex-direction: column;
+            }
+            
+            .support-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="/logo-main.svg" alt="Punaise Equipment" style="height: 40px; width: auto;">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="compare.html" class="nav-link">Compare</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="downloads.html" class="nav-link active">Downloads</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="downloads-hero">
+        <div class="container">
+            <h1>Technical Download Center</h1>
+            <p>Access comprehensive technical documentation, specifications, CAD files, and operation manuals for all Punaise steel cutting equipment</p>
+            
+            <div class="downloads-stats">
+                <div class="download-stat">
+                    <span class="number">150+</span>
+                    <span class="label">Technical Documents</span>
+                </div>
+                <div class="download-stat">
+                    <span class="number">25+</span>
+                    <span class="label">Equipment Models</span>
+                </div>
+                <div class="download-stat">
+                    <span class="number">10k+</span>
+                    <span class="label">Downloads</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Container -->
+    <section class="downloads-container">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="download-categories">
+                <button class="category-filter active" data-category="all">All Resources</button>
+                <button class="category-filter" data-category="specifications">Specifications</button>
+                <button class="category-filter" data-category="manuals">Operation Manuals</button>
+                <button class="category-filter" data-category="cad">CAD Files</button>
+                <button class="category-filter" data-category="safety">Safety Guides</button>
+                <button class="category-filter" data-category="maintenance">Maintenance</button>
+            </div>
+
+            <!-- Downloads Grid -->
+            <div class="downloads-grid">
+                <!-- CNC Plasma Cutting Specifications -->
+                <div class="download-card" data-category="specifications">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>CNC Plasma Cutting System Specifications</h3>
+                            <p class="download-subtitle">Complete technical specifications and performance data</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">Comprehensive technical specifications including cutting thickness ranges, speed parameters, power consumption, and dimensional drawings for our CNC plasma cutting systems.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">PDF Document</span>
+                                <span class="file-size">2.8 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Dec 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('CNC Plasma Specifications')">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('plasma-specs')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laser Cutting CAD Files -->
+                <div class="download-card" data-category="cad">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>Laser Cutting System CAD Files</h3>
+                            <p class="download-subtitle">2D/3D CAD files for installation planning</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">AutoCAD and SolidWorks files including floor plans, elevation views, and 3D models for facility planning and installation design.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">CAD Archive</span>
+                                <span class="file-size">15.2 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Dec 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('Laser CAD Files')">
+                                <i class="fas fa-download"></i>
+                                Download ZIP
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('laser-cad')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operation Manual -->
+                <div class="download-card" data-category="manuals">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>Taiwan Ronghua Slitter Operation Manual</h3>
+                            <p class="download-subtitle">Complete operation and setup guide</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">Step-by-step operation procedures, setup instructions, troubleshooting guide, and performance optimization tips for Taiwan Ronghua slitting equipment.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">PDF Manual</span>
+                                <span class="file-size">4.6 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Nov 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('Ronghua Operation Manual')">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('ronghua-manual')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety Guide -->
+                <div class="download-card" data-category="safety">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>Industrial Safety Guidelines</h3>
+                            <p class="download-subtitle">Comprehensive safety protocols and procedures</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">Essential safety protocols, personal protective equipment requirements, emergency procedures, and risk assessment guidelines for all steel cutting operations.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">PDF Guide</span>
+                                <span class="file-size">1.9 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Dec 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('Safety Guidelines')">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('safety-guide')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintenance Schedule -->
+                <div class="download-card" data-category="maintenance">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>Preventive Maintenance Schedule</h3>
+                            <p class="download-subtitle">Equipment maintenance and service intervals</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">Detailed maintenance schedules, service checklists, replacement part specifications, and troubleshooting procedures for optimal equipment performance.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">PDF Schedule</span>
+                                <span class="file-size">1.3 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Dec 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('Maintenance Schedule')">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('maintenance-schedule')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flame Cutting Specifications -->
+                <div class="download-card" data-category="specifications">
+                    <div class="download-header">
+                        <div class="download-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="download-title">
+                            <h3>Flame Cutting Equipment Specifications</h3>
+                            <p class="download-subtitle">Heavy-duty cutting system specifications</p>
+                        </div>
+                    </div>
+                    <div class="download-content">
+                        <p class="download-description">Technical specifications for flame cutting equipment including torch configurations, gas consumption rates, cutting capacity, and dimensional requirements.</p>
+                        <div class="download-details">
+                            <div class="file-info">
+                                <span class="file-type">PDF Document</span>
+                                <span class="file-size">2.1 MB</span>
+                            </div>
+                            <div class="download-date">Updated: Nov 2024</div>
+                        </div>
+                        <div class="download-actions">
+                            <a href="#" class="btn-download" onclick="trackDownload('Flame Cutting Specifications')">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="btn-preview" onclick="previewDocument('flame-specs')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Requirements -->
+    <section class="download-requirements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download Requirements & Support</h2>
+                <p>Information about document formats, software requirements, and technical support resources</p>
+            </div>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF Reader Required</h3>
+                    <p>Most documents are in PDF format. Download Adobe Acrobat Reader or any compatible PDF viewer for best viewing experience.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>CAD Software</h3>
+                    <p>CAD files require AutoCAD, SolidWorks, or compatible CAD software. Free viewers available for basic viewing and measurements.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Need help with documents or technical questions? Our engineering team provides comprehensive support and consultation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="download-support">
+        <div class="container">
+            <div class="support-content">
+                <h2>Need Additional Resources?</h2>
+                <p>Can't find what you're looking for? Contact our technical team for custom specifications, additional documentation, or engineering support.</p>
+                <div class="support-buttons">
+                    <a href="index.html#contact" class="btn-support">
+                        <i class="fas fa-phone"></i>
+                        Contact Technical Team
+                    </a>
+                    <a href="mailto:466904802@qq.com" class="btn-support">
+                        <i class="fas fa-envelope"></i>
+                        Request Custom Documentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-logo">
+                    <img src="/logo-main.svg" alt="Punaise Logo" style="height: 40px; filter: brightness(0) invert(1);">
+                    <p>Professional steel cutting equipment since 2005</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#products">Products</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="downloads.html">Downloads</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.min.js" defer></script>
+    <script>
+        // Download center functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Category filtering
+            const categoryFilters = document.querySelectorAll('.category-filter');
+            const downloadCards = document.querySelectorAll('.download-card');
+
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('click', () => {
+                    // Update active filter
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    filter.classList.add('active');
+
+                    const category = filter.getAttribute('data-category');
+
+                    // Filter download cards
+                    downloadCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Track category filter usage
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'download_category_filter', {
+                            'event_category': 'engagement',
+                            'event_label': category,
+                            'value': 1
+                        });
+                    }
+                });
+            });
+        });
+
+        // Track download events
+        function trackDownload(documentName) {
+            // Simulate download process
+            alert(`Downloading: ${documentName}\n\nThis is a demo - in production, this would initiate the actual file download.`);
+            
+            // Track download event
+            if (typeof gtag === 'function') {
+                gtag('event', 'file_download', {
+                    'event_category': 'downloads',
+                    'event_label': documentName,
+                    'value': 1
+                });
+            }
+        }
+
+        // Preview document functionality
+        function previewDocument(docId) {
+            alert(`Document preview for: ${docId}\n\nIn production, this would open a preview modal or new tab with the document preview.`);
+            
+            // Track preview event
+            if (typeof gtag === 'function') {
+                gtag('event', 'document_preview', {
+                    'event_category': 'engagement',
+                    'event_label': docId,
+                    'value': 1
+                });
+            }
+        }
+
+        // CSS Animation for filtering
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

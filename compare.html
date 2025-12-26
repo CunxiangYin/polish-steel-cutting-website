@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison Tool | Steel Cutting Equipment - Punaise</title>
+    <meta name="description" content="Compare steel cutting equipment specifications, features, and pricing. Find the perfect solution for your industrial needs with our interactive comparison tool.">
+    <meta name="keywords" content="steel cutting equipment comparison, CNC equipment specs, plasma vs laser cutting, equipment specifications">
+    
+    <link rel="canonical" href="https://cute-jelly-dc03bf.netlify.app/compare.html">
+    <link rel="stylesheet" href="style.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Comparison Tool Specific Styles */
+        .comparison-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .comparison-hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .comparison-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .comparison-container {
+            padding: 80px 0;
+            background: var(--background-white);
+        }
+        
+        .comparison-selector {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 3rem;
+        }
+        
+        .selector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .product-selector {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .product-selector:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .product-selector.selected {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .product-selector i {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .comparison-table {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 3rem;
+        }
+        
+        .table-header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 2fr repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .table-row {
+            display: grid;
+            grid-template-columns: 2fr repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            align-items: center;
+        }
+        
+        .table-row:nth-child(even) {
+            background: var(--background-light);
+        }
+        
+        .spec-category {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 1.5rem 0 0.5rem;
+            padding: 0 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .spec-name {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .spec-value {
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        
+        .spec-value.highlight {
+            background: var(--success-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+        }
+        
+        .spec-value.warning {
+            background: var(--warning-color);
+            color: white;
+            padding: 4px 8px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+        }
+        
+        .recommendation {
+            background: var(--gradient-secondary);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+        
+        .recommendation h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .recommendation p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .table-header, .table-row {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .spec-name {
+                background: var(--primary-color);
+                color: white;
+                padding: 0.5rem;
+                border-radius: var(--border-radius);
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="/logo-main.svg" alt="Punaise Equipment" style="height: 40px; width: auto;">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="compare.html" class="nav-link active">Compare</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="comparison-hero">
+        <div class="container">
+            <h1>Equipment Comparison Tool</h1>
+            <p>Compare specifications, features, and capabilities of our steel cutting equipment to find the perfect solution for your industrial needs</p>
+        </div>
+    </section>
+
+    <!-- Comparison Container -->
+    <section class="comparison-container">
+        <div class="container">
+            <!-- Product Selector -->
+            <div class="comparison-selector">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Select Products to Compare</h2>
+                <div class="selector-grid">
+                    <div class="product-selector" data-product="plasma">
+                        <i class="fas fa-bolt"></i>
+                        <h4>CNC Plasma Cutting</h4>
+                        <p>High-speed plasma cutting systems</p>
+                    </div>
+                    <div class="product-selector" data-product="laser">
+                        <i class="fas fa-laser"></i>
+                        <h4>Laser Cutting Systems</h4>
+                        <p>Precision laser cutting equipment</p>
+                    </div>
+                    <div class="product-selector" data-product="flame">
+                        <i class="fas fa-fire"></i>
+                        <h4>Flame Cutting</h4>
+                        <p>Heavy-duty flame cutting machines</p>
+                    </div>
+                    <div class="product-selector" data-product="ronghua">
+                        <i class="fas fa-cut"></i>
+                        <h4>Taiwan Ronghua Slitter</h4>
+                        <p>Professional slitting equipment</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table" id="comparisonTable" style="display: none;">
+                <div class="table-header">
+                    <div><strong>Specifications</strong></div>
+                    <div id="product1Header"></div>
+                    <div id="product2Header"></div>
+                    <div id="product3Header"></div>
+                </div>
+
+                <div class="spec-category">Cutting Capabilities</div>
+                
+                <div class="table-row">
+                    <div class="spec-name">Maximum Thickness</div>
+                    <div class="spec-value" id="thickness1"></div>
+                    <div class="spec-value" id="thickness2"></div>
+                    <div class="spec-value" id="thickness3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Cutting Speed</div>
+                    <div class="spec-value" id="speed1"></div>
+                    <div class="spec-value" id="speed2"></div>
+                    <div class="spec-value" id="speed3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Precision Level</div>
+                    <div class="spec-value" id="precision1"></div>
+                    <div class="spec-value" id="precision2"></div>
+                    <div class="spec-value" id="precision3"></div>
+                </div>
+
+                <div class="spec-category">Technical Specifications</div>
+
+                <div class="table-row">
+                    <div class="spec-name">Power Consumption</div>
+                    <div class="spec-value" id="power1"></div>
+                    <div class="spec-value" id="power2"></div>
+                    <div class="spec-value" id="power3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Working Area</div>
+                    <div class="spec-value" id="area1"></div>
+                    <div class="spec-value" id="area2"></div>
+                    <div class="spec-value" id="area3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Material Types</div>
+                    <div class="spec-value" id="materials1"></div>
+                    <div class="spec-value" id="materials2"></div>
+                    <div class="spec-value" id="materials3"></div>
+                </div>
+
+                <div class="spec-category">Economic Factors</div>
+
+                <div class="table-row">
+                    <div class="spec-name">Initial Investment</div>
+                    <div class="spec-value" id="investment1"></div>
+                    <div class="spec-value" id="investment2"></div>
+                    <div class="spec-value" id="investment3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Operating Cost/Hour</div>
+                    <div class="spec-value" id="operating1"></div>
+                    <div class="spec-value" id="operating2"></div>
+                    <div class="spec-value" id="operating3"></div>
+                </div>
+
+                <div class="table-row">
+                    <div class="spec-name">Maintenance Frequency</div>
+                    <div class="spec-value" id="maintenance1"></div>
+                    <div class="spec-value" id="maintenance2"></div>
+                    <div class="spec-value" id="maintenance3"></div>
+                </div>
+
+                <div class="spec-category">Best Use Cases</div>
+
+                <div class="table-row">
+                    <div class="spec-name">Recommended For</div>
+                    <div class="spec-value" id="usecase1"></div>
+                    <div class="spec-value" id="usecase2"></div>
+                    <div class="spec-value" id="usecase3"></div>
+                </div>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="recommendation" id="recommendation" style="display: none;">
+                <h3><i class="fas fa-lightbulb"></i> Our Recommendation</h3>
+                <p id="recommendationText"></p>
+                <button class="btn btn-primary" onclick="scrollToContact()">
+                    <i class="fas fa-phone"></i>
+                    Get Expert Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-logo">
+                    <img src="/logo-main.svg" alt="Punaise Logo" style="height: 40px; filter: brightness(0) invert(1);">
+                    <p>Professional steel cutting equipment since 2005</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#products">Products</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.min.js" defer></script>
+    <script>
+        // Product specifications data
+        const productSpecs = {
+            plasma: {
+                name: "CNC Plasma Cutting",
+                thickness: "3-200mm",
+                speed: "2-8 m/min",
+                precision: "±1-3mm",
+                power: "50-400 kW",
+                area: "3000×12000mm",
+                materials: "Carbon steel, Stainless steel, Aluminum",
+                investment: "Medium",
+                operating: "$15-25/hour",
+                maintenance: "Monthly",
+                usecase: "High-volume production, thick materials"
+            },
+            laser: {
+                name: "Laser Cutting Systems", 
+                thickness: "0.1-50mm",
+                speed: "5-25 m/min",
+                precision: "±0.1mm",
+                power: "1-15 kW",
+                area: "2000×6000mm",
+                materials: "Steel, Aluminum, Brass, Copper",
+                investment: "High",
+                operating: "$25-40/hour", 
+                maintenance: "Bi-weekly",
+                usecase: "Precision cutting, complex shapes"
+            },
+            flame: {
+                name: "Flame Cutting",
+                thickness: "10-300mm",
+                speed: "0.5-3 m/min", 
+                precision: "±3-5mm",
+                power: "5-15 kW",
+                area: "6000×20000mm",
+                materials: "Carbon steel, Low alloy steel",
+                investment: "Low",
+                operating: "$8-15/hour",
+                maintenance: "Weekly",
+                usecase: "Heavy structural steel, shipbuilding"
+            },
+            ronghua: {
+                name: "Taiwan Ronghua Slitter",
+                thickness: "0.1-6mm",
+                speed: "50-300 m/min",
+                precision: "±0.05mm",
+                power: "20-100 kW", 
+                area: "2000×1600mm",
+                materials: "Steel coils, Stainless strips",
+                investment: "High",
+                operating: "$20-30/hour",
+                maintenance: "Monthly",
+                usecase: "Steel strip processing, coil slitting"
+            }
+        };
+
+        let selectedProducts = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Product selector functionality
+            const selectors = document.querySelectorAll('.product-selector');
+            
+            selectors.forEach(selector => {
+                selector.addEventListener('click', () => {
+                    const product = selector.getAttribute('data-product');
+                    
+                    if (selector.classList.contains('selected')) {
+                        // Deselect
+                        selector.classList.remove('selected');
+                        selectedProducts = selectedProducts.filter(p => p !== product);
+                    } else if (selectedProducts.length < 3) {
+                        // Select (max 3)
+                        selector.classList.add('selected');
+                        selectedProducts.push(product);
+                    } else {
+                        alert('You can compare up to 3 products at a time.');
+                    }
+                    
+                    updateComparison();
+                    
+                    // Track comparison usage
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'product_comparison', {
+                            'event_category': 'engagement',
+                            'event_label': product,
+                            'products_selected': selectedProducts.length,
+                            'value': 1
+                        });
+                    }
+                });
+            });
+        });
+
+        function updateComparison() {
+            const table = document.getElementById('comparisonTable');
+            const recommendation = document.getElementById('recommendation');
+            
+            if (selectedProducts.length < 2) {
+                table.style.display = 'none';
+                recommendation.style.display = 'none';
+                return;
+            }
+            
+            table.style.display = 'block';
+            recommendation.style.display = 'block';
+            
+            // Update headers
+            selectedProducts.forEach((product, index) => {
+                const headerElement = document.getElementById(`product${index + 1}Header`);
+                if (headerElement) {
+                    headerElement.innerHTML = `<strong>${productSpecs[product].name}</strong>`;
+                }
+            });
+            
+            // Clear unused columns
+            for (let i = selectedProducts.length; i < 3; i++) {
+                const headerElement = document.getElementById(`product${i + 1}Header`);
+                if (headerElement) {
+                    headerElement.innerHTML = '';
+                }
+            }
+            
+            // Update specifications
+            const specFields = ['thickness', 'speed', 'precision', 'power', 'area', 'materials', 'investment', 'operating', 'maintenance', 'usecase'];
+            
+            specFields.forEach(field => {
+                selectedProducts.forEach((product, index) => {
+                    const element = document.getElementById(`${field}${index + 1}`);
+                    if (element) {
+                        element.textContent = productSpecs[product][field];
+                        
+                        // Add highlighting for best values
+                        if (field === 'precision' && product === 'laser') {
+                            element.classList.add('highlight');
+                        } else if (field === 'thickness' && product === 'flame') {
+                            element.classList.add('highlight');
+                        } else if (field === 'speed' && (product === 'ronghua' || product === 'laser')) {
+                            element.classList.add('highlight');
+                        } else if (field === 'investment' && product === 'flame') {
+                            element.classList.add('highlight');
+                        } else {
+                            element.classList.remove('highlight', 'warning');
+                        }
+                    }
+                });
+                
+                // Clear unused cells
+                for (let i = selectedProducts.length; i < 3; i++) {
+                    const element = document.getElementById(`${field}${i + 1}`);
+                    if (element) {
+                        element.textContent = '';
+                        element.classList.remove('highlight', 'warning');
+                    }
+                }
+            });
+            
+            // Generate recommendation
+            generateRecommendation();
+        }
+
+        function generateRecommendation() {
+            const recommendations = {
+                'plasma,laser': "For versatile operations requiring both speed and precision, consider plasma cutting for thick materials (>10mm) and laser cutting for thin, precision work (<10mm).",
+                'plasma,flame': "Excellent combination for heavy industry - use flame cutting for very thick structural steel and plasma for faster, cleaner cuts on medium thickness materials.",
+                'laser,ronghua': "Perfect for precision metal processing facilities - laser cutting for custom parts and Ronghua slitters for high-volume strip processing.",
+                'plasma,laser,flame': "Complete cutting solution covering all thickness ranges and precision requirements - ideal for large fabrication shops with diverse projects.",
+                'plasma,ronghua': "Great for steel processing plants that need both plate cutting and coil processing capabilities.",
+                'flame,ronghua': "Specialized setup for heavy steel processing with high-volume strip production capabilities."
+            };
+            
+            const key = selectedProducts.sort().join(',');
+            const recommendationText = recommendations[key] || "Contact our experts for a customized recommendation based on your specific production requirements.";
+            
+            document.getElementById('recommendationText').textContent = recommendationText;
+        }
+
+        function scrollToContact() {
+            window.location.href = 'index.html#contact';
+        }
+    </script>
+</body>
+</html>
