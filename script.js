@@ -359,3 +359,42 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+// FAQ Toggle Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    
+    faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const faqItem = toggle.closest('.faq-item');
+            const faqAnswer = faqItem.querySelector('.faq-answer');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-toggle').forEach(otherToggle => {
+                if (otherToggle !== toggle) {
+                    otherToggle.setAttribute('aria-expanded', 'false');
+                    otherToggle.closest('.faq-item').querySelector('.faq-answer').classList.remove('active');
+                }
+            });
+            
+            // Toggle current FAQ
+            toggle.setAttribute('aria-expanded', !isExpanded);
+            faqAnswer.classList.toggle('active');
+            
+            // Track FAQ interaction with Google Analytics
+            if (typeof gtag === 'function') {
+                gtag('event', 'faq_interaction', {
+                    'event_category': 'engagement',
+                    'event_label': toggle.querySelector('span').textContent,
+                    'value': 1
+                });
+            }
+        });
+    });
+    
+    // Add FAQ navigation item to scroll observer
+    const faqSection = document.querySelector('#faq');
+    if (faqSection) {
+        observer.observe(faqSection);
+    }
+});

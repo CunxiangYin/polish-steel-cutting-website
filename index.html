@@ -34,7 +34,7 @@
     <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -155,19 +155,60 @@
 
     <!-- Google Search Console Verification (Replace with your verification code) -->
     <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE" />
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 </head>
 <body>
+    <!-- Breadcrumb Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://cute-jelly-dc03bf.netlify.app/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Products",
+            "item": "https://cute-jelly-dc03bf.netlify.app/#products"
+        },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contact",
+            "item": "https://cute-jelly-dc03bf.netlify.app/#contact"
+        }]
+    }
+    </script>
+    <!-- Breadcrumb Navigation for SEO (Hidden visually but available for screen readers and search engines) -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+    </nav>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="/logo-main.svg" alt="Punaise Logo" style="height: 40px; width: auto;">
+                <img src="/logo-main.svg" alt="Punaise Mechanical Equipment - Professional Steel Cutting Equipment Manufacturer" loading="eager" style="height: 40px; width: auto;">
             </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
                 <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-item">
                     <div class="language-selector">
@@ -283,9 +324,9 @@
             </div>
             <div class="products-grid">
                 <div class="product-card">
-                    <div class="product-image">
+                    <div class="product-image" loading="lazy">
                         <div class="product-placeholder">
-                            <i class="fas fa-bolt" aria-label="CNC Plasma Cutting Equipment Icon"></i>
+                            <i class="fas fa-bolt" aria-label="CNC Plasma Cutting Equipment Icon" title="CNC Plasma Cutting Equipment"></i>
                         </div>
                     </div>
                     <div class="product-info">
@@ -300,9 +341,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">
+                    <div class="product-image" loading="lazy">
                         <div class="product-placeholder">
-                            <i class="fas fa-laser"></i>
+                            <i class="fas fa-laser" aria-label="Laser Cutting Systems Icon" title="Industrial Laser Cutting Equipment"></i>
                         </div>
                     </div>
                     <div class="product-info">
@@ -317,9 +358,9 @@
                     </div>
                 </div>
                 <div class="product-card">
-                    <div class="product-image">
+                    <div class="product-image" loading="lazy">
                         <div class="product-placeholder">
-                            <i class="fas fa-cut"></i>
+                            <i class="fas fa-cut" aria-label="Taiwan Ronghua Slitting Machine Icon" title="Taiwan Ronghua Professional Slitting Equipment"></i>
                         </div>
                     </div>
                     <div class="product-info">
@@ -450,6 +491,101 @@
         </div>
     </section>
 
+    <!-- FAQ Section for Better SEO -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our steel cutting equipment and services</p>
+            </div>
+            <div class="faq-container" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>What types of steel cutting equipment does Punaise offer?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Punaise offers a comprehensive range of steel cutting equipment including CNC plasma cutting systems, laser cutting machines, flame cutting equipment, and Taiwan Ronghua slitting machines. We also provide auxiliary equipment, spare parts, and complete processing solutions for steel plates of various thicknesses.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>Do you provide technical support and maintenance services?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Yes, we provide comprehensive technical support including installation guidance, operator training, maintenance consulting, and spare parts supply. Our experienced team, led by Manager Fu, offers both on-site and remote technical assistance throughout Guangdong Province and neighboring regions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>What is the typical delivery time for equipment?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Delivery times vary depending on the equipment type and customization requirements. Standard equipment typically ships within 2-4 weeks, while customized solutions may require 4-8 weeks. We maintain inventory of popular models and spare parts for faster delivery in the Guangdong region.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>Are you an authorized distributor of Taiwan Ronghua equipment?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Yes, Punaise is an authorized distributor of Taiwan Ronghua precision machinery. We offer genuine Ronghua slitting machines, flying shears, and steel strip cutters with full manufacturer warranty and technical support. Our partnership ensures authentic products and reliable after-sales service.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>What industries do you serve?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>We serve various industries including metal fabrication, construction, shipbuilding, automotive manufacturing, heavy machinery, and steel processing centers. Our equipment is suitable for both large-scale industrial operations and smaller fabrication workshops throughout China and Southeast Asia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            <span>How can I get a quotation for equipment?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>You can request a quotation by contacting us through our website contact form, calling +86 (755) 2644-3680, or emailing 466904802@qq.com. Please provide details about your cutting requirements, material specifications, and production volume for an accurate quote. Manager Fu will personally assist with technical specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -533,7 +669,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div style="margin-bottom: 15px;">
-                        <img src="/logo-main.svg" alt="Punaise Logo" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
+                        <img src="/logo-main.svg" alt="Punaise Mechanical Equipment Footer Logo - Steel Cutting Solutions" loading="lazy" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
                     </div>
                     <p>Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd. - Sales of steel plates, steel plate processing equipment, auxiliary equipment, and Taiwan Ronghua precision machinery since 2005. Production and trade oriented business model.</p>
                     <div class="social-links">
@@ -597,7 +733,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="language.js"></script>
+    <script src="script.min.js" defer></script>
+    <script src="language.min.js" defer></script>
 </body>
 </html>

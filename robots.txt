@@ -1,34 +1,48 @@
+# Robots.txt for Punaise Mechanical Equipment
+# https://cute-jelly-dc03bf.netlify.app/
+
+# Allow all crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: *.pdf$
 
-# Sitemap
-Sitemap: https://polish-equipment.com/sitemap.xml
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
-
-# Allow all major search engines
+# Specific rules for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
+Crawl-delay: 1
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 1
 
-# Block common bots that might waste bandwidth
-User-agent: SemrushBot
-Disallow: /
+User-agent: Yandexbot
+Allow: /
+Crawl-delay: 2
 
+# Block bad bots
 User-agent: AhrefsBot
 Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap.xml
+
+# Additional sitemaps for language versions
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-en.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-zh.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-es.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-pt.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-th.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-vi.xml
+Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap-id.xml
