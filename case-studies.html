@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Success Stories | Steel Cutting Equipment Case Studies - Punaise</title>
+    <meta name="description" content="Discover how Punaise steel cutting equipment transforms manufacturing operations. Real customer success stories, productivity improvements, and ROI case studies from across China.">
+    <meta name="keywords" content="customer case studies, steel cutting success stories, manufacturing ROI, equipment testimonials, productivity improvements, Punaise customers">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cute-jelly-dc03bf.netlify.app/case-studies.html">
+    <meta property="og:title" content="Customer Success Stories | Steel Cutting Equipment Case Studies">
+    <meta property="og:description" content="Real customer success stories showing productivity improvements and ROI with Punaise equipment.">
+    <meta property="og:image" content="https://cute-jelly-dc03bf.netlify.app/logo-main.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cute-jelly-dc03bf.netlify.app/case-studies.html">
+    <meta property="twitter:title" content="Customer Success Stories | Steel Cutting Equipment Case Studies">
+    <meta property="twitter:description" content="Real customer success stories and ROI data from manufacturing companies across China.">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cute-jelly-dc03bf.netlify.app/case-studies.html">
+    <link rel="stylesheet" href="style.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Structured Data for Case Studies -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Punaise Customer Case Studies",
+        "description": "Success stories and customer testimonials from steel cutting equipment implementations",
+        "url": "https://cute-jelly-dc03bf.netlify.app/case-studies.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cute-jelly-dc03bf.netlify.app/logo-main.svg"
+            }
+        },
+        "mainEntity": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "author": {
+                    "@type": "Organization",
+                    "name": "Guangzhou Heavy Industries"
+                },
+                "reviewBody": "40% increase in cutting efficiency with new CNC plasma system"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        /* Case Studies Specific Styles */
+        .case-studies-hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .case-studies-hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .case-studies-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .hero-stat {
+            text-align: center;
+        }
+        
+        .hero-stat .number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .hero-stat .label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .case-studies-container {
+            padding: 80px 0;
+            background: var(--background-light);
+        }
+        
+        .case-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 12px 24px;
+            border: 2px solid var(--border-color);
+            background: white;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .case-study-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .case-header {
+            background: var(--gradient-secondary);
+            color: white;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .case-industry {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .case-title {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .case-company {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+        }
+        
+        .case-challenge-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .case-content {
+            padding: 2rem;
+        }
+        
+        .case-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .case-section h4 {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .case-section p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.9rem;
+        }
+        
+        .case-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .case-metric {
+            text-align: center;
+        }
+        
+        .metric-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--success-color);
+            margin-bottom: 0.25rem;
+        }
+        
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .case-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .case-tag {
+            padding: 4px 8px;
+            background: var(--background-light);
+            color: var(--text-secondary);
+            border-radius: var(--border-radius);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .featured-case {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            max-width: 100%;
+        }
+        
+        .featured-case .case-header {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .featured-case .case-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .featured-case .case-content {
+            padding: 3rem;
+        }
+        
+        .roi-calculator {
+            background: var(--background-white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .calculator-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .calculator-title {
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .calculator-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .input-group {
+            text-align: left;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+        
+        .roi-results {
+            background: var(--background-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+        
+        .roi-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .roi-metric {
+            text-align: center;
+        }
+        
+        .roi-metric .value {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--success-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .roi-metric .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-case {
+                grid-template-columns: 1fr;
+                grid-column: 1;
+            }
+            
+            .case-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .calculator-inputs {
+                grid-template-columns: 1fr;
+            }
+            
+            .roi-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="/logo-main.svg" alt="Punaise Equipment" style="height: 40px; width: auto;">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="compare.html" class="nav-link">Compare</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="downloads.html" class="nav-link">Downloads</a></li>
+                <li class="nav-item"><a href="case-studies.html" class="nav-link active">Case Studies</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="case-studies-hero">
+        <div class="container">
+            <h1>Customer Success Stories</h1>
+            <p>Discover how manufacturers across China have transformed their operations with Punaise steel cutting equipment, achieving remarkable productivity gains and ROI</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="number">500+</span>
+                    <span class="label">Successful Installations</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="number">40%</span>
+                    <span class="label">Average Efficiency Increase</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="number">12</span>
+                    <span class="label">Months Average ROI</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="number">98%</span>
+                    <span class="label">Customer Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Container -->
+    <section class="case-studies-container">
+        <div class="container">
+            <!-- Filters -->
+            <div class="case-filters">
+                <button class="filter-btn active" data-filter="all">All Industries</button>
+                <button class="filter-btn" data-filter="shipbuilding">Shipbuilding</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="automotive">Automotive</button>
+                <button class="filter-btn" data-filter="aerospace">Aerospace</button>
+                <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+            </div>
+
+            <!-- Case Studies Grid -->
+            <div class="case-studies-grid">
+                <!-- Featured Case Study -->
+                <div class="case-study-card featured-case" data-industry="shipbuilding">
+                    <div class="case-header">
+                        <div class="case-industry">Shipbuilding</div>
+                        <h2 class="case-title">Guangzhou Shipyard Transformation</h2>
+                        <p class="case-company">Guangzhou Heavy Industries Co., Ltd.</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-ship"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>The Challenge</h4>
+                            <p>Guangzhou Heavy Industries faced increasing demand for complex ship hull components while struggling with outdated flame cutting equipment that limited precision and speed. Manual cutting processes were creating bottlenecks in production schedules and affecting delivery timelines.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Our Solution</h4>
+                            <p>We implemented a complete CNC plasma cutting system with advanced nesting software and automated material handling. The solution included operator training, maintenance protocols, and integration with existing workflow management systems.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Results Achieved</h4>
+                            <p>The new system transformed their manufacturing capabilities, enabling them to handle larger contracts and deliver higher quality components ahead of schedule. Material waste reduction and improved cut quality significantly impacted their bottom line.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">65%</span>
+                                <span class="metric-label">Faster Cutting</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">30%</span>
+                                <span class="metric-label">Material Savings</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">8 months</span>
+                                <span class="metric-label">ROI Period</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">25%</span>
+                                <span class="metric-label">Output Increase</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">CNC Plasma</span>
+                            <span class="case-tag">Automated Handling</span>
+                            <span class="case-tag">Nesting Software</span>
+                            <span class="case-tag">Thick Plate Cutting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-study-card" data-industry="construction">
+                    <div class="case-header">
+                        <div class="case-industry">Construction</div>
+                        <h3 class="case-title">Structural Steel Efficiency Boost</h3>
+                        <p class="case-company">Beijing Construction Materials Ltd.</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>Challenge</h4>
+                            <p>High-volume structural steel fabrication required faster processing while maintaining precision for complex building projects across Beijing metropolitan area.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Solution</h4>
+                            <p>Dual-head CNC plasma cutting system with automatic steel feeding and integrated quality control sensors for consistent beam and plate processing.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Productivity Gain</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">15%</span>
+                                <span class="metric-label">Cost Reduction</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">Dual-Head System</span>
+                            <span class="case-tag">Quality Control</span>
+                            <span class="case-tag">High Volume</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-study-card" data-industry="automotive">
+                    <div class="case-header">
+                        <div class="case-industry">Automotive</div>
+                        <h3 class="case-title">Precision Parts Manufacturing</h3>
+                        <p class="case-company">Shenzhen Auto Components Co.</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>Challenge</h4>
+                            <p>Automotive supplier needed precise cutting of various steel grades for chassis components with tight tolerances and zero defect requirements.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Solution</h4>
+                            <p>Fiber laser cutting system with advanced beam control and real-time monitoring for consistent quality across all material types and thicknesses.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">99.8%</span>
+                                <span class="metric-label">Quality Rate</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">50%</span>
+                                <span class="metric-label">Faster Setup</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">Fiber Laser</span>
+                            <span class="case-tag">Multi-Material</span>
+                            <span class="case-tag">Tight Tolerances</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="case-study-card" data-industry="aerospace">
+                    <div class="case-header">
+                        <div class="case-industry">Aerospace</div>
+                        <h3 class="case-title">Titanium Component Processing</h3>
+                        <p class="case-company">Xi'an Aerospace Manufacturing</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>Challenge</h4>
+                            <p>Processing aerospace-grade titanium and specialty alloys required extreme precision and contamination-free cutting environment.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Solution</h4>
+                            <p>Specialized laser cutting system with inert gas environment and precision motion control for aerospace material specifications.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">±0.05mm</span>
+                                <span class="metric-label">Precision Level</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Cert. Compliance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">Titanium Processing</span>
+                            <span class="case-tag">Aerospace Grade</span>
+                            <span class="case-tag">Clean Environment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 5 -->
+                <div class="case-study-card" data-industry="manufacturing">
+                    <div class="case-header">
+                        <div class="case-industry">General Manufacturing</div>
+                        <h3 class="case-title">Taiwan Ronghua Slitter Success</h3>
+                        <p class="case-company">Dongguan Steel Processing Center</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>Challenge</h4>
+                            <p>Steel service center needed high-speed coil slitting with consistent strip width accuracy for diverse customer requirements.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Solution</h4>
+                            <p>Taiwan Ronghua precision slitter with automatic tension control and edge trimming for consistent high-quality strip production.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">300m/min</span>
+                                <span class="metric-label">Processing Speed</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">±0.02mm</span>
+                                <span class="metric-label">Width Accuracy</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">Ronghua Slitter</span>
+                            <span class="case-tag">High-Speed Processing</span>
+                            <span class="case-tag">Precision Slitting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 6 -->
+                <div class="case-study-card" data-industry="manufacturing">
+                    <div class="case-header">
+                        <div class="case-industry">Heavy Industry</div>
+                        <h3 class="case-title">Energy Sector Equipment</h3>
+                        <p class="case-company">Shandong Energy Equipment Ltd.</p>
+                        <div class="case-challenge-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-section">
+                            <h4>Challenge</h4>
+                            <p>Manufacturing large-scale energy equipment components required cutting extra-thick steel plates with minimal heat-affected zones.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4>Solution</h4>
+                            <p>Heavy-duty flame cutting system with precision oxy-fuel technology for thick plate processing up to 300mm with superior edge quality.</p>
+                        </div>
+                        
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <span class="metric-value">300mm</span>
+                                <span class="metric-label">Max Thickness</span>
+                            </div>
+                            <div class="case-metric">
+                                <span class="metric-value">35%</span>
+                                <span class="metric-label">Time Savings</span>
+                            </div>
+                        </div>
+                        
+                        <div class="case-tags">
+                            <span class="case-tag">Flame Cutting</span>
+                            <span class="case-tag">Extra-Thick Plate</span>
+                            <span class="case-tag">Energy Sector</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator">
+        <div class="container">
+            <div class="calculator-content">
+                <h2 class="calculator-title">Calculate Your ROI with Punaise Equipment</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-secondary);">Estimate your potential return on investment based on your current operations</p>
+                
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="currentHours">Current Monthly Production Hours</label>
+                        <input type="number" id="currentHours" value="200" min="1" max="1000">
+                    </div>
+                    <div class="input-group">
+                        <label for="hourlyRate">Hourly Labor Cost (CNY)</label>
+                        <input type="number" id="hourlyRate" value="80" min="1" max="500">
+                    </div>
+                    <div class="input-group">
+                        <label for="materialCost">Monthly Material Cost (CNY)</label>
+                        <input type="number" id="materialCost" value="50000" min="1000" max="1000000">
+                    </div>
+                    <div class="input-group">
+                        <label for="equipmentType">Equipment Type</label>
+                        <select id="equipmentType">
+                            <option value="plasma">CNC Plasma Cutting</option>
+                            <option value="laser">Laser Cutting System</option>
+                            <option value="flame">Flame Cutting</option>
+                            <option value="ronghua">Taiwan Ronghua Slitter</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" onclick="calculateROI()">
+                    <i class="fas fa-calculator"></i>
+                    Calculate ROI
+                </button>
+                
+                <div class="roi-results" id="roiResults" style="display: none;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">Your Projected Results</h3>
+                    <div class="roi-metrics">
+                        <div class="roi-metric">
+                            <span class="value" id="monthlySavings">¥0</span>
+                            <span class="label">Monthly Savings</span>
+                        </div>
+                        <div class="roi-metric">
+                            <span class="value" id="annualSavings">¥0</span>
+                            <span class="label">Annual Savings</span>
+                        </div>
+                        <div class="roi-metric">
+                            <span class="value" id="roiPeriod">0</span>
+                            <span class="label">ROI Period (Months)</span>
+                        </div>
+                        <div class="roi-metric">
+                            <span class="value" id="efficiencyGain">0%</span>
+                            <span class="label">Efficiency Increase</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem; color: var(--text-secondary); font-style: italic;">
+                        *Estimates based on industry averages and customer case study data. Actual results may vary based on specific operational conditions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-logo">
+                    <img src="/logo-main.svg" alt="Punaise Logo" style="height: 40px; filter: brightness(0) invert(1);">
+                    <p>Professional steel cutting equipment since 2005</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#products">Products</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="downloads.html">Downloads</a>
+                    <a href="case-studies.html">Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.min.js" defer></script>
+    <script src="analytics-enhanced.min.js" defer></script>
+    <script src="customer-service.min.js" defer></script>
+    <script>
+        // Case studies functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const caseCards = document.querySelectorAll('.case-study-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active filter
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    // Filter case studies
+                    caseCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-industry') === filter) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Track filter usage
+                    if (typeof window.AnalyticsTracker !== 'undefined') {
+                        window.AnalyticsTracker.trackEvent('case_studies', 'filter_change', {
+                            filter: filter,
+                            visible_cases: Array.from(caseCards).filter(card => 
+                                card.style.display !== 'none'
+                            ).length
+                        });
+                    }
+                });
+            });
+
+            // Track case study card clicks
+            caseCards.forEach((card, index) => {
+                card.addEventListener('click', () => {
+                    const industry = card.getAttribute('data-industry');
+                    const title = card.querySelector('.case-title').textContent;
+                    
+                    if (typeof window.AnalyticsTracker !== 'undefined') {
+                        window.AnalyticsTracker.trackEvent('case_studies', 'case_click', {
+                            case_title: title,
+                            industry: industry,
+                            position: index + 1
+                        });
+                    }
+
+                    // Expand case study (could implement modal or detail page)
+                    console.log(`Case study clicked: ${title} (${industry})`);
+                });
+            });
+        });
+
+        // ROI Calculator
+        function calculateROI() {
+            const currentHours = parseFloat(document.getElementById('currentHours').value) || 200;
+            const hourlyRate = parseFloat(document.getElementById('hourlyRate').value) || 80;
+            const materialCost = parseFloat(document.getElementById('materialCost').value) || 50000;
+            const equipmentType = document.getElementById('equipmentType').value;
+
+            // Equipment-specific efficiency multipliers and costs (in CNY)
+            const equipmentData = {
+                plasma: { efficiencyGain: 40, materialSavings: 20, estimatedCost: 800000 },
+                laser: { efficiencyGain: 50, materialSavings: 15, estimatedCost: 1200000 },
+                flame: { efficiencyGain: 30, materialSavings: 25, estimatedCost: 400000 },
+                ronghua: { efficiencyGain: 60, materialSavings: 30, estimatedCost: 1500000 }
+            };
+
+            const equipment = equipmentData[equipmentType];
+            
+            // Calculate current monthly costs
+            const currentLaborCost = currentHours * hourlyRate;
+            const currentTotalCost = currentLaborCost + materialCost;
+
+            // Calculate savings with new equipment
+            const laborSavings = currentLaborCost * (equipment.efficiencyGain / 100);
+            const materialSavingsAmount = materialCost * (equipment.materialSavings / 100);
+            const totalMonthlySavings = laborSavings + materialSavingsAmount;
+            const annualSavings = totalMonthlySavings * 12;
+
+            // Calculate ROI period
+            const roiPeriod = Math.round(equipment.estimatedCost / totalMonthlySavings);
+
+            // Update display
+            document.getElementById('monthlySavings').textContent = 
+                `¥${totalMonthlySavings.toLocaleString('zh-CN')}`;
+            document.getElementById('annualSavings').textContent = 
+                `¥${annualSavings.toLocaleString('zh-CN')}`;
+            document.getElementById('roiPeriod').textContent = `${roiPeriod}`;
+            document.getElementById('efficiencyGain').textContent = `${equipment.efficiencyGain}%`;
+
+            // Show results
+            document.getElementById('roiResults').style.display = 'block';
+            document.getElementById('roiResults').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Track ROI calculation
+            if (typeof window.AnalyticsTracker !== 'undefined') {
+                window.AnalyticsTracker.trackEvent('conversion', 'roi_calculation', {
+                    equipment_type: equipmentType,
+                    monthly_savings: totalMonthlySavings,
+                    roi_period_months: roiPeriod,
+                    efficiency_gain: equipment.efficiencyGain,
+                    current_hours: currentHours,
+                    current_cost: currentTotalCost
+                });
+            }
+        }
+
+        // Add CSS animation for filtering
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
