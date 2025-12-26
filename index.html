@@ -844,14 +844,11 @@
         </div>
     </footer>
 
-    <!-- Floating CTA for Mobile -->
-    <button class="floating-cta" onclick="scrollToContact()" title="Get Free Quote">
-        <i class="fas fa-comments"></i>
-    </button>
     
     <script src="script.min.js" defer></script>
     <script src="language.min.js" defer></script>
     <script src="analytics-enhanced.min.js" defer></script>
+    <script src="customer-service.min.js" defer></script>
     
     <!-- Enhanced CTA Functions -->
     <script>
@@ -956,23 +953,6 @@
                     }
                 });
             });
-            
-            // Floating CTA visibility based on scroll
-            const floatingCTA = document.querySelector('.floating-cta');
-            const heroSection = document.querySelector('.hero');
-            
-            if (floatingCTA && heroSection) {
-                window.addEventListener('scroll', () => {
-                    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-                    const scrollPosition = window.pageYOffset;
-                    
-                    if (scrollPosition > heroBottom) {
-                        floatingCTA.style.display = 'flex';
-                    } else {
-                        floatingCTA.style.display = 'none';
-                    }
-                });
-            }
         });
     </script>
 </body>
