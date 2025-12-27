@@ -73,6 +73,22 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Suppliers -->
+  <url>
+    <loc>https://cute-jelly-dc03bf.netlify.app/suppliers.html</loc>
+    <lastmod>2024-12-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Applications -->
+  <url>
+    <loc>https://cute-jelly-dc03bf.netlify.app/applications.html</loc>
+    <lastmod>2024-12-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
   <!-- Product sections (virtual pages) -->
   <url>
     <loc>https://cute-jelly-dc03bf.netlify.app/#products</loc>
