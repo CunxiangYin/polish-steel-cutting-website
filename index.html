@@ -48,6 +48,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="whatsapp-widget.min.css">
+    <link rel="stylesheet" href="form-optimization.min.css">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -869,6 +871,79 @@
         </div>
     </section>
 
+    <!-- Smart Quote Section -->
+    <section class="smart-quote-section">
+        <div class="container">
+            <div class="smart-quote-form">
+                <h3>🚀 智能询价系统 - 30秒获取专业报价</h3>
+                <form id="smartQuoteForm" class="quote-form">
+                    <div class="quote-form-grid">
+                        <div class="form-group">
+                            <label for="industry">您的行业 *</label>
+                            <select name="industry" id="industry" required>
+                                <option value="">请选择您的行业</option>
+                                <option value="shipbuilding">造船工业</option>
+                                <option value="automotive">汽车制造</option>
+                                <option value="construction">建筑钢结构</option>
+                                <option value="machinery">机械制造</option>
+                                <option value="steel-center">钢材加工中心</option>
+                                <option value="energy">能源设备</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="material">切割材料 *</label>
+                            <select name="material" id="material" required>
+                                <option value="">请选择材料类型</option>
+                                <option value="carbon-steel">碳钢</option>
+                                <option value="stainless-steel">不锈钢</option>
+                                <option value="aluminum">铝材</option>
+                                <option value="copper">铜材</option>
+                                <option value="alloy">合金钢</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="thickness">板材厚度: <span class="thickness-display" id="thicknessDisplay">10mm</span></label>
+                        <input type="range" id="thickness" name="thickness" min="1" max="300" value="10">
+                    </div>
+                    <div class="quote-form-grid">
+                        <div class="form-group">
+                            <label for="quantity">月切割量</label>
+                            <select name="quantity" id="quantity">
+                                <option value="small">小于100平方米</option>
+                                <option value="medium">100-1000平方米</option>
+                                <option value="large">1000-5000平方米</option>
+                                <option value="xlarge">5000平方米以上</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">预算范围</label>
+                            <select name="budget" id="budget">
+                                <option value="under-50k">5万以下</option>
+                                <option value="50k-100k">5-10万</option>
+                                <option value="100k-200k">10-20万</option>
+                                <option value="over-200k">20万以上</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quote-form-grid">
+                        <div class="form-group">
+                            <label for="quotePhone">联系电话 *</label>
+                            <input type="tel" id="quotePhone" name="phone" required placeholder="请输入手机号码">
+                        </div>
+                        <div class="form-group">
+                            <label for="quoteCompany">公司名称</label>
+                            <input type="text" id="quoteCompany" name="company" placeholder="请输入公司名称">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary quote-submit">
+                        <i class="fas fa-calculator"></i> 立即获取专业报价
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -1021,6 +1096,7 @@
     <script src="language.min.js" defer></script>
     <script src="analytics-enhanced.min.js" defer></script>
     <script src="customer-service.min.js" defer></script>
+    <script src="optimization-widgets.min.js" defer></script>
     
     <!-- Enhanced CTA Functions -->
     <script>
