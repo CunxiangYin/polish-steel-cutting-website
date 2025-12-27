@@ -45,11 +45,24 @@
     <link rel="canonical" href="https://punaise-equipment.com/">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- PWA支持 -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="普耐斯机电">
+    <link rel="apple-touch-icon" href="/images/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/icon-192x192.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="whatsapp-widget.min.css">
     <link rel="stylesheet" href="form-optimization.min.css">
+    <link rel="stylesheet" href="product-search.min.css">
+    <link rel="stylesheet" href="mobile-nav.min.css">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -1097,6 +1110,134 @@
     <script src="analytics-enhanced.min.js" defer></script>
     <script src="customer-service.min.js" defer></script>
     <script src="optimization-widgets.min.js" defer></script>
+    <script src="product-search.min.js" defer></script>
+    <script src="image-optimization.min.js" defer></script>
+    <script src="live-chat.min.js" defer></script>
+    <script src="mobile-nav.min.js" defer></script>
+    
+    <!-- PWA Service Worker -->
+    <script>
+        // 注册Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW注册成功: ', registration.scope);
+                        
+                        // 检查更新
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // 显示更新提示
+                                    showUpdateAvailable();
+                                }
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.log('SW注册失败: ', error);
+                    });
+            });
+        }
+        
+        // 显示应用更新提示
+        function showUpdateAvailable() {
+            const updateBanner = document.createElement('div');
+            updateBanner.innerHTML = `
+                <div style="position: fixed; top: 0; left: 0; right: 0; background: #667eea; color: white; 
+                            padding: 15px; text-align: center; z-index: 10001; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                    <span>网站有新版本可用</span>
+                    <button onclick="window.location.reload()" 
+                            style="background: white; color: #667eea; border: none; padding: 8px 16px; 
+                                   border-radius: 20px; margin-left: 15px; cursor: pointer; font-weight: 600;">
+                        立即更新
+                    </button>
+                    <button onclick="this.parentElement.parentElement.remove()" 
+                            style="background: transparent; color: white; border: 1px solid white; padding: 8px 16px; 
+                                   border-radius: 20px; margin-left: 10px; cursor: pointer;">
+                        稍后更新
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(updateBanner);
+        }
+        
+        // PWA安装提示
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // 显示安装提示
+            showInstallPrompt();
+        });
+        
+        // 显示PWA安装提示
+        function showInstallPrompt() {
+            const installBanner = document.createElement('div');
+            installBanner.id = 'pwaInstallBanner';
+            installBanner.innerHTML = `
+                <div style="position: fixed; bottom: 80px; right: 30px; background: white; 
+                            border-radius: 15px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+                            max-width: 300px; z-index: 9999; border: 2px solid #667eea;">
+                    <h4 style="margin: 0 0 10px 0; color: #333;">📱 安装到主屏幕</h4>
+                    <p style="margin: 0 0 15px 0; color: #666; font-size: 14px;">
+                        将普耐斯机电设备添加到主屏幕，快速访问产品信息和在线咨询
+                    </p>
+                    <div style="display: flex; gap: 10px;">
+                        <button onclick="installPWA()" 
+                                style="flex: 1; background: #667eea; color: white; border: none; 
+                                       padding: 10px; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                            立即安装
+                        </button>
+                        <button onclick="document.getElementById('pwaInstallBanner').remove()" 
+                                style="flex: 1; background: #f8f9fa; color: #666; border: 1px solid #e9ecef; 
+                                       padding: 10px; border-radius: 8px; cursor: pointer;">
+                            稍后提醒
+                        </button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(installBanner);
+            
+            // 5秒后自动隐藏
+            setTimeout(() => {
+                const banner = document.getElementById('pwaInstallBanner');
+                if (banner) banner.remove();
+            }, 15000);
+        }
+        
+        // 执行PWA安装
+        function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((result) => {
+                    if (result.outcome === 'accepted') {
+                        console.log('用户接受PWA安装');
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'pwa_install', {'result': 'accepted'});
+                        }
+                    } else {
+                        console.log('用户拒绝PWA安装');
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'pwa_install', {'result': 'dismissed'});
+                        }
+                    }
+                    deferredPrompt = null;
+                    document.getElementById('pwaInstallBanner').remove();
+                });
+            }
+        }
+        
+        // PWA安装完成事件
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('PWA安装完成');
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'pwa_installed');
+            }
+        });
+    </script>
     
     <!-- Enhanced CTA Functions -->
     <script>
