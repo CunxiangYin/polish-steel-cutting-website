@@ -4,15 +4,15 @@
 function initWhatsAppWidget() {
     // 创建WhatsApp按钮
     const whatsappHTML = `
-        <a href="https://wa.me/8613510992218?text=你好，我对贵公司的钢板切割设备感兴趣，想了解更多信息。" 
+        <a href="https://wa.me/8613510992218?text=Hello,%20I'm%20interested%20in%20your%20steel%20cutting%20equipment%20and%20would%20like%20to%20know%20more%20information." 
            class="whatsapp-float" 
            target="_blank"
            aria-label="Contact us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
         <div class="whatsapp-tooltip">
-            <strong>需要帮助？</strong><br>
-            点击直接WhatsApp咨询！
+            <strong>Need Help?</strong><br>
+            Click to chat on WhatsApp!
         </div>
     `;
     
@@ -42,10 +42,10 @@ function initEmergencyBanner() {
         <div class="emergency-banner" id="emergencyBanner">
             <div class="banner-text">
                 <span class="hot-icon">🔥</span>
-                <span>24小时服务热线：</span>
-                <span class="phone-number">135-1099-2218</span>
+                <span>24/7 Service Hotline: </span>
+                <span class="phone-number">+86 135-1099-2218</span>
                 <span>|</span>
-                <a href="tel:+8613510992218" class="cta-button">立即致电</a>
+                <a href="tel:+8613510992218" class="cta-button">Call Now</a>
             </div>
             <span class="close-banner" onclick="closeEmergencyBanner()">×</span>
         </div>
@@ -92,9 +92,9 @@ function closeEmergencyBanner() {
 // 3. A/B测试CTA文案
 function initABTesting() {
     const ctaVariants = [
-        { text: '立即获取报价', class: 'variant-a' },
-        { text: '免费咨询方案', class: 'variant-b' },
-        { text: '预约产品演示', class: 'variant-c' }
+        { text: 'Get Quote Now', class: 'variant-a' },
+        { text: 'Free Consultation', class: 'variant-b' },
+        { text: 'Book Product Demo', class: 'variant-c' }
     ];
     
     // 获取或设置用户的测试组
@@ -142,8 +142,8 @@ function initClientLogos() {
         <section class="client-logos-section">
             <div class="client-logos-container">
                 <div class="client-logos-header">
-                    <h3>500+企业的共同选择</h3>
-                    <p>19年来，我们服务了众多知名企业</p>
+                    <h3>Trusted by 500+ Companies</h3>
+                    <p>Serving renowned enterprises for 19 years</p>
                 </div>
                 <div class="logo-scroll-wrapper">
                     <div class="logo-scroll">
@@ -208,7 +208,7 @@ function initTrustBadges() {
                 </div>
                 <div class="trust-badge-text">
                     <div class="trust-badge-title">ISO 9001</div>
-                    <div class="trust-badge-desc">质量认证</div>
+                    <div class="trust-badge-desc">Quality Certified</div>
                 </div>
             </div>
             <div class="trust-badge">
@@ -217,7 +217,7 @@ function initTrustBadges() {
                 </div>
                 <div class="trust-badge-text">
                     <div class="trust-badge-title">19年</div>
-                    <div class="trust-badge-desc">行业经验</div>
+                    <div class="trust-badge-desc">Industry Experience</div>
                 </div>
             </div>
             <div class="trust-badge">
@@ -226,7 +226,7 @@ function initTrustBadges() {
                 </div>
                 <div class="trust-badge-text">
                     <div class="trust-badge-title">500+</div>
-                    <div class="trust-badge-desc">服务企业</div>
+                    <div class="trust-badge-desc">Clients Served</div>
                 </div>
             </div>
             <div class="trust-badge">
@@ -235,7 +235,7 @@ function initTrustBadges() {
                 </div>
                 <div class="trust-badge-text">
                     <div class="trust-badge-title">24/7</div>
-                    <div class="trust-badge-desc">技术支持</div>
+                    <div class="trust-badge-desc">Technical Support</div>
                 </div>
             </div>
         </div>
@@ -317,18 +317,18 @@ function validateInput(input) {
     
     if (input.hasAttribute('required') && !input.value.trim()) {
         isValid = false;
-        errorMsg = '此字段为必填项';
+        errorMsg = 'This field is required';
     } else if (input.type === 'email' && input.value) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(input.value)) {
             isValid = false;
-            errorMsg = '请输入有效的邮箱地址';
+            errorMsg = 'Please enter a valid email address';
         }
     } else if (input.type === 'tel' && input.value) {
         const phoneRegex = /^1[3-9]\d{9}$/;
         if (!phoneRegex.test(input.value.replace(/\D/g, ''))) {
             isValid = false;
-            errorMsg = '请输入有效的手机号码';
+            errorMsg = 'Please enter a valid phone number';
         }
     }
     
@@ -364,8 +364,8 @@ function showSuccessAnimation(form) {
     const successHTML = `
         <div class="form-success-overlay">
             <div class="success-icon">✓</div>
-            <h3>提交成功！</h3>
-            <p>我们会尽快与您联系</p>
+            <h3>Submitted Successfully!</h3>
+            <p>We will contact you as soon as possible</p>
         </div>
     `;
     
@@ -401,16 +401,16 @@ function showExitPopup() {
         <div class="exit-popup-overlay" id="exitPopup">
             <div class="exit-popup">
                 <button class="close-popup" onclick="closeExitPopup()">×</button>
-                <h2>等等！别错过独家优惠</h2>
-                <p>立即咨询可享受：</p>
+                <h2>Wait! Don't Miss Exclusive Offers</h2>
+                <p>Contact us now to enjoy:</p>
                 <ul>
-                    <li>✓ 免费设备选型方案</li>
-                    <li>✓ 首次合作9折优惠</li>
-                    <li>✓ 免费上门技术指导</li>
+                    <li>✓ Free equipment selection solution</li>
+                    <li>✓ 10% discount for first-time cooperation</li>
+                    <li>✓ Free on-site technical guidance</li>
                 </ul>
                 <div class="popup-cta">
-                    <a href="tel:+8613510992218" class="btn-call">立即致电</a>
-                    <a href="https://wa.me/8613510992218" class="btn-whatsapp">WhatsApp咨询</a>
+                    <a href="tel:+8613510992218" class="btn-call">Call Now</a>
+                    <a href="https://wa.me/8613510992218" class="btn-whatsapp">WhatsApp Consultation</a>
                 </div>
             </div>
         </div>
@@ -438,7 +438,7 @@ function initSmartQuoteForm() {
     
     if (!form) return;
     
-    // 厚度滑块实时更新
+    // Real-time thickness slider update
     if (thicknessSlider && thicknessDisplay) {
         thicknessSlider.addEventListener('input', function() {
             thicknessDisplay.textContent = this.value + 'mm';
@@ -513,7 +513,7 @@ function showRecommendations(industry) {
     const rec = recommendations[industry];
     if (rec) {
         // 可以在页面上显示推荐信息
-        console.log('推荐设备:', rec.equipment, '特点:', rec.features);
+        console.log('Recommended Equipment:', rec.equipment, 'Features:', rec.features);
     }
 }
 
@@ -525,36 +525,36 @@ function generateRecommendation(data) {
     let estimatedPrice = '';
     let additionalNotes = [];
     
-    // 根据厚度推荐设备
+    // Recommend equipment based on thickness
     if (thickness <= 6) {
-        recommendedEquipment.push('激光切割机');
+        recommendedEquipment.push('Laser Cutting Machine');
     } else if (thickness <= 50) {
-        recommendedEquipment.push('等离子切割机');
+        recommendedEquipment.push('Plasma Cutting Machine');
         if (thickness > 20) {
-            recommendedEquipment.push('火焰切割机');
+            recommendedEquipment.push('Flame Cutting Machine');
         }
     } else {
-        recommendedEquipment.push('火焰切割机');
-        recommendedEquipment.push('重型等离子');
+        recommendedEquipment.push('Flame Cutting Machine');
+        recommendedEquipment.push('Heavy-duty Plasma');
     }
     
-    // 根据行业调整推荐
+    // Adjust recommendations based on industry
     if (industry === 'automotive' && thickness <= 10) {
-        recommendedEquipment = ['高精度激光切割机'];
-        additionalNotes.push('推荐IPG光源，确保汽车零部件精度要求');
+        recommendedEquipment = ['High-precision Laser Cutting Machine'];
+        additionalNotes.push('Recommended IPG light source to ensure automotive parts precision requirements');
     } else if (industry === 'steel-center') {
-        recommendedEquipment.push('台湾容华分条机');
-        additionalNotes.push('建议配套自动收卷系统');
+        recommendedEquipment.push('Taiwan Ronghua Slitting Machine');
+        additionalNotes.push('Recommended with automatic coiling system');
     }
     
     // 价格估算
     const priceRanges = {
-        'under-50k': '3-5万元',
-        '50k-100k': '8-12万元', 
-        '100k-200k': '15-25万元',
-        'over-200k': '30-80万元'
+        'under-50k': '$7,000-15,000',
+        '50k-100k': '$15,000-35,000', 
+        '100k-200k': '$35,000-75,000',
+        'over-200k': '$75,000-200,000'
     };
-    estimatedPrice = priceRanges[budget] || '请电话咨询';
+    estimatedPrice = priceRanges[budget] || 'Please call for consultation';
     
     return {
         equipment: recommendedEquipment,
@@ -569,41 +569,41 @@ function showQuoteResult(recommendation, data) {
         <div class="quote-result-overlay">
             <div class="quote-result">
                 <button class="close-result" onclick="closeQuoteResult()">×</button>
-                <h2>🎯 为您定制的专业方案</h2>
+                <h2>🎯 Professional Solution Customized for You</h2>
                 <div class="result-content">
                     <div class="result-section">
-                        <h3>推荐设备</h3>
+                        <h3>Recommended Equipment</h3>
                         <div class="equipment-list">
                             ${recommendation.equipment.map(eq => `<span class="equipment-tag">${eq}</span>`).join('')}
                         </div>
                     </div>
                     <div class="result-section">
-                        <h3>价格区间</h3>
+                        <h3>Price Range</h3>
                         <p class="price-range">${recommendation.price}</p>
                     </div>
                     ${recommendation.notes.length > 0 ? `
                     <div class="result-section">
-                        <h3>专业建议</h3>
+                        <h3>Professional Advice</h3>
                         <ul class="notes-list">
                             ${recommendation.notes.map(note => `<li>${note}</li>`).join('')}
                         </ul>
                     </div>
                     ` : ''}
                     <div class="result-section">
-                        <h3>您的需求</h3>
+                        <h3>Your Requirements</h3>
                         <div class="requirement-summary">
-                            <p><strong>行业:</strong> ${getIndustryName(data.industry)}</p>
-                            <p><strong>材料:</strong> ${getMaterialName(data.material)}</p>
-                            <p><strong>厚度:</strong> ${data.thickness}mm</p>
+                            <p><strong>Industry:</strong> ${getIndustryName(data.industry)}</p>
+                            <p><strong>Material:</strong> ${getMaterialName(data.material)}</p>
+                            <p><strong>Thickness:</strong> ${data.thickness}mm</p>
                         </div>
                     </div>
                 </div>
                 <div class="result-cta">
                     <a href="tel:+8613510992218" class="btn-call">
-                        <i class="fas fa-phone"></i> 立即致电咨询
+                        <i class="fas fa-phone"></i> Call Now for Consultation
                     </a>
-                    <a href="https://wa.me/8613510992218?text=我刚完成了智能询价，希望进一步咨询${recommendation.equipment.join('、')}的详细方案" class="btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> WhatsApp详聊
+                    <a href="https://wa.me/8613510992218?text=I just completed the smart quote, and would like to further consult about the detailed solution for ${recommendation.equipment.join(', ')}" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Chat
                     </a>
                 </div>
             </div>
@@ -627,23 +627,23 @@ function closeQuoteResult() {
 // 辅助函数
 function getIndustryName(value) {
     const names = {
-        'shipbuilding': '造船工业',
-        'automotive': '汽车制造',
-        'construction': '建筑钢结构',
-        'machinery': '机械制造',
-        'steel-center': '钢材加工中心',
-        'energy': '能源设备'
+        'shipbuilding': 'Shipbuilding Industry',
+        'automotive': 'Automotive Manufacturing',
+        'construction': 'Construction Steel Structure',
+        'machinery': 'Machinery Manufacturing',
+        'steel-center': 'Steel Processing Center',
+        'energy': 'Energy Equipment'
     };
     return names[value] || value;
 }
 
 function getMaterialName(value) {
     const names = {
-        'carbon-steel': '碳钢',
-        'stainless-steel': '不锈钢',
-        'aluminum': '铝材',
-        'copper': '铜材',
-        'alloy': '合金钢'
+        'carbon-steel': 'Carbon Steel',
+        'stainless-steel': 'Stainless Steel',
+        'aluminum': 'Aluminum',
+        'copper': 'Copper',
+        'alloy': 'Alloy Steel'
     };
     return names[value] || value;
 }
