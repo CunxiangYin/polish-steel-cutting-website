@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Test - Mobile Responsive Check</title>
+    <link rel="stylesheet" href="navigation-aggressive-fix.min.css">
+    <style>
+        /* Test styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 80px; /* Account for fixed navbar */
+        }
+        .test-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .breakpoint-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        .screen-sizes {
+            margin: 20px 0;
+        }
+        .screen-size {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Structure -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Crect width='120' height='40' fill='%234F46E5'/%3E%3Ctext x='60' y='25' text-anchor='middle' fill='white' font-family='Arial' font-size='14' font-weight='bold'%3EPunaise%3C/text%3E%3C/svg%3E" alt="Punaise Logo">
+            </div>
+            
+            <!-- Main Navigation Menu -->
+            <ul class="nav-menu">
+                <!-- Core Navigation Items -->
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                
+                <!-- Secondary Navigation Items -->
+                <li class="nav-item nav-secondary"><a href="applications.html" class="nav-link">Applications</a></li>
+                <li class="nav-item nav-secondary"><a href="compare.html" class="nav-link">Compare</a></li>
+                <li class="nav-item nav-secondary"><a href="downloads.html" class="nav-link">Downloads</a></li>
+                
+                <!-- Tertiary Navigation Items -->
+                <li class="nav-item nav-tertiary"><a href="suppliers.html" class="nav-link">Suppliers</a></li>
+                <li class="nav-item nav-tertiary"><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+                <li class="nav-item nav-tertiary"><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+            
+            <!-- Navigation Tools -->
+            <div class="nav-tools">
+                <div class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <select>
+                        <option value="en">EN</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <a href="local-seo-optimization.html" class="nav-local-btn">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Shenzhen Local</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Test Content -->
+    <div class="test-content">
+        <h1>Navigation Crowding Test</h1>
+        <p>This page tests the aggressive navigation fix for different screen sizes.</p>
+        
+        <div class="screen-sizes">
+            <h3>Target Breakpoints:</h3>
+            <div class="screen-size">1600px+ (Large Desktop): All items visible</div>
+            <div class="screen-size">1400-1600px (Desktop): Hide tertiary items</div>
+            <div class="screen-size">1200-1400px (Medium Desktop): Hide secondary & tertiary</div>
+            <div class="screen-size">1000-1200px (Large Tablet): Only core items</div>
+            <div class="screen-size">768-1000px (Tablet): Hamburger menu</div>
+            <div class="screen-size">< 768px (Mobile): Compact hamburger menu</div>
+        </div>
+        
+        <h2>What to Check:</h2>
+        <ul>
+            <li>Navigation items don't overlap or crowd at any screen size</li>
+            <li>Text remains readable and clickable</li>
+            <li>Hamburger menu appears at correct breakpoint</li>
+            <li>Mobile menu opens/closes properly</li>
+            <li>All interactive elements are accessible</li>
+        </ul>
+        
+        <h2>Current Screen Status:</h2>
+        <p>Resize your browser to test different breakpoints. The indicator in the bottom-right corner shows your current screen size.</p>
+        
+        <!-- Repeated content for scrolling tests -->
+        <div style="height: 1000px; background: linear-gradient(45deg, #f0f0f0, #e0e0e0); margin-top: 30px; padding: 20px;">
+            <h3>Scroll Content Area</h3>
+            <p>Scroll to test the fixed navigation behavior...</p>
+        </div>
+    </div>
+
+    <!-- Screen size indicator -->
+    <div class="breakpoint-indicator" id="breakpointIndicator">
+        Detecting screen size...
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    
+    <!-- Navigation JavaScript -->
+    <script src="navigation-mobile-fix.js"></script>
+    
+    <!-- Screen size detection -->
+    <script>
+        function updateBreakpointIndicator() {
+            const width = window.innerWidth;
+            const indicator = document.getElementById('breakpointIndicator');
+            let status = '';
+            
+            if (width >= 1600) {
+                status = `${width}px - Large Desktop (All items)`;
+            } else if (width >= 1400) {
+                status = `${width}px - Desktop (No tertiary)`;
+            } else if (width >= 1200) {
+                status = `${width}px - Medium (Core + secondary)`;
+            } else if (width >= 1000) {
+                status = `${width}px - Large Tablet (Core only)`;
+            } else if (width >= 768) {
+                status = `${width}px - Tablet (Hamburger)`;
+            } else {
+                status = `${width}px - Mobile (Compact)`;
+            }
+            
+            indicator.textContent = status;
+        }
+        
+        // Update on load and resize
+        updateBreakpointIndicator();
+        window.addEventListener('resize', updateBreakpointIndicator);
+        
+        // Log navigation behavior
+        console.log('Navigation Test Page Loaded');
+        console.log('Screen Width:', window.innerWidth);
+    </script>
+</body>
+</html>
