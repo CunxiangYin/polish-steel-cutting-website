@@ -79,11 +79,11 @@ export default function Header() {
                         </NavigationMenuContent>
                       </>
                     ) : (
-                      <Link href={item.href} legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                      <NavigationMenuLink asChild>
+                        <Link href={item.href} className={navigationMenuTriggerStyle()}>
                           {item.title}
-                        </NavigationMenuLink>
-                      </Link>
+                        </Link>
+                      </NavigationMenuLink>
                     )}
                   </NavigationMenuItem>
                 ))}
@@ -188,7 +188,6 @@ export default function Header() {
           </div>
         )}
       </div>
-
       {/* Top notification bar */}
       <div className="bg-blue-600 text-white text-center py-1 text-sm">
         🎉 限时优惠：新客户免费技术咨询服务 - 
