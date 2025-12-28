@@ -1,16 +1,16 @@
-# Netlify Redirects File
-# URL重定向规则
+# Netlify redirects configuration
 
-# 语言重定向
-/zh/* /local-seo-optimization.html 301
-/cn/* /local-seo-optimization.html 301
-/chinese/* /local-seo-optimization.html 301
+# Redirect old URLs to new structure
+/index-lite.html    /    301
+/index-full.html    /    301
+/index-simple.html  /    301
 
-# 旧URL重定向（如果有）
-/about /index.html#about 301
-/products /index.html#products 301
-/contact /index.html#contact 301
-/services /applications.html 301
+# Language-specific redirects
+/zh/*    /local-seo-optimization.html    200
+/cn/*    /local-seo-optimization.html    200
 
-# 404处理
-/* /404.html 404
+# PWA support
+/offline    /index.html    200
+
+# 404 handling
+/*    /404.html    404
