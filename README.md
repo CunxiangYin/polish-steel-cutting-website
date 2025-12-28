@@ -1,6 +1,22 @@
-# ElectroMech Solutions - Landing Page
+# 深圳普耐斯机电设备有限公司 | Punaise Mechanical Equipment
 
-A modern, responsive landing page for an electromechanical equipment company targeting international markets.
+专业钢板切割设备制造商，19年行业经验，服务500+企业客户。
+
+## 🚨 网站访问状态
+- **主站**: https://cute-jelly-dc03bf.netlify.app (暂时维护中)  
+- **备用站**: https://punaise-equipment.vercel.app (即将上线)
+- **GitHub Pages**: https://cunxiangyin.github.io/polish-steel-cutting-website
+
+## 📞 紧急联系方式
+- **销售热线**: 135-1099-2218
+- **WhatsApp**: +86-135-1099-2218  
+- **地址**: 深圳市南山区科技园
+
+## 主要产品
+- 🔸 等离子切割机 (精度±0.5mm)
+- 🔸 激光切割设备 (精度±0.03mm)  
+- 🔸 火焰切割机 (厚度6-300mm)
+- 🔸 台湾容华分条机
 
 ## Features
 
