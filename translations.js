@@ -50,7 +50,50 @@ const TRANSLATIONS = {
         'footer.about': 'About Punaise',
         'footer.support': '24/7 Support',
         'footer.delivery': 'Fast Delivery',
-        'footer.quality': 'Quality Assurance'
+        'footer.quality': 'Quality Assurance',
+        
+        // Navigation extras
+        'nav.local': 'Shenzhen Local',
+        
+        // Quote form
+        'quote.title': 'Get Professional Quote in 30 Seconds',
+        'quote.industry': 'Your Industry',
+        'quote.material': 'Cutting Material',
+        'quote.thickness': 'Material Thickness',
+        'quote.quantity': 'Monthly Volume',
+        'quote.budget': 'Budget Range',
+        'quote.phone': 'Contact Phone',
+        'quote.company': 'Company Name',
+        'quote.submit': 'Get Professional Quote',
+        'quote.select.industry': 'Select your industry',
+        'quote.select.material': 'Select material type',
+        
+        // Industries
+        'industry.shipbuilding': 'Shipbuilding',
+        'industry.automotive': 'Automotive',
+        'industry.construction': 'Construction',
+        'industry.machinery': 'Machinery',
+        'industry.steel': 'Steel Processing Center',
+        'industry.energy': 'Energy Equipment',
+        
+        // Materials
+        'material.carbon': 'Carbon Steel',
+        'material.stainless': 'Stainless Steel',
+        'material.aluminum': 'Aluminum',
+        'material.copper': 'Copper',
+        'material.alloy': 'Alloy Steel',
+        
+        // Quantities
+        'quantity.small': 'Less than 100 m²',
+        'quantity.medium': '100-1000 m²',
+        'quantity.large': '1000-5000 m²',
+        'quantity.xlarge': 'Over 5000 m²',
+        
+        // Budget
+        'budget.under50k': 'Under $50,000',
+        'budget.50to100k': '$50,000-$100,000',
+        'budget.100to200k': '$100,000-$200,000',
+        'budget.over200k': 'Over $200,000'
     },
     
     // === SOUTHEAST ASIA LANGUAGES ===
@@ -308,7 +351,28 @@ const TRANSLATIONS = {
         'product.slitting.desc': '专业钢卷分条设备',
         
         'contact.title': '联系我们',
-        'contact.submit': '发送消息'
+        'contact.submit': '发送消息',
+        
+        'nav.local': '深圳本地',
+        
+        // Quote form
+        'quote.title': '智能询价系统 - 30秒获取专业报价',
+        'quote.industry': '您的行业',
+        'quote.material': '切割材料',
+        'quote.thickness': '板材厚度',
+        'quote.quantity': '月切割量',
+        'quote.budget': '预算范围',
+        'quote.phone': '联系电话',
+        'quote.company': '公司名称',
+        'quote.submit': '立即获取专业报价',
+        
+        // Industries
+        'industry.shipbuilding': '造船工业',
+        'industry.automotive': '汽车制造',
+        'industry.construction': '建筑钢结构',
+        'industry.machinery': '机械制造',
+        'industry.steel': '钢材加工中心',
+        'industry.energy': '能源设备'
     }
 };
 
