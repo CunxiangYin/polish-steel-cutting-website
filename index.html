@@ -16,6 +16,8 @@
     
     <!-- Combined CSS -->
     <link rel="stylesheet" href="combined-essential.min.css">
+    <link rel="stylesheet" href="style-enhancements.min.css">
+    <link rel="stylesheet" href="layout-improvements.min.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -100,7 +102,9 @@
                     </div>
                     <h3>台湾容华分条机</h3>
                     <p>精密分条切割<br>自动收卷系统<br>废料最小化</p>
-                    <button class="btn btn-primary" onclick="openWhatsApp('分条机')">询价</button>
+                    <button class="btn btn-primary" onclick="openWhatsApp('分条机')">
+                        <i class="fas fa-comment-dots"></i> 立即询价
+                    </button>
                 </div>
             </div>
         </div>
@@ -109,33 +113,43 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>公司介绍</h2>
+            <div class="section-header">
+                <h2>关于我们</h2>
+                <p>深圳普耐斯机电设备有限公司 - 您值得信赖的切割设备专家</p>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <h3>深圳普耐斯机电设备有限公司</h3>
                     <p>成立于2005年，专业从事钢板切割设备的销售和技术服务。我们代理多个知名品牌，为客户提供等离子切割、激光切割、火焰切割等全系列解决方案。</p>
                     
-                    <div class="features">
-                        <div class="feature">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h4>19年行业经验</h4>
-                                <p>深耕钢板切割设备领域</p>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
                             </div>
+                            <h4>19年行业经验</h4>
+                            <p>深耕钢板切割设备领域，积累丰富行业经验</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-users"></i>
-                            <div>
-                                <h4>500+企业客户</h4>
-                                <p>服务各行业知名企业</p>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
                             </div>
+                            <h4>500+企业客户</h4>
+                            <p>服务各行业知名企业，赢得广泛信赖</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-tools"></i>
-                            <div>
-                                <h4>全套技术支持</h4>
-                                <p>从选型到维护一站式服务</p>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-tools"></i>
                             </div>
+                            <h4>全套技术支持</h4>
+                            <p>从选型到维护一站式服务，确保设备稳定运行</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>品质认证</h4>
+                            <p>代理多个国际知名品牌，品质有保障</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +160,10 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>联系我们</h2>
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <p>专业团队随时为您提供咨询服务</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
