@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳普耐斯机电设备 - 系统维护中</title>
+    <meta name="robots" content="noindex">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.6;
+        }
+        
+        .maintenance-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .status {
+            background: rgba(255, 193, 7, 0.2);
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .status h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ffc107;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .contact-item {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background: #128c7e;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-phone {
+            background: #007bff;
+        }
+        
+        .btn-phone:hover {
+            background: #0056b3;
+        }
+        
+        .products {
+            margin: 30px 0;
+        }
+        
+        .products h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .product-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .update-time {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 30px;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            .maintenance-container {
+                padding: 30px 15px;
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="logo">🔧 普耐斯机电</div>
+        
+        <h1>系统维护升级中</h1>
+        
+        <div class="spinner"></div>
+        
+        <div class="status">
+            <h2>⚠️ 当前状态</h2>
+            <p>我们的网站正在进行系统升级优化，为您提供更好的浏览体验。</p>
+            <p><strong>预计恢复时间：24小时内</strong></p>
+        </div>
+        
+        <div class="contact-info">
+            <h3>📞 紧急联系方式</h3>
+            <div class="contact-item">
+                <span>销售热线：<strong>135-1099-2218</strong></span>
+            </div>
+            <div class="contact-item">
+                <span>WhatsApp：<strong>+86-135-1099-2218</strong></span>
+            </div>
+            <div class="contact-item">
+                <span>📍 深圳市南山区科技园</span>
+            </div>
+            
+            <div style="margin-top: 25px;">
+                <a href="tel:+8613510992218" class="btn btn-phone">
+                    📞 立即致电
+                </a>
+                <a href="https://wa.me/8613510992218?text=您好，我想了解贵公司的切割设备" class="btn">
+                    💬 WhatsApp咨询
+                </a>
+            </div>
+        </div>
+        
+        <div class="products">
+            <h3>🔧 主要产品</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <strong>等离子切割机</strong><br>
+                    精度±0.5mm<br>
+                    厚度0-80mm
+                </div>
+                <div class="product-item">
+                    <strong>激光切割设备</strong><br>
+                    精度±0.03mm<br>
+                    厚度0-20mm
+                </div>
+                <div class="product-item">
+                    <strong>火焰切割机</strong><br>
+                    厚度6-300mm<br>
+                    大型工件
+                </div>
+                <div class="product-item">
+                    <strong>台湾容华分条机</strong><br>
+                    精密分条<br>
+                    自动收卷
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+            <p><strong>🏆 19年行业经验 • 500+企业客户 • 专业技术支持</strong></p>
+        </div>
+        
+        <div class="update-time">
+            最后更新：2024年12月28日<br>
+            感谢您的理解与支持！
+        </div>
+    </div>
+    
+    <script>
+        // 自动刷新检查网站状态
+        let checkCount = 0;
+        setInterval(() => {
+            checkCount++;
+            if (checkCount <= 24) { // 检查24次，每次间隔5分钟
+                fetch('/')
+                    .then(response => {
+                        if (response.ok && !response.url.includes('maintenance.html')) {
+                            window.location.reload();
+                        }
+                    })
+                    .catch(() => {
+                        console.log('Still in maintenance mode');
+                    });
+            }
+        }, 300000); // 5分钟检查一次
+        
+        // 显示当前时间
+        function updateTime() {
+            const now = new Date().toLocaleString('zh-CN');
+            document.querySelector('.update-time').innerHTML = 
+                `最后更新：2024年12月28日<br>当前时间：${now}<br>感谢您的理解与支持！`;
+        }
+        
+        updateTime();
+        setInterval(updateTime, 60000); // 每分钟更新时间
+    </script>
+</body>
+</html>
