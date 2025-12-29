@@ -1,0 +1,165 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品中心",
+    "applications": "应用案例",
+    "downloads": "资料下载",
+    "contact": "联系我们",
+    "localService": "深圳本地",
+    "getQuote": "立即咨询",
+    "phone": "+86 135-1099-2218"
+  },
+  "hero": {
+    "title": "专业钢板切割设备制造商",
+    "subtitle": "深圳普耐斯机电设备有限公司，19年专注CNC等离子、激光、火焰切割设备研发制造",
+    "getQuoteButton": "获取报价",
+    "consultButton": "立即咨询",
+    "notificationBanner": "🎉 限时优惠：新客户免费技术咨询服务 - ",
+    "applyNow": "立即申请"
+  },
+  "stats": {
+    "experience": {
+      "number": "19+",
+      "label": "年行业经验"
+    },
+    "companies": {
+      "number": "500+",
+      "label": "服务企业"
+    },
+    "sales": {
+      "number": "1000+",
+      "label": "设备销售"
+    },
+    "support": {
+      "number": "24/7",
+      "label": "技术支持"
+    }
+  },
+  "products": {
+    "title": "专业切割设备产品线",
+    "subtitle": "提供全系列钢板切割解决方案，满足不同行业需求",
+    "plasma": {
+      "title": "CNC等离子切割机",
+      "description": "高精度数控等离子切割，适用于各种厚度金属材料",
+      "thickness": "切割厚度: 0.5-50mm",
+      "accuracy": "精度: ±0.3mm",
+      "features": [
+        "自动调高系统",
+        "套料软件优化",
+        "多火炬配置"
+      ]
+    },
+    "laser": {
+      "title": "激光切割设备",
+      "description": "高功率光纤激光切割，极高精度和切割质量",
+      "thickness": "切割厚度: 0.1-30mm",
+      "accuracy": "精度: ±0.03mm",
+      "features": [
+        "光纤激光器",
+        "自动上下料",
+        "智能排料系统"
+      ]
+    },
+    "flame": {
+      "title": "数控火焰切割机",
+      "description": "大厚度钢板切割的经济型解决方案",
+      "thickness": "切割厚度: 6-300mm",
+      "economic": "经济高效",
+      "features": [
+        "双火炬配置",
+        "预热自动控制",
+        "大型龙门结构"
+      ]
+    },
+    "getQuote": "获取报价"
+  },
+  "about": {
+    "title": "关于深圳普耐斯机电设备",
+    "description": "成立于2005年，我们是一家专业从事钢板切割设备研发、制造、销售和服务的高新技术企业。公司位于深圳市南山区，拥有现代化的生产基地和技术研发中心。",
+    "advantages": {
+      "manufacturing": {
+        "title": "专业制造",
+        "description": "19年制造经验"
+      },
+      "technology": {
+        "title": "技术领先",
+        "description": "持续技术创新"
+      },
+      "service": {
+        "title": "全程服务",
+        "description": "售前售后支持"
+      },
+      "support": {
+        "title": "24小时",
+        "description": "技术热线支持"
+      }
+    },
+    "serviceTitle": "服务优势",
+    "servicePoints": [
+      "专业的技术团队，为客户提供个性化解决方案",
+      "完善的售后服务体系，全国范围快速响应",
+      "持续的技术培训支持，确保设备高效运行",
+      "原厂配件供应保障，设备长期稳定运行"
+    ]
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "立即联系，获取专业的切割设备解决方案",
+    "info": "联系信息",
+    "phone": {
+      "label": "24小时服务热线",
+      "number": "+86 135-1099-2218"
+    },
+    "email": {
+      "label": "邮箱咨询",
+      "address": "info@punaise.com"
+    },
+    "address": {
+      "label": "公司地址",
+      "location": "深圳市南山区科技园"
+    },
+    "commitment": {
+      "title": "专业服务承诺",
+      "description": "我们承诺为每一位客户提供专业、及时、贴心的服务。从咨询、设计、制造到安装调试，全程专业团队跟进。"
+    },
+    "form": {
+      "title": "快速咨询",
+      "name": "您的姓名",
+      "phone": "联系电话",
+      "email": "邮箱地址",
+      "company": "公司名称",
+      "message": "请描述您的需求...",
+      "submit": "提交咨询",
+      "submitSuccess": "联系信息已提交，我们会尽快回复！"
+    }
+  },
+  "footer": {
+    "company": "深圳普耐斯机电设备有限公司",
+    "tagline": "专业钢板切割设备制造商",
+    "products": "产品系列",
+    "productList": [
+      "CNC等离子切割机",
+      "激光切割设备",
+      "数控火焰切割机",
+      "配套设备"
+    ],
+    "services": "服务支持",
+    "serviceList": [
+      "技术咨询",
+      "方案设计",
+      "安装调试",
+      "售后维护"
+    ],
+    "contactInfo": "联系方式",
+    "copyright": "© 2024 深圳普耐斯机电设备有限公司. 保留所有权利."
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出现错误",
+    "tryAgain": "重试",
+    "close": "关闭",
+    "confirm": "确认",
+    "cancel": "取消"
+  }
+}

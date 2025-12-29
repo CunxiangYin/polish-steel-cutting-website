@@ -1,0 +1,84 @@
+[build]
+  publish = "out"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# 多语言重定向规则
+[[redirects]]
+  from = "/"
+  to = "/zh/"
+  status = 302
+
+# SPA 回退规则 - 支持 Next.js 动态路由
+[[redirects]]
+  from = "/zh/*"
+  to = "/zh/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/th/*"
+  to = "/th/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/vi/*"
+  to = "/vi/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ms/*"
+  to = "/ms/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/id/*"
+  to = "/id/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/es/*"
+  to = "/es/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/pt/*"
+  to = "/pt/index.html"
+  status = 200
+
+# 安全头设置
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
+
+# 缓存设置
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# 语言版本的 hreflang 支持
+[[headers]]
+  for = "/zh/"
+  [headers.values]
+    Link = '''<https://cute-jelly-dc03bf.netlify.app/zh/>; rel="alternate"; hreflang="zh", <https://cute-jelly-dc03bf.netlify.app/en/>; rel="alternate"; hreflang="en", <https://cute-jelly-dc03bf.netlify.app/th/>; rel="alternate"; hreflang="th", <https://cute-jelly-dc03bf.netlify.app/vi/>; rel="alternate"; hreflang="vi", <https://cute-jelly-dc03bf.netlify.app/ms/>; rel="alternate"; hreflang="ms", <https://cute-jelly-dc03bf.netlify.app/id/>; rel="alternate"; hreflang="id", <https://cute-jelly-dc03bf.netlify.app/es/>; rel="alternate"; hreflang="es", <https://cute-jelly-dc03bf.netlify.app/pt/>; rel="alternate"; hreflang="pt", <https://cute-jelly-dc03bf.netlify.app/zh/>; rel="alternate"; hreflang="x-default"'''

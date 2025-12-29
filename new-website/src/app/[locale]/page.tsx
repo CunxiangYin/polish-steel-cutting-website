@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { useTranslations } from '@/contexts/TranslationContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -8,15 +9,18 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Phone, Mail, MapPin, Factory, Settings, Zap, Truck } from 'lucide-react';
 import { toast } from 'sonner';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 
-export default function SimplePage() {
+export default function HomePage() {
+  const { t, raw } = useTranslations();
+  
   const handleGetQuote = (productName: string) => {
-    toast.success(`询价请求已发送：${productName}`);
+    toast.success(`${t('common.loading')}: ${productName}`);
   };
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('联系信息已提交，我们会尽快回复！');
+    toast.success(t('contact.form.submitSuccess'));
   };
 
   return (
@@ -34,16 +38,27 @@ export default function SimplePage() {
             </div>
             <nav className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a href="#hero" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">首页</a>
-                <a href="#products" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">产品</a>
-                <a href="#about" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">关于</a>
-                <a href="#contact" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">联系</a>
+                <a href="#hero" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  {t('navigation.home')}
+                </a>
+                <a href="#products" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  {t('navigation.products')}
+                </a>
+                <a href="#about" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  {t('navigation.about')}
+                </a>
+                <a href="#contact" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  {t('navigation.contact')}
+                </a>
               </div>
             </nav>
-            <Button variant="outline" size="sm">
-              <Phone className="w-4 h-4 mr-2" />
-              +86 135-1099-2218
-            </Button>
+            <div className="flex items-center space-x-4">
+              <LocaleSwitcher />
+              <Button variant="outline" size="sm">
+                <Phone className="w-4 h-4 mr-2" />
+                {t('navigation.phone')}
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -53,19 +68,19 @@ export default function SimplePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              专业钢板切割设备制造商
+              {t('hero.title')}
             </h1>
             <p className="mt-6 text-xl text-blue-100 max-w-3xl mx-auto">
-              深圳普耐斯机电设备有限公司，19年专注CNC等离子、激光、火焰切割设备研发制造
+              {t('hero.subtitle')}
             </p>
             <div className="mt-10 flex justify-center gap-4">
-              <Button size="lg" variant="secondary" onClick={() => handleGetQuote('整体解决方案')}>
+              <Button size="lg" variant="secondary" onClick={() => handleGetQuote(t('hero.getQuoteButton'))}>
                 <Settings className="w-5 h-5 mr-2" />
-                获取报价
+                {t('hero.getQuoteButton')}
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
                 <Phone className="w-5 h-5 mr-2" />
-                立即咨询
+                {t('hero.consultButton')}
               </Button>
             </div>
           </div>
@@ -77,20 +92,20 @@ export default function SimplePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-blue-600">19+</div>
-              <div className="text-gray-600">年行业经验</div>
+              <div className="text-3xl font-bold text-blue-600">{t('stats.experience.number')}</div>
+              <div className="text-gray-600">{t('stats.experience.label')}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">500+</div>
-              <div className="text-gray-600">服务企业</div>
+              <div className="text-3xl font-bold text-blue-600">{t('stats.companies.number')}</div>
+              <div className="text-gray-600">{t('stats.companies.label')}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">1000+</div>
-              <div className="text-gray-600">设备销售</div>
+              <div className="text-3xl font-bold text-blue-600">{t('stats.sales.number')}</div>
+              <div className="text-gray-600">{t('stats.sales.label')}</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-blue-600">24/7</div>
-              <div className="text-gray-600">技术支持</div>
+              <div className="text-3xl font-bold text-blue-600">{t('stats.support.number')}</div>
+              <div className="text-gray-600">{t('stats.support.label')}</div>
             </div>
           </div>
         </div>
@@ -101,10 +116,10 @@ export default function SimplePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              专业切割设备产品线
+              {t('products.title')}
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              提供全系列钢板切割解决方案，满足不同行业需求
+              {t('products.subtitle')}
             </p>
           </div>
 
@@ -115,28 +130,28 @@ export default function SimplePage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6 text-blue-600" />
                 </div>
-                <CardTitle>CNC等离子切割机</CardTitle>
+                <CardTitle>{t('products.plasma.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  高精度数控等离子切割，适用于各种厚度金属材料
+                  {t('products.plasma.description')}
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">切割厚度: 0.5-50mm</Badge>
-                  <Badge variant="secondary">精度: ±0.3mm</Badge>
+                  <Badge variant="secondary">{t('products.plasma.thickness')}</Badge>
+                  <Badge variant="secondary">{t('products.plasma.accuracy')}</Badge>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-gray-600">
-                  <li>• 自动调高系统</li>
-                  <li>• 套料软件优化</li>
-                  <li>• 多火炬配置</li>
+                  {raw('products.plasma.features')?.map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
               </CardContent>
               <CardFooter>
                 <Button 
                   className="w-full" 
-                  onClick={() => handleGetQuote('CNC等离子切割机')}
+                  onClick={() => handleGetQuote(t('products.plasma.title'))}
                 >
-                  获取报价
+                  {t('products.getQuote')}
                 </Button>
               </CardFooter>
             </Card>
@@ -147,28 +162,28 @@ export default function SimplePage() {
                 <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                   <Settings className="w-6 h-6 text-orange-600" />
                 </div>
-                <CardTitle>激光切割设备</CardTitle>
+                <CardTitle>{t('products.laser.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  高功率光纤激光切割，极高精度和切割质量
+                  {t('products.laser.description')}
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">切割厚度: 0.1-30mm</Badge>
-                  <Badge variant="secondary">精度: ±0.03mm</Badge>
+                  <Badge variant="secondary">{t('products.laser.thickness')}</Badge>
+                  <Badge variant="secondary">{t('products.laser.accuracy')}</Badge>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-gray-600">
-                  <li>• 光纤激光器</li>
-                  <li>• 自动上下料</li>
-                  <li>• 智能排料系统</li>
+                  {raw('products.laser.features')?.map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
               </CardContent>
               <CardFooter>
                 <Button 
                   className="w-full" 
-                  onClick={() => handleGetQuote('激光切割设备')}
+                  onClick={() => handleGetQuote(t('products.laser.title'))}
                 >
-                  获取报价
+                  {t('products.getQuote')}
                 </Button>
               </CardFooter>
             </Card>
@@ -179,28 +194,28 @@ export default function SimplePage() {
                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                   <Factory className="w-6 h-6 text-red-600" />
                 </div>
-                <CardTitle>数控火焰切割机</CardTitle>
+                <CardTitle>{t('products.flame.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  大厚度钢板切割的经济型解决方案
+                  {t('products.flame.description')}
                 </p>
                 <div className="space-y-2">
-                  <Badge variant="secondary">切割厚度: 6-300mm</Badge>
-                  <Badge variant="secondary">经济高效</Badge>
+                  <Badge variant="secondary">{t('products.flame.thickness')}</Badge>
+                  <Badge variant="secondary">{t('products.flame.economic')}</Badge>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-gray-600">
-                  <li>• 双火炬配置</li>
-                  <li>• 预热自动控制</li>
-                  <li>• 大型龙门结构</li>
+                  {raw('products.flame.features')?.map((feature: string, index: number) => (
+                    <li key={index}>• {feature}</li>
+                  ))}
                 </ul>
               </CardContent>
               <CardFooter>
                 <Button 
                   className="w-full" 
-                  onClick={() => handleGetQuote('数控火焰切割机')}
+                  onClick={() => handleGetQuote(t('products.flame.title'))}
                 >
-                  获取报价
+                  {t('products.getQuote')}
                 </Button>
               </CardFooter>
             </Card>
@@ -214,54 +229,43 @@ export default function SimplePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
-                关于深圳普耐斯机电设备
+                {t('about.title')}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                成立于2005年，我们是一家专业从事钢板切割设备研发、制造、销售和服务的高新技术企业。
-                公司位于深圳市南山区，拥有现代化的生产基地和技术研发中心。
+                {t('about.description')}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
                   <Factory className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">专业制造</div>
-                  <div className="text-sm text-gray-600">19年制造经验</div>
+                  <div className="font-semibold">{t('about.advantages.manufacturing.title')}</div>
+                  <div className="text-sm text-gray-600">{t('about.advantages.manufacturing.description')}</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
                   <Settings className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">技术领先</div>
-                  <div className="text-sm text-gray-600">持续技术创新</div>
+                  <div className="font-semibold">{t('about.advantages.technology.title')}</div>
+                  <div className="text-sm text-gray-600">{t('about.advantages.technology.description')}</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
                   <Truck className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">全程服务</div>
-                  <div className="text-sm text-gray-600">售前售后支持</div>
+                  <div className="font-semibold">{t('about.advantages.service.title')}</div>
+                  <div className="text-sm text-gray-600">{t('about.advantages.service.description')}</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
                   <Phone className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">24小时</div>
-                  <div className="text-sm text-gray-600">技术热线支持</div>
+                  <div className="font-semibold">{t('about.advantages.support.title')}</div>
+                  <div className="text-sm text-gray-600">{t('about.advantages.support.description')}</div>
                 </div>
               </div>
             </div>
             <div className="bg-gray-100 rounded-lg p-8">
-              <h3 className="text-xl font-bold mb-4">服务优势</h3>
+              <h3 className="text-xl font-bold mb-4">{t('about.serviceTitle')}</h3>
               <ul className="space-y-3">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>专业的技术团队，为客户提供个性化解决方案</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>完善的售后服务体系，全国范围快速响应</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>持续的技术培训支持，确保设备高效运行</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>原厂配件供应保障，设备长期稳定运行</span>
-                </li>
+                {raw('about.servicePoints')?.map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span>{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -273,46 +277,45 @@ export default function SimplePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-              联系我们
+              {t('contact.title')}
             </h2>
             <p className="mt-4 text-xl text-gray-600">
-              立即联系，获取专业的切割设备解决方案
+              {t('contact.subtitle')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h3 className="text-xl font-bold mb-6">联系信息</h3>
+              <h3 className="text-xl font-bold mb-6">{t('contact.info')}</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <div className="font-medium">24小时服务热线</div>
-                    <div className="text-gray-600">+86 135-1099-2218</div>
+                    <div className="font-medium">{t('contact.phone.label')}</div>
+                    <div className="text-gray-600">{t('contact.phone.number')}</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <div className="font-medium">邮箱咨询</div>
-                    <div className="text-gray-600">info@punaise.com</div>
+                    <div className="font-medium">{t('contact.email.label')}</div>
+                    <div className="text-gray-600">{t('contact.email.address')}</div>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <div className="font-medium">公司地址</div>
-                    <div className="text-gray-600">深圳市南山区科技园</div>
+                    <div className="font-medium">{t('contact.address.label')}</div>
+                    <div className="text-gray-600">{t('contact.address.location')}</div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-                <h4 className="font-bold mb-2">专业服务承诺</h4>
+                <h4 className="font-bold mb-2">{t('contact.commitment.title')}</h4>
                 <p className="text-sm text-gray-600">
-                  我们承诺为每一位客户提供专业、及时、贴心的服务。
-                  从咨询、设计、制造到安装调试，全程专业团队跟进。
+                  {t('contact.commitment.description')}
                 </p>
               </div>
             </div>
@@ -321,44 +324,44 @@ export default function SimplePage() {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle>快速咨询</CardTitle>
+                  <CardTitle>{t('contact.form.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleContactSubmit} className="space-y-4">
                     <div>
                       <Input 
-                        placeholder="您的姓名" 
+                        placeholder={t('contact.form.name')} 
                         required 
                       />
                     </div>
                     <div>
                       <Input 
                         type="tel" 
-                        placeholder="联系电话" 
+                        placeholder={t('contact.form.phone')} 
                         required 
                       />
                     </div>
                     <div>
                       <Input 
                         type="email" 
-                        placeholder="邮箱地址" 
+                        placeholder={t('contact.form.email')} 
                         required 
                       />
                     </div>
                     <div>
                       <Input 
-                        placeholder="公司名称" 
+                        placeholder={t('contact.form.company')} 
                       />
                     </div>
                     <div>
                       <Textarea 
-                        placeholder="请描述您的需求..." 
+                        placeholder={t('contact.form.message')} 
                         rows={4}
                         required 
                       />
                     </div>
                     <Button type="submit" className="w-full">
-                      提交咨询
+                      {t('contact.form.submit')}
                     </Button>
                   </form>
                 </CardContent>
@@ -377,39 +380,37 @@ export default function SimplePage() {
                 <span className="text-white font-bold text-sm">Punaise</span>
               </div>
               <p className="text-gray-400 text-sm">
-                深圳普耐斯机电设备有限公司
-                专业钢板切割设备制造商
+                {t('footer.company')}<br />
+                {t('footer.tagline')}
               </p>
             </div>
             <div>
-              <h4 className="font-bold mb-4">产品系列</h4>
+              <h4 className="font-bold mb-4">{t('footer.products')}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>CNC等离子切割机</li>
-                <li>激光切割设备</li>
-                <li>数控火焰切割机</li>
-                <li>配套设备</li>
+                {raw('footer.productList')?.map((product: string, index: number) => (
+                  <li key={index}>{product}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">服务支持</h4>
+              <h4 className="font-bold mb-4">{t('footer.services')}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>技术咨询</li>
-                <li>方案设计</li>
-                <li>安装调试</li>
-                <li>售后维护</li>
+                {raw('footer.serviceList')?.map((service: string, index: number) => (
+                  <li key={index}>{service}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">联系方式</h4>
+              <h4 className="font-bold mb-4">{t('footer.contactInfo')}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>电话: +86 135-1099-2218</li>
-                <li>邮箱: info@punaise.com</li>
-                <li>地址: 深圳市南山区</li>
+                <li>{t('navigation.phone')}</li>
+                <li>{t('contact.email.address')}</li>
+                <li>{t('contact.address.location')}</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 深圳普耐斯机电设备有限公司. 保留所有权利.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>

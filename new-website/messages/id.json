@@ -1,0 +1,160 @@
+{
+  "navigation": {
+    "home": "Beranda",
+    "products": "Produk",
+    "about": "Tentang Kami",
+    "contact": "Kontak",
+    "phone": "Telepon"
+  },
+  "hero": {
+    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "subtitle": "Produsen peralatan pemotongan pelat baja profesional, menyediakan solusi peralatan berkualitas tinggi sejak 2005. Spesialis dalam mesin pemotong plasma, laser dan mesin Taiwan Rong Hua",
+    "getQuoteButton": "Dapatkan Penawaran",
+    "consultButton": "Konsultasi Gratis"
+  },
+  "stats": {
+    "experience": {
+      "number": "19+",
+      "label": "Tahun Pengalaman"
+    },
+    "companies": {
+      "number": "500+",
+      "label": "Perusahaan Terpercaya"
+    },
+    "sales": {
+      "number": "1000+",
+      "label": "Mesin Terjual"
+    },
+    "support": {
+      "number": "24/7",
+      "label": "Dukungan"
+    }
+  },
+  "products": {
+    "title": "Produk dan Layanan",
+    "subtitle": "Peralatan pemotongan pelat baja berkualitas tinggi untuk semua kebutuhan",
+    "getQuote": "Dapatkan Penawaran",
+    "plasma": {
+      "title": "Mesin Pemotong Plasma CNC",
+      "description": "Mesin pemotong plasma CNC presisi tinggi, cocok untuk memotong pelat baja sedang",
+      "thickness": "Ketebalan: 0.5-30mm",
+      "accuracy": "Akurasi: ±0.1mm",
+      "features": [
+        "Sistem kontrol CNC canggih",
+        "Kecepatan pemotongan tinggi",
+        "Permukaan potong halus",
+        "Biaya operasional rendah"
+      ]
+    },
+    "laser": {
+      "title": "Mesin Pemotong Laser",
+      "description": "Mesin pemotong laser fiber presisi tinggi untuk pekerjaan halus dan pemotongan bentuk kompleks",
+      "thickness": "Ketebalan: 0.1-25mm",
+      "accuracy": "Akurasi: ±0.05mm",
+      "features": [
+        "Laser fiber performa tinggi",
+        "Pemotongan tanpa kontak",
+        "Akurasi tingkat mikron",
+        "Beragam material"
+      ]
+    },
+    "flame": {
+      "title": "Mesin Pemotong Api",
+      "description": "Mesin pemotong api untuk pelat baja tebal, hemat biaya, cocok untuk pekerjaan skala besar",
+      "thickness": "Ketebalan: 5-300mm",
+      "economic": "Hemat Biaya",
+      "features": [
+        "Cocok untuk pelat baja tebal",
+        "Biaya operasional rendah",
+        "Kecepatan pemotongan tinggi",
+        "Sistem bahan bakar otomatis"
+      ]
+    }
+  },
+  "about": {
+    "title": "Tentang Punaise",
+    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. didirikan pada tahun 2005, adalah produsen peralatan pemotongan pelat baja profesional dan agen mesin Taiwan Rong Hua di China. Kami berkomitmen untuk mengembangkan teknologi manufaktur dan melayani pelanggan dengan sangat baik",
+    "serviceTitle": "Layanan Kami",
+    "servicePoints": [
+      "Konsultasi dan desain solusi gratis",
+      "Instalasi dan pelatihan mesin",
+      "Layanan purna jual dan pemeliharaan",
+      "Penyediaan suku cadang dan aksesori",
+      "Upgrade dan perbaikan mesin"
+    ],
+    "advantages": {
+      "manufacturing": {
+        "title": "Manufaktur Canggih",
+        "description": "Teknologi manufaktur modern"
+      },
+      "technology": {
+        "title": "Teknologi Terdepan",
+        "description": "Sistem kontrol CNC dan software terbaru"
+      },
+      "service": {
+        "title": "Layanan Komprehensif",
+        "description": "Dari konsultasi hingga purna jual"
+      },
+      "support": {
+        "title": "Dukungan 24/7",
+        "description": "Tim teknis siap membantu kapan saja"
+      }
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Siap untuk konsultasi dan layanan profesional",
+    "info": "Informasi Kontak",
+    "phone": {
+      "label": "Telepon",
+      "number": "+86 755-8888-9999"
+    },
+    "email": {
+      "label": "Email",
+      "address": "info@punaise-equipment.com"
+    },
+    "address": {
+      "label": "Alamat",
+      "location": "Shenzhen, Guangdong, China"
+    },
+    "commitment": {
+      "title": "Komitmen Kami",
+      "description": "Kami berkomitmen untuk menyediakan layanan dan produk berkualitas tinggi dengan dukungan teknis dan layanan purna jual yang komprehensif"
+    },
+    "form": {
+      "title": "Kirim Pesan kepada Kami",
+      "name": "Nama",
+      "phone": "Telepon",
+      "email": "Email",
+      "company": "Perusahaan",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "submitSuccess": "Pesan berhasil dikirim!"
+    }
+  },
+  "footer": {
+    "company": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "tagline": "Produsen Peralatan Pemotongan Pelat Baja Profesional",
+    "products": "Produk",
+    "productList": [
+      "Mesin Pemotong Plasma CNC",
+      "Mesin Pemotong Laser",
+      "Mesin Pemotong Api",
+      "Mesin Taiwan Rong Hua"
+    ],
+    "services": "Layanan",
+    "serviceList": [
+      "Konsultasi dan desain",
+      "Instalasi",
+      "Pelatihan",
+      "Pemeliharaan"
+    ],
+    "contactInfo": "Informasi Kontak",
+    "copyright": "© 2024 Shenzhen Punaise Mechanical Equipment Co., Ltd. Hak cipta dilindungi."
+  },
+  "common": {
+    "loading": "Memuat",
+    "error": "Terjadi kesalahan",
+    "success": "Berhasil"
+  }
+}

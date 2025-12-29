@@ -1,55 +1,20 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Layout from '@/components/layout/Layout';
-import { Toaster } from '@/components/ui/sonner';
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  display: 'swap',
+  variable: '--font-inter'
 });
 
 export const metadata: Metadata = {
-  title: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商",
-  description: "深圳普耐斯机电设备有限公司，专业从事钢板切割设备、台湾荣华分条机、等离子激光切割系统制造。自2005年起为客户提供优质设备解决方案。",
-  keywords: "钢板切割设备, CNC切割设备, 等离子切割, 激光切割, 火焰切割, 金属制造, 工业切割, 台湾荣华机械",
-  authors: [{ name: "深圳普耐斯机电设备有限公司" }],
-  openGraph: {
-    type: "website",
-    locale: "zh_CN",
-    url: "https://punaise-equipment.com/",
-    siteName: "深圳普耐斯机电设备有限公司",
-    title: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商",
-    description: "专业从事钢板切割设备制造，台湾荣华分条机代理，为金属制造行业提供优质解决方案。",
-    images: [
-      {
-        url: "/images/punaise-cutting-equipment.jpg",
-        width: 1200,
-        height: 630,
-        alt: "普耐斯钢板切割设备",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商",
-    description: "专业从事钢板切割设备制造，台湾荣华分条机代理，为金属制造行业提供优质解决方案。",
-    images: ["/images/punaise-cutting-equipment.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: 'YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE',
-  },
+  title: "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+  description: "Professional steel cutting equipment manufacturer",
+  metadataBase: new URL(process.env.NODE_ENV === 'production' 
+    ? 'https://cute-jelly-dc03bf.netlify.app' 
+    : 'http://localhost:3000'),
 };
 
 export default function RootLayout({
@@ -58,18 +23,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={inter.variable}>
+    <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b82f6" />
+        <link rel="alternate" hrefLang="zh" href="https://cute-jelly-dc03bf.netlify.app/zh" />
+        <link rel="alternate" hrefLang="en" href="https://cute-jelly-dc03bf.netlify.app/en" />
+        <link rel="alternate" hrefLang="th" href="https://cute-jelly-dc03bf.netlify.app/th" />
+        <link rel="alternate" hrefLang="vi" href="https://cute-jelly-dc03bf.netlify.app/vi" />
+        <link rel="alternate" hrefLang="ms" href="https://cute-jelly-dc03bf.netlify.app/ms" />
+        <link rel="alternate" hrefLang="id" href="https://cute-jelly-dc03bf.netlify.app/id" />
+        <link rel="alternate" hrefLang="es" href="https://cute-jelly-dc03bf.netlify.app/es" />
+        <link rel="alternate" hrefLang="pt" href="https://cute-jelly-dc03bf.netlify.app/pt" />
+        <link rel="alternate" hrefLang="x-default" href="https://cute-jelly-dc03bf.netlify.app/zh" />
       </head>
-      <body className="font-inter antialiased">
-        <Layout>
-          {children}
-        </Layout>
-        <Toaster position="bottom-right" />
+      <body className="font-sans antialiased" style={{'--font-inter': inter.style.fontFamily} as any}>
+        {children}
       </body>
     </html>
   );
