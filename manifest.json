@@ -1,7 +1,7 @@
 {
-    "name": "深圳普耐斯机电设备有限公司",
-    "short_name": "普耐斯机电",
-    "description": "专业钢板切割设备制造商，提供等离子切割、激光切割、火焰切割设备及台湾容华分条机",
+    "name": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "short_name": "Punaise",
+    "description": "Professional steel cutting equipment manufacturer offering plasma, laser, and flame cutting systems with Taiwan Ronghua slitting machines",
     "version": "2.0.0",
     "start_url": "/",
     "display": "standalone",
@@ -9,7 +9,7 @@
     "theme_color": "#667eea",
     "orientation": "portrait-primary",
     "scope": "/",
-    "lang": "zh-CN",
+    "lang": "en",
     "dir": "ltr",
     "categories": [
         "business",
@@ -72,21 +72,21 @@
             "sizes": "320x568",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "移动端首页展示"
+            "label": "Mobile Homepage Display"
         },
         {
             "src": "/images/screenshot-desktop.png",
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "桌面端产品展示"
+            "label": "Desktop Product Display"
         }
     ],
     "shortcuts": [
         {
-            "name": "产品搜索",
-            "short_name": "搜索",
-            "description": "快速搜索切割设备",
+            "name": "Product Search",
+            "short_name": "Search",
+            "description": "Quick search for cutting equipment",
             "url": "/#products",
             "icons": [
                 {
@@ -97,9 +97,9 @@
             ]
         },
         {
-            "name": "在线咨询",
-            "short_name": "咨询",
-            "description": "联系销售顾问",
+            "name": "Online Consultation",
+            "short_name": "Consult",
+            "description": "Contact sales consultant",
             "url": "/#contact",
             "icons": [
                 {
@@ -110,9 +110,9 @@
             ]
         },
         {
-            "name": "获取报价",
-            "short_name": "报价",
-            "description": "快速获取设备报价",
+            "name": "Get Quote",
+            "short_name": "Quote",
+            "description": "Quick equipment quotation",
             "url": "/#smartQuote",
             "icons": [
                 {
@@ -123,9 +123,9 @@
             ]
         },
         {
-            "name": "联系我们",
-            "short_name": "联系",
-            "description": "查看联系方式",
+            "name": "Contact Us",
+            "short_name": "Contact",
+            "description": "View contact information",
             "url": "/contact.html",
             "icons": [
                 {

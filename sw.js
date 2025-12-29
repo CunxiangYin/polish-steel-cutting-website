@@ -1,9 +1,9 @@
-// Service Worker - PWA支持
+// Service Worker - PWA support
 const CACHE_NAME = 'punaise-equipment-v2.1';
 const STATIC_CACHE_NAME = 'punaise-static-v2.1';
 const DYNAMIC_CACHE_NAME = 'punaise-dynamic-v2.1';
 
-// 需要缓存的核心文件
+// Core files to cache
 const CORE_ASSETS = [
     '/',
     '/index.html',
@@ -18,52 +18,52 @@ const CORE_ASSETS = [
     '/favicon.ico'
 ];
 
-// 需要缓存的字体和外部资源
+// Fonts and external resources to cache
 const FONT_ASSETS = [
     'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
 ];
 
-// 预缓存的图片资源
+// Pre-cached image assets
 const IMAGE_ASSETS = [
     '/logo-main.svg',
     '/images/hero-banner.jpg',
     '/images/company-overview.jpg'
 ];
 
-// 安装事件 - 缓存核心资源
+// Install event - cache core resources
 self.addEventListener('install', event => {
     console.log('Service Worker: Installing...');
     
     event.waitUntil(
         Promise.all([
-            // 缓存核心静态资源
+            // Cache core static assets
             caches.open(STATIC_CACHE_NAME).then(cache => {
                 console.log('Service Worker: Caching core assets');
                 return cache.addAll(CORE_ASSETS);
             }),
             
-            // 缓存字体资源
+            // Cache font assets
             caches.open(STATIC_CACHE_NAME).then(cache => {
                 console.log('Service Worker: Caching font assets');
                 return cache.addAll(FONT_ASSETS);
             }),
             
-            // 预缓存关键图片
+            // Pre-cache critical images
             caches.open(STATIC_CACHE_NAME).then(cache => {
                 console.log('Service Worker: Pre-caching images');
                 return cache.addAll(IMAGE_ASSETS.filter(Boolean));
             })
         ]).then(() => {
             console.log('Service Worker: Installation complete');
-            return self.skipWaiting(); // 立即激活新的SW
+            return self.skipWaiting(); // Immediately activate new SW
         }).catch(error => {
             console.error('Service Worker: Installation failed', error);
         })
     );
 });
 
-// 激活事件 - 清理旧缓存
+// Activate event - clean up old caches
 self.addEventListener('activate', event => {
     console.log('Service Worker: Activating...');
     
@@ -71,7 +71,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames.map(cacheName => {
-                    // 删除旧版本缓存
+                    // Delete old version caches
                     if (cacheName !== STATIC_CACHE_NAME && 
                         cacheName !== DYNAMIC_CACHE_NAME &&
                         cacheName.startsWith('punaise-')) {
@@ -82,22 +82,22 @@ self.addEventListener('activate', event => {
             );
         }).then(() => {
             console.log('Service Worker: Activation complete');
-            return self.clients.claim(); // 立即控制所有页面
+            return self.clients.claim(); // Immediately control all pages
         })
     );
 });
 
-// 拦截网络请求
+// Intercept network requests
 self.addEventListener('fetch', event => {
     const { request } = event;
     const url = new URL(request.url);
     
-    // 忽略Chrome扩展请求
+    // Ignore Chrome extension requests
     if (url.protocol === 'chrome-extension:') {
         return;
     }
     
-    // 忽略非GET请求
+    // Ignore non-GET requests
     if (request.method !== 'GET') {
         return;
     }
@@ -105,37 +105,37 @@ self.addEventListener('fetch', event => {
     event.respondWith(handleFetch(request));
 });
 
-// 处理网络请求的核心逻辑
+// Core logic for handling network requests
 async function handleFetch(request) {
     const url = new URL(request.url);
     
     try {
-        // HTML页面 - 网络优先，缓存备用
+        // HTML pages - network first, cache fallback
         if (request.headers.get('accept').includes('text/html')) {
             return await handleHtmlRequest(request);
         }
         
-        // 静态资源 - 缓存优先
+        // Static assets - cache first
         if (isStaticAsset(url)) {
             return await handleStaticAsset(request);
         }
         
-        // 图片资源 - 缓存优先，网络备用
+        // Image resources - cache first, network fallback
         if (isImageRequest(request)) {
             return await handleImageRequest(request);
         }
         
-        // API请求 - 网络优先，缓存备用
+        // API requests - network first, cache fallback
         if (isApiRequest(url)) {
             return await handleApiRequest(request);
         }
         
-        // 外部资源 - 缓存优先
+        // External resources - cache first
         if (isExternalResource(url)) {
             return await handleExternalResource(request);
         }
         
-        // 默认策略 - 网络优先
+        // Default strategy - network first
         return await handleDefaultRequest(request);
         
     } catch (error) {
@@ -144,46 +144,46 @@ async function handleFetch(request) {
     }
 }
 
-// 处理HTML请求 - 网络优先策略
+// Handle HTML requests - network first strategy
 async function handleHtmlRequest(request) {
     const cache = await caches.open(DYNAMIC_CACHE_NAME);
     
     try {
-        // 尝试从网络获取最新版本
+        // Try to get latest version from network
         const networkResponse = await fetch(request);
         
         if (networkResponse.ok) {
-            // 缓存最新版本
+            // Cache latest version
             cache.put(request, networkResponse.clone());
             return networkResponse;
         }
         
         throw new Error('Network response not ok');
     } catch (error) {
-        // 网络失败，从缓存获取
+        // Network failed, get from cache
         const cachedResponse = await cache.match(request);
         if (cachedResponse) {
             console.log('Service Worker: Serving HTML from cache');
             return cachedResponse;
         }
         
-        // 返回离线页面
+        // Return offline page
         return await handleOfflineResponse(request);
     }
 }
 
-// 处理静态资源 - 缓存优先策略
+// Handle static assets - cache first strategy
 async function handleStaticAsset(request) {
     const cache = await caches.open(STATIC_CACHE_NAME);
     const cachedResponse = await cache.match(request);
     
     if (cachedResponse) {
-        // 后台更新缓存
+        // Update cache in background
         updateCache(request, cache);
         return cachedResponse;
     }
     
-    // 缓存中没有，从网络获取并缓存
+    // Not in cache, fetch from network and cache
     try {
         const networkResponse = await fetch(request);
         if (networkResponse.ok) {
@@ -196,7 +196,7 @@ async function handleStaticAsset(request) {
     }
 }
 
-// 处理图片请求
+// Handle image requests
 async function handleImageRequest(request) {
     const cache = await caches.open(DYNAMIC_CACHE_NAME);
     const cachedResponse = await cache.match(request);
@@ -208,18 +208,18 @@ async function handleImageRequest(request) {
     try {
         const networkResponse = await fetch(request);
         if (networkResponse.ok) {
-            // 缓存图片，但限制缓存大小
-            await manageCacheSize(cache, 50); // 最多50个图片
+            // Cache image, but limit cache size
+            await manageCacheSize(cache, 50); // Maximum 50 images
             cache.put(request, networkResponse.clone());
         }
         return networkResponse;
     } catch (error) {
-        // 返回占位图片
+        // Return placeholder image
         return createPlaceholderResponse();
     }
 }
 
-// 处理API请求
+// Handle API requests
 async function handleApiRequest(request) {
     const cache = await caches.open(DYNAMIC_CACHE_NAME);
     
@@ -227,19 +227,19 @@ async function handleApiRequest(request) {
         const networkResponse = await fetch(request);
         
         if (networkResponse.ok) {
-            // 缓存API响应（短期）
+            // Cache API response (short term)
             const responseToCache = networkResponse.clone();
-            // 为API响应设置较短的过期时间
+            // Set shorter expiration time for API response
             addCacheHeaders(responseToCache);
             cache.put(request, responseToCache);
         }
         
         return networkResponse;
     } catch (error) {
-        // 网络失败，尝试从缓存获取
+        // Network failed, try to get from cache
         const cachedResponse = await cache.match(request);
         if (cachedResponse) {
-            // 添加离线标识
+            // Add offline identifier
             const response = cachedResponse.clone();
             response.headers.set('X-Served-By', 'sw-cache');
             return response;
@@ -249,7 +249,7 @@ async function handleApiRequest(request) {
     }
 }
 
-// 处理外部资源
+// Handle external resources
 async function handleExternalResource(request) {
     const cache = await caches.open(STATIC_CACHE_NAME);
     const cachedResponse = await cache.match(request);
@@ -270,7 +270,7 @@ async function handleExternalResource(request) {
     }
 }
 
-// 默认请求处理
+// Default request handling
 async function handleDefaultRequest(request) {
     try {
         return await fetch(request);
@@ -286,7 +286,7 @@ async function handleDefaultRequest(request) {
     }
 }
 
-// 后台更新缓存
+// Background cache update
 async function updateCache(request, cache) {
     try {
         const response = await fetch(request);
@@ -298,30 +298,30 @@ async function updateCache(request, cache) {
     }
 }
 
-// 管理缓存大小
+// Manage cache size
 async function manageCacheSize(cache, maxItems) {
     const keys = await cache.keys();
     if (keys.length >= maxItems) {
-        // 删除最旧的条目
+        // Delete oldest entry
         const oldestKey = keys[0];
         await cache.delete(oldestKey);
     }
 }
 
-// 添加缓存头部
+// Add cache headers
 function addCacheHeaders(response) {
-    response.headers.set('Cache-Control', 'max-age=300'); // 5分钟
+    response.headers.set('Cache-Control', 'max-age=300'); // 5 minutes
     response.headers.set('X-Cache-Timestamp', Date.now().toString());
 }
 
-// 创建占位图片响应
+// Create placeholder image response
 function createPlaceholderResponse() {
     const svg = `
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
             <rect width="300" height="200" fill="#f0f0f0"/>
             <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" 
                   fill="#999" font-family="Arial" font-size="16">
-                图片加载中...
+                Loading image...
             </text>
         </svg>
     `;
@@ -334,11 +334,11 @@ function createPlaceholderResponse() {
     });
 }
 
-// 处理离线响应
+// Handle offline response
 async function handleOfflineResponse(request) {
     const url = new URL(request.url);
     
-    // 如果请求的是HTML页面，返回缓存的首页
+    // If requesting HTML page, return cached homepage
     if (request.headers.get('accept').includes('text/html')) {
         const cache = await caches.open(STATIC_CACHE_NAME);
         const cachedIndex = await cache.match('/');
@@ -348,10 +348,10 @@ async function handleOfflineResponse(request) {
         }
     }
     
-    // 返回离线消息
+    // Return offline message
     return new Response(
         JSON.stringify({
-            message: '您当前处于离线状态，请检查网络连接',
+            message: 'You are currently offline, please check your network connection',
             offline: true,
             timestamp: Date.now()
         }),
@@ -366,25 +366,25 @@ async function handleOfflineResponse(request) {
     );
 }
 
-// 工具函数 - 检查是否为静态资源
+// Utility function - check if static asset
 function isStaticAsset(url) {
     return /\\.(css|js|woff|woff2|ttf|eot|svg|ico)$/i.test(url.pathname);
 }
 
-// 工具函数 - 检查是否为图片请求
+// Utility function - check if image request
 function isImageRequest(request) {
     return request.headers.get('accept').includes('image/') ||
            /\\.(jpg|jpeg|png|gif|webp|svg)$/i.test(new URL(request.url).pathname);
 }
 
-// 工具函数 - 检查是否为API请求
+// Utility function - check if API request
 function isApiRequest(url) {
     return url.pathname.startsWith('/api/') || 
            url.pathname.includes('/api/') ||
            url.hostname.includes('api.');
 }
 
-// 工具函数 - 检查是否为外部资源
+// Utility function - check if external resource
 function isExternalResource(url) {
     return url.hostname !== self.location.hostname &&
            (url.hostname.includes('googleapis.com') ||
@@ -392,7 +392,7 @@ function isExternalResource(url) {
             url.hostname.includes('fonts.gstatic.com'));
 }
 
-// 消息处理 - 与页面通信
+// Message handling - communicate with page
 self.addEventListener('message', event => {
     const { type, data } = event.data;
     
@@ -429,7 +429,7 @@ self.addEventListener('message', event => {
     }
 });
 
-// 清理缓存
+// Clean up cache
 async function cleanupCache() {
     const cacheNames = await caches.keys();
     const oldCaches = cacheNames.filter(name => 
@@ -441,7 +441,7 @@ async function cleanupCache() {
     return Promise.all(oldCaches.map(cache => caches.delete(cache)));
 }
 
-// 预缓存URL
+// Precache URLs
 async function precacheUrls(urls) {
     const cache = await caches.open(DYNAMIC_CACHE_NAME);
     
@@ -459,10 +459,10 @@ async function precacheUrls(urls) {
     return Promise.allSettled(promises);
 }
 
-// 推送通知处理
+// Push notification handling
 self.addEventListener('push', event => {
     const options = {
-        body: '我们有新的产品更新！',
+        body: 'We have new product updates!',
         icon: '/images/icon-192x192.png',
         badge: '/images/badge-72x72.png',
         vibrate: [100, 50, 100],
@@ -473,23 +473,23 @@ self.addEventListener('push', event => {
         actions: [
             {
                 action: 'explore',
-                title: '查看详情',
+                title: 'View Details',
                 icon: '/images/action-explore.png'
             },
             {
                 action: 'close',
-                title: '关闭',
+                title: 'Close',
                 icon: '/images/action-close.png'
             }
         ]
     };
     
     event.waitUntil(
-        self.registration.showNotification('普耐斯机电设备', options)
+        self.registration.showNotification('Punaise Electromechanical Equipment', options)
     );
 });
 
-// 通知点击处理
+// Notification click handling
 self.addEventListener('notificationclick', event => {
     event.notification.close();
     
@@ -500,41 +500,41 @@ self.addEventListener('notificationclick', event => {
     }
 });
 
-// 后台同步
+// Background sync
 self.addEventListener('sync', event => {
     if (event.tag === 'background-sync') {
         event.waitUntil(doBackgroundSync());
     }
 });
 
-// 执行后台同步
+// Execute background sync
 async function doBackgroundSync() {
     try {
-        // 这里可以执行后台数据同步
+        // Background data sync can be executed here
         console.log('Service Worker: Background sync completed');
     } catch (error) {
         console.error('Service Worker: Background sync failed', error);
     }
 }
 
-// 周期性后台同步
+// Periodic background sync
 self.addEventListener('periodicsync', event => {
     if (event.tag === 'periodic-background-sync') {
         event.waitUntil(doPeriodicSync());
     }
 });
 
-// 执行周期性同步
+// Execute periodic sync
 async function doPeriodicSync() {
-    // 定期检查更新
+    // Periodically check for updates
     try {
         const response = await fetch('/api/version');
         const data = await response.json();
         
         if (data.version !== CACHE_NAME) {
-            // 通知用户有新版本可用
-            await self.registration.showNotification('版本更新', {
-                body: '网站有新版本可用，点击刷新页面',
+            // Notify user that new version is available
+            await self.registration.showNotification('Version Update', {
+                body: 'New website version available, click to refresh page',
                 icon: '/images/icon-192x192.png'
             });
         }

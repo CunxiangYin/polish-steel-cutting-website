@@ -46,12 +46,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
     
-    <!-- PWA支持 -->
+    <!-- PWA Support -->
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#667eea">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="普耐斯机电">
+    <meta name="apple-mobile-web-app-title" content="Punaise Mechanical">
     <link rel="apple-touch-icon" href="/images/icon-192x192.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icon-192x192.png">
@@ -1131,63 +1131,63 @@
     
     <!-- PWA Service Worker -->
     <script>
-        // 注册Service Worker
+        // Register Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js')
                     .then(registration => {
-                        console.log('SW注册成功: ', registration.scope);
+                        console.log('SW registered successfully: ', registration.scope);
                         
-                        // 检查更新
+                        // Check for updates
                         registration.addEventListener('updatefound', () => {
                             const newWorker = registration.installing;
                             newWorker.addEventListener('statechange', () => {
                                 if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                    // 显示更新提示
+                                    // Show update notification
                                     showUpdateAvailable();
                                 }
                             });
                         });
                     })
                     .catch(error => {
-                        console.log('SW注册失败: ', error);
+                        console.log('SW registration failed: ', error);
                     });
             });
         }
         
-        // 显示应用更新提示
+        // Show application update notification
         function showUpdateAvailable() {
             const updateBanner = document.createElement('div');
             updateBanner.innerHTML = `
                 <div style="position: fixed; top: 0; left: 0; right: 0; background: #667eea; color: white; 
                             padding: 15px; text-align: center; z-index: 10001; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-                    <span>网站有新版本可用</span>
+                    <span>A new version is available</span>
                     <button onclick="window.location.reload()" 
                             style="background: white; color: #667eea; border: none; padding: 8px 16px; 
                                    border-radius: 20px; margin-left: 15px; cursor: pointer; font-weight: 600;">
-                        立即更新
+                        Update Now
                     </button>
                     <button onclick="this.parentElement.parentElement.remove()" 
                             style="background: transparent; color: white; border: 1px solid white; padding: 8px 16px; 
                                    border-radius: 20px; margin-left: 10px; cursor: pointer;">
-                        稍后更新
+                        Later
                     </button>
                 </div>
             `;
             document.body.appendChild(updateBanner);
         }
         
-        // PWA安装提示
+        // PWA installation prompt
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
             
-            // 显示安装提示
+            // Show install prompt
             showInstallPrompt();
         });
         
-        // 显示PWA安装提示
+        // Show PWA installation prompt
         function showInstallPrompt() {
             const installBanner = document.createElement('div');
             installBanner.id = 'pwaInstallBanner';
@@ -1215,25 +1215,25 @@
             `;
             document.body.appendChild(installBanner);
             
-            // 5秒后自动隐藏
+            // Auto-hide after 5 seconds
             setTimeout(() => {
                 const banner = document.getElementById('pwaInstallBanner');
                 if (banner) banner.remove();
             }, 15000);
         }
         
-        // 执行PWA安装
+        // Execute PWA installation
         function installPWA() {
             if (deferredPrompt) {
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((result) => {
                     if (result.outcome === 'accepted') {
-                        console.log('用户接受PWA安装');
+                        console.log('User accepted PWA installation');
                         if (typeof gtag !== 'undefined') {
                             gtag('event', 'pwa_install', {'result': 'accepted'});
                         }
                     } else {
-                        console.log('用户拒绝PWA安装');
+                        console.log('User declined PWA installation');
                         if (typeof gtag !== 'undefined') {
                             gtag('event', 'pwa_install', {'result': 'dismissed'});
                         }
@@ -1244,9 +1244,9 @@
             }
         }
         
-        // PWA安装完成事件
+        // PWA installation complete event
         window.addEventListener('appinstalled', (evt) => {
-            console.log('PWA安装完成');
+            console.log('PWA installation complete');
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'pwa_installed');
             }
