@@ -1,6 +1,9 @@
 headersOrigin = "inline"
 redirectsOrigin = "inline"
 
+[images]
+remote_images = ["^(?:https:\\/\\/cute-jelly-dc03bf\\.netlify\\.app(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"]
+
 [functions]
 
 [functions."*"]
