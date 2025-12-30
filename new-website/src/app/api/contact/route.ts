@@ -42,7 +42,7 @@ async function sendEmail(data: z.infer<typeof contactFormSchema>) {
   // - CRM system like HubSpot, Salesforce, etc.
   
   console.log('Email would be sent with data:', {
-    to: 'sales@punaise.com',
+    to: '466904802@qq.com',
     from: data.email,
     subject: `联系表单: ${data.subject}`,
     html: `

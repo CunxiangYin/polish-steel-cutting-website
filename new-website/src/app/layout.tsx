@@ -45,7 +45,8 @@ export default function RootLayout({
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+86-755-1234567",
+      "telephone": "+86-755-2644-3680",
+      "email": "466904802@qq.com",
       "contactType": "customer service",
       "availableLanguage": ["zh", "en", "th", "vi", "ms", "id", "es", "pt"]
     },
