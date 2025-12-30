@@ -3,6 +3,15 @@ import { locales, type Locale, defaultLocale } from '@/config/i18n';
 import { Toaster } from 'sonner';
 import type { Metadata } from "next";
 import { TranslationProvider } from '@/contexts/TranslationContext';
+import { 
+  generateEnhancedMetadata, 
+  generateGeoMetadata, 
+  getLocalizedMetaDescription,
+  generateCompanyStructuredData,
+  generateProductStructuredData,
+  generateBreadcrumbStructuredData,
+  marketKeywords
+} from '@/lib/seo';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -15,126 +24,91 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   
-  // Define metadata for each language
-  const metadata = {
-    zh: {
-      title: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商",
-      description: "深圳普耐斯机电设备有限公司，专业从事钢板切割设备、台湾荣华分条机、等离子激光切割系统制造。自2005年起为客户提供优质设备解决方案。",
-      keywords: "钢板切割设备, CNC切割设备, 等离子切割, 激光切割, 火焰切割, 金属制造, 工业切割, 台湾荣华机械",
-      author: "深圳普耐斯机电设备有限公司",
-      siteName: "深圳普耐斯机电设备有限公司",
-      ogDescription: "专业从事钢板切割设备制造，台湾荣华分条机代理，为金属制造行业提供优质解决方案。",
-      altText: "普耐斯钢板切割设备",
-      ogLocale: "zh_CN"
-    },
-    en: {
-      title: "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Professional Steel Cutting Equipment Manufacturer",
-      description: "Shenzhen Punaise Mechanical Equipment Co., Ltd. specializes in steel cutting equipment manufacturing, Taiwan Runghua slitting machines, plasma laser cutting systems. Providing quality equipment solutions since 2005.",
-      keywords: "steel plate cutting, CNC cutting equipment, plasma cutting, laser cutting, flame cutting, metal fabrication, industrial cutting, Taiwan Runghua machinery",
-      author: "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
-      siteName: "Shenzhen Punaise Mechanical Equipment",
-      ogDescription: "Professional steel cutting equipment manufacturer, Taiwan Runghua slitting machine agent, providing quality solutions for metal manufacturing industry.",
-      altText: "Punaise Steel Cutting Equipment",
-      ogLocale: "en_US"
-    },
-    th: {
-      title: "เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล - ผู้ผลิตอุปกรณ์ตัดเหล็กแผ่นมืออาชีพ",
-      description: "เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล ผู้เชี่ยวชาญในการผลิตอุปกรณ์ตัดเหล็กแผ่น เครื่องจักรไต้หวันรุ่งฮั่ว ระบบตัดพลาสม่าและเลเซอร์",
-      keywords: "อุปกรณ์ตัดเหล็กแผ่น, เครื่องตัด CNC, ตัดพลาสม่า, ตัดเลเซอร์, ตัดเปลวไฟ, การผลิตโลหะ, การตัดอุตสาหกรรม",
-      author: "เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล",
-      siteName: "ปูไนส์ อุปกรณ์เครื่องจักรกล",
-      ogDescription: "ผู้ผลิตอุปกรณ์ตัดเหล็กแผ่นมืออาชีพ ให้บริการโซลูชันคุณภาพสูงสำหรับอุตสาหกรรมโลหะ",
-      altText: "อุปกรณ์ตัดเหล็กปูไนส์",
-      ogLocale: "th_TH"
-    },
-    vi: {
-      title: "Công ty Thiết bị Cơ khí Punaise Thâm Quyến - Nhà sản xuất thiết bị cắt tấm thép chuyên nghiệp",
-      description: "Công ty Thiết bị Cơ khí Punaise Thâm Quyến chuyên sản xuất thiết bị cắt tấm thép, máy móc Đài Loan Rong Hua, hệ thống cắt plasma laser",
-      keywords: "thiết bị cắt tấm thép, máy cắt CNC, cắt plasma, cắt laser, cắt khí, chế tạo kim loại, cắt công nghiệp",
-      author: "Công ty Thiết bị Cơ khí Punaise Thâm Quyến",
-      siteName: "Punaise Thiết bị Cơ khí",
-      ogDescription: "Nhà sản xuất thiết bị cắt tấm thép chuyên nghiệp, cung cấp giải pháp chất lượng cao cho ngành công nghiệp kim loại",
-      altText: "Thiết bị cắt thép Punaise",
-      ogLocale: "vi_VN"
-    },
-    ms: {
-      title: "Shenzhen Punaise Mechanical Equipment - Pengeluar Peralatan Pemotongan Plat Keluli Profesional",
-      description: "Shenzhen Punaise Mechanical Equipment pakar dalam pembuatan peralatan pemotongan plat keluli, jentera Taiwan Rong Hua, sistem pemotong plasma laser",
-      keywords: "peralatan pemotongan plat keluli, mesin pemotong CNC, pemotongan plasma, pemotongan laser, pemotongan api, pembuatan logam, pemotongan industri",
-      author: "Shenzhen Punaise Mechanical Equipment",
-      siteName: "Punaise Mechanical Equipment",
-      ogDescription: "Pengeluar peralatan pemotongan plat keluli profesional, menyediakan penyelesaian berkualiti tinggi untuk industri logam",
-      altText: "Peralatan Pemotong Keluli Punaise",
-      ogLocale: "ms_MY"
-    },
-    id: {
-      title: "Shenzhen Punaise Mechanical Equipment - Produsen Peralatan Pemotongan Pelat Baja Profesional",
-      description: "Shenzhen Punaise Mechanical Equipment mengkhususkan diri dalam pembuatan peralatan pemotongan pelat baja, mesin Taiwan Rong Hua, sistem pemotong plasma laser",
-      keywords: "peralatan pemotongan pelat baja, mesin pemotong CNC, pemotongan plasma, pemotongan laser, pemotongan api, manufaktur logam, pemotongan industri",
-      author: "Shenzhen Punaise Mechanical Equipment",
-      siteName: "Punaise Mechanical Equipment",
-      ogDescription: "Produsen peralatan pemotongan pelat baja profesional, menyediakan solusi berkualitas tinggi untuk industri logam",
-      altText: "Peralatan Pemotong Baja Punaise",
-      ogLocale: "id_ID"
-    },
-    es: {
-      title: "Shenzhen Punaise Mechanical Equipment - Fabricante Profesional de Equipos de Corte de Placas de Acero",
-      description: "Shenzhen Punaise Mechanical Equipment se especializa en la fabricación de equipos de corte de placas de acero, maquinaria Taiwan Rong Hua, sistemas de corte por plasma láser",
-      keywords: "equipos de corte de placas de acero, máquinas de corte CNC, corte por plasma, corte por láser, corte por llama, fabricación de metales, corte industrial",
-      author: "Shenzhen Punaise Mechanical Equipment",
-      siteName: "Punaise Mechanical Equipment",
-      ogDescription: "Fabricante profesional de equipos de corte de placas de acero, proporcionando soluciones de alta calidad para la industria metalúrgica",
-      altText: "Equipos de Corte de Acero Punaise",
-      ogLocale: "es_ES"
-    },
-    pt: {
-      title: "Shenzhen Punaise Mechanical Equipment - Fabricante Profissional de Equipamentos de Corte de Chapas de Aço",
-      description: "Shenzhen Punaise Mechanical Equipment especializa-se na fabricação de equipamentos de corte de chapas de aço, maquinário Taiwan Rong Hua, sistemas de corte por plasma laser",
-      keywords: "equipamentos de corte de chapas de aço, máquinas de corte CNC, corte por plasma, corte a laser, corte por chama, fabricação de metais, corte industrial",
-      author: "Shenzhen Punaise Mechanical Equipment",
-      siteName: "Punaise Mechanical Equipment",
-      ogDescription: "Fabricante profissional de equipamentos de corte de chapas de aço, fornecendo soluções de alta qualidade para a indústria metalúrgica",
-      altText: "Equipamentos de Corte de Aço Punaise",
-      ogLocale: "pt_BR"
-    }
+  // Validate locale
+  const validLocale = locales.includes(locale as Locale) ? (locale as Locale) : defaultLocale;
+  
+  // Define localized metadata
+  const localizedTitles = {
+    zh: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商 | CNC等离子激光切割",
+    en: "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Professional Steel Cutting Equipment Manufacturer | CNC Plasma Laser Cutting",
+    th: "เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล - ผู้ผลิตอุปกรณ์ตัดเหล็กแผ่นมืออาชีพ | CNC พลาสม่า เลเซอร์",
+    vi: "Công ty Thiết bị Cơ khí Punaise Thâm Quyến - Nhà sản xuất thiết bị cắt tấm thép chuyên nghiệp | CNC Plasma Laser",
+    ms: "Shenzhen Punaise Mechanical Equipment - Pengeluar Peralatan Pemotongan Plat Keluli Profesional | CNC Plasma Laser",
+    id: "Shenzhen Punaise Mechanical Equipment - Produsen Peralatan Pemotongan Pelat Baja Profesional | CNC Plasma Laser",
+    es: "Shenzhen Punaise Mechanical Equipment - Fabricante Profesional de Equipos de Corte de Placas de Acero | CNC Plasma Láser",
+    pt: "Shenzhen Punaise Mechanical Equipment - Fabricante Profissional de Equipamentos de Corte de Chapas de Aço | CNC Plasma Laser",
   };
 
-  const currentMetadata = metadata[locale as keyof typeof metadata] || metadata.zh;
+  const pageTitle = localizedTitles[validLocale];
+  const pageDescription = getLocalizedMetaDescription(validLocale);
+  
+  // Generate enhanced metadata with all SEO features
+  const enhancedMetadata = generateEnhancedMetadata(
+    validLocale,
+    pageTitle,
+    pageDescription
+  );
+
+  // Add geo-targeting metadata
+  const geoMetadata = generateGeoMetadata(validLocale);
+
+  // Build the other metadata object safely
+  const baseOtherMetadata = enhancedMetadata.other || {};
+  const additionalMetadata = {
+    ...geoMetadata,
+    'format-detection': 'telephone=no',
+    'msapplication-TileColor': '#2563eb',
+    'theme-color': '#2563eb',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'mobile-web-app-capable': 'yes',
+  };
+
+  // Combine metadata objects, ensuring proper types
+  const otherMetadata: { [key: string]: string | number | (string | number)[] } = {};
+  
+  // Add base metadata
+  Object.entries(baseOtherMetadata).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      otherMetadata[key] = value;
+    }
+  });
+  
+  // Add additional metadata
+  Object.entries(additionalMetadata).forEach(([key, value]) => {
+    if (value !== undefined && value !== null) {
+      otherMetadata[key] = value;
+    }
+  });
 
   return {
-    title: currentMetadata.title,
-    description: currentMetadata.description,
-    keywords: currentMetadata.keywords,
-    authors: [{ name: currentMetadata.author }],
-    openGraph: {
-      type: "website",
-      locale: currentMetadata.ogLocale,
-      url: `https://cute-jelly-dc03bf.netlify.app/${locale}`,
-      siteName: currentMetadata.siteName,
-      title: currentMetadata.title,
-      description: currentMetadata.ogDescription,
-      images: [
+    ...enhancedMetadata,
+    other: otherMetadata,
+    verification: {
+      google: 'your-google-site-verification', // Replace with actual verification code
+      yandex: 'your-yandex-verification', // Replace with actual verification code
+      yahoo: 'your-yahoo-verification', // Replace with actual verification code
+      other: {
+        'baidu-site-verification': 'your-baidu-verification', // For Chinese market
+      },
+    },
+    manifest: '/manifest.webmanifest',
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '16x16 32x32' },
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180' },
+      ],
+      other: [
         {
-          url: "/images/punaise-cutting-equipment.jpg",
-          width: 1200,
-          height: 630,
-          alt: currentMetadata.altText,
+          rel: 'mask-icon',
+          url: '/safari-pinned-tab.svg',
+          color: '#2563eb',
         },
       ],
     },
-    alternates: {
-      languages: {
-        'zh': 'https://cute-jelly-dc03bf.netlify.app/zh',
-        'en': 'https://cute-jelly-dc03bf.netlify.app/en',
-        'th': 'https://cute-jelly-dc03bf.netlify.app/th',
-        'vi': 'https://cute-jelly-dc03bf.netlify.app/vi',
-        'ms': 'https://cute-jelly-dc03bf.netlify.app/ms',
-        'id': 'https://cute-jelly-dc03bf.netlify.app/id',
-        'es': 'https://cute-jelly-dc03bf.netlify.app/es',
-        'pt': 'https://cute-jelly-dc03bf.netlify.app/pt',
-        'x-default': 'https://cute-jelly-dc03bf.netlify.app/zh'
-      }
-    }
   };
 }
 
@@ -152,10 +126,12 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const validLocale = locale as Locale;
+
   // Import messages directly to avoid getRequestConfig issues
   let messages;
   try {
-    switch (locale) {
+    switch (validLocale) {
       case 'zh':
         messages = (await import('../../../messages/zh.json')).default;
         break;
@@ -187,10 +163,54 @@ export default async function LocaleLayout({
     messages = (await import('../../../messages/zh.json')).default;
   }
 
+  // Generate structured data
+  const companyStructuredData = generateCompanyStructuredData(validLocale);
+  const productStructuredData = generateProductStructuredData(validLocale);
+  const breadcrumbStructuredData = generateBreadcrumbStructuredData(validLocale);
+
   return (
-    <TranslationProvider messages={messages} locale={locale}>
-      {children}
-      <Toaster />
-    </TranslationProvider>
+    <html lang={validLocale} dir="ltr">
+      <head>
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(companyStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(productStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbStructuredData),
+          }}
+        />
+        
+        {/* Preconnect to external domains for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        
+        {/* Language-specific optimizations */}
+        {validLocale === 'zh' && (
+          <>
+            <link rel="dns-prefetch" href="//baidu.com" />
+            <link rel="dns-prefetch" href="//weibo.com" />
+          </>
+        )}
+      </head>
+      <body>
+        <TranslationProvider messages={messages} locale={validLocale}>
+          {children}
+          <Toaster />
+        </TranslationProvider>
+      </body>
+    </html>
   );
 }
