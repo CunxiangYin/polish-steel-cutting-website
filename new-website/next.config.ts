@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cute-jelly-dc03bf.netlify.app',
+        hostname: 'punaise-equipment.netlify.app',
         port: '',
         pathname: '/**',
       },
@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
   // 环境变量
   env: {
     NEXT_PUBLIC_APP_URL: process.env.NODE_ENV === 'production' 
-      ? 'https://cute-jelly-dc03bf.netlify.app'
+      ? 'https://punaise-equipment.netlify.app'
       : 'http://localhost:3000',
   },
 

@@ -140,6 +140,55 @@
       linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
   }
+  
+  /* Responsive utilities */
+  .container-responsive {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-responsive-h1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
+  }
+  
+  .text-responsive-h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .text-responsive-h3 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8;
+  }
+  
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8;
+  }
+  
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8;
+  }
+  
+  .grid-responsive-4 {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6;
+  }
+  
+  .padding-responsive {
+    @apply py-16 sm:py-20 md:py-24;
+  }
+  
+  .padding-responsive-sm {
+    @apply py-8 sm:py-12 md:py-16;
+  }
+  
+  .margin-responsive {
+    @apply mb-12 sm:mb-16 md:mb-20;
+  }
+  
+  .margin-responsive-sm {
+    @apply mb-8 sm:mb-12 md:mb-16;
+  }
 }
 
 @layer utilities {
@@ -148,6 +197,18 @@
   }
   .animate-spin-reverse {
     animation: spin 6s linear infinite reverse;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out;
+  }
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s ease-in-out infinite;
   }
   .line-clamp-2 {
     display: -webkit-box;
@@ -160,5 +221,63 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .card-hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { gtagFormSubmit, gtagContact } from '@/components/GoogleAnalytics';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -52,6 +53,16 @@ export default function ContactForm() {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       console.log('Contact Form Data:', data);
+      
+      // Track form submission in Google Analytics
+      gtagFormSubmit('contact_form', {
+        company: data.company,
+        service: data.service,
+        has_phone: !!data.phone,
+      });
+      
+      // Track contact method
+      gtagContact('website_form', data.service);
       
       // Show success message
       toast.success('消息发送成功！', {
@@ -106,7 +117,7 @@ export default function ContactForm() {
                 发送另一条消息
               </Button>
               <Button 
-                onClick={() => window.open(`tel:${'+86-755-2644-3680'}`, '_self')}
+                onClick={() => window.open(`tel:${'+86-755-26443680'}`, '_self')}
               >
                 <Phone className="h-4 w-4 mr-2" />
                 立即致电
@@ -301,7 +312,7 @@ export default function ContactForm() {
                 type="button"
                 variant="outline"
                 className="h-12"
-                onClick={() => window.open(`tel:${'+86-755-2644-3680'}`, '_self')}
+                onClick={() => window.open(`tel:${'+86-755-26443680'}`, '_self')}
               >
                 <Phone className="mr-2 h-4 w-4" />
                 直接致电
@@ -313,14 +324,14 @@ export default function ContactForm() {
               <div className="flex flex-col sm:flex-row gap-4 text-center sm:text-left">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-blue-600" />
-                  <span>+86 755-2644-3680</span>
+                  <span>+86 755-26443680</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-600" />
                   <span>466904802@qq.com</span>
                 </div>
                 <div className="text-blue-600 font-medium">
-                  付经理: +86 135-1099-2218
+                  付经理: +86 189-3864-9300
                 </div>
               </div>
             </div>

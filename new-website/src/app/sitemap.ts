@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next'
 export const dynamic = 'force-static'
 
 const baseUrl = process.env.NODE_ENV === 'production'
-  ? 'https://cute-jelly-dc03bf.netlify.app'
+  ? 'https://punaise-equipment.netlify.app'
   : 'http://localhost:3000'
 
 export default function sitemap(): MetadataRoute.Sitemap {

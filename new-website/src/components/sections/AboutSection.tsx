@@ -15,6 +15,7 @@ import {
   Phone
 } from 'lucide-react';
 import { COMPANY_INFO } from '@/lib/constants';
+import { keyPartners, targetCustomers } from '@/data/products';
 
 export default function AboutSection() {
   const features = [
@@ -64,8 +65,7 @@ export default function AboutSection() {
             自2005年起领先钢材切割技术
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            深圳普耐斯机电设备有限公司专业从事钢板、钢板加工设备、辅助设备、零配件及周边材料销售。
-            我们提供技术维修和咨询服务，主营台湾荣华精密机械，为全球金属制造行业服务。
+            {COMPANY_INFO.description}
           </p>
         </div>
 
@@ -201,6 +201,85 @@ export default function AboutSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Partners and Customers Section */}
+        <div className="mt-16 space-y-12">
+          {/* Key Partners */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              主要合作伙伴
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {keyPartners.map((partner, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-2">{partner.name}</h4>
+                        <p className="text-sm text-gray-600 mb-2">{partner.description}</p>
+                        <Badge variant="outline" className="text-xs">
+                          {partner.partnership}
+                        </Badge>
+                        {partner.website && (
+                          <p className="text-xs text-blue-600 mt-1">{partner.website}</p>
+                        )}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Target Customers */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              主要客户群体
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {targetCustomers.map((group, index) => (
+                <Card key={index} className="border-l-4 border-l-orange-500">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-orange-700 flex items-center gap-2">
+                      <Factory className="h-5 w-5" />
+                      {group.category}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      {group.customers.map((customer, customerIndex) => (
+                        <div key={customerIndex} className="flex items-center gap-2">
+                          <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                          <span className="text-gray-700 text-sm">{customer}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Core Values Display */}
+          {COMPANY_INFO.coreValues && (
+            <div className="bg-blue-50 rounded-xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">
+                企业核心价值观
+              </h3>
+              <p className="text-blue-800 text-lg leading-relaxed max-w-4xl mx-auto">
+                {COMPANY_INFO.coreValues}
+              </p>
+              {COMPANY_INFO.slogan && (
+                <div className="mt-4">
+                  <Badge className="bg-blue-600 text-white px-4 py-2 text-sm">
+                    {COMPANY_INFO.slogan}
+                  </Badge>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* CTA Section */}

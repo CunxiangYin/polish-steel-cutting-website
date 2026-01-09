@@ -4,6 +4,9 @@ export interface Company {
   logo: string;
   description: string;
   founded: string;
+  slogan?: string;
+  coreValues?: string;
+  targetCustomers?: string[];
   address: {
     street: string;
     city: string;
@@ -13,8 +16,10 @@ export interface Company {
   };
   contact: {
     phone: string;
+    fax?: string;
     mobile: string;
     email: string;
+    website?: string;
     manager: string;
   };
   services: string[];

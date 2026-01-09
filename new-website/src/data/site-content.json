@@ -1,0 +1,318 @@
+{
+  "hero": {
+    "title": {
+      "zh": "专业钢板切割设备制造商",
+      "en": "Professional Steel Cutting Equipment Manufacturer",
+      "th": "ผู้ผลิตอุปกรณ์ตัดแผ่นเหล็กมืออาชีพ",
+      "vi": "Nhà Sản Xuất Thiết Bị Cắt Thép Chuyên Nghiệp",
+      "ms": "Pengilang Peralatan Pemotong Keluli Profesional",
+      "id": "Produsen Peralatan Pemotong Baja Profesional",
+      "es": "Fabricante Profesional de Equipos de Corte de Acero",
+      "pt": "Fabricante Profissional de Equipamentos de Corte de Aço"
+    },
+    "subtitle": {
+      "zh": "作为综合性贸易公司，我们专门服务于大型钢材加工配送中心。主营业务包括大型钢板切割设备和周边设备的销售、安装、调试及售后服务，以及专业配套配件、耗材和工具的销售。",
+      "en": "As a comprehensive trading company, we specialize in serving large steel processing and distribution centers. Our main business includes sales, installation, commissioning and after-sales service of large steel plate cutting equipment and peripheral equipment, as well as sales of specialized accessories, consumables and tools.",
+      "th": "ในฐานะบริษัทการค้าแบบครบวงจร เราเชี่ยวชาญในการให้บริการศูนย์แปรรูปและจำหน่ายเหล็กขนาดใหญ่ ธุรกิจหลักของเรา ได้แก่ การขาย การติดตั้ง การทดสอบ และบริการหลังการขายของอุปกรณ์ตัดแผ่นเหล็กขนาดใหญ่และอุปกรณ์ประกอบ รวมถึงการขายอุปกรณ์เสริม วัสดุสิ้นเปลือง และเครื่องมือเฉพาะทาง",
+      "vi": "Là một công ty thương mại toàn diện, chúng tôi chuyên phục vụ các trung tâm chế biến và phân phối thép lớn. Hoạt động kinh doanh chính của chúng tôi bao gồm bán hàng, lắp đặt, vận hành thử nghiệm và dịch vụ hậu mãi của thiết bị cắt thép lớn và thiết bị ngoại vi, cũng như bán phụ kiện chuyên dụng, vật tư tiêu hao và công cụ.",
+      "ms": "Sebagai sebuah syarikat perdagangan yang komprehensif, kami mengkhusus dalam melayani pusat pemprosesan dan pengedaran keluli berskala besar. Perniagaan utama kami termasuk penjualan, pemasangan, pentauliahan dan perkhidmatan selepas jualan peralatan pemotongan plat keluli besar dan peralatan persisian, serta penjualan aksesori khusus, bahan habis pakai dan peralatan.",
+      "id": "Sebagai perusahaan perdagangan yang komprehensif, kami mengkhususkan diri dalam melayani pusat pemrosesan dan distribusi baja skala besar. Bisnis utama kami meliputi penjualan, instalasi, komisioning dan layanan purna jual peralatan pemotongan pelat baja besar dan peralatan periferal, serta penjualan aksesori khusus, bahan habis pakai dan peralatan.",
+      "es": "Como empresa comercial integral, nos especializamos en servir a grandes centros de procesamiento y distribución de acero. Nuestro negocio principal incluye ventas, instalación, puesta en marcha y servicio postventa de equipos de corte de placas de acero grandes y equipos periféricos, así como ventas de accesorios especializados, consumibles y herramientas.",
+      "pt": "Como empresa comercial abrangente, especializamo-nos em servir grandes centros de processamento e distribuição de aço. Nosso negócio principal inclui vendas, instalação, comissionamento e serviço pós-venda de equipamentos de corte de chapas de aço grandes e equipamentos periféricos, bem como vendas de acessórios especializados, consumíveis e ferramentas."
+    },
+    "slogan": {
+      "zh": "专业、全面、用心的服务",
+      "en": "Professional, Comprehensive and Dedicated Service",
+      "th": "บริการที่เป็นมืออาชีพ ครบครัน และใส่ใจ",
+      "vi": "Dịch Vụ Chuyên Nghiệp, Toàn Diện và Tận Tâm",
+      "ms": "Perkhidmatan Profesional, Menyeluruh dan Berdedikasi",
+      "id": "Layanan Profesional, Komprehensif dan Berdedikasi",
+      "es": "Servicio Profesional, Integral y Dedicado",
+      "pt": "Serviço Profissional, Abrangente e Dedicado"
+    },
+    "backgroundImage": "/images/hero-bg.jpg",
+    "buttons": [
+      {
+        "text": {
+          "zh": "获取产品报价",
+          "en": "Get Product Quote",
+          "th": "ขอใบเสนอราคาสินค้า",
+          "vi": "Nhận Báo Giá Sản Phẩm",
+          "ms": "Dapatkan Sebut Harga Produk",
+          "id": "Dapatkan Penawaran Produk",
+          "es": "Obtener Cotización de Producto",
+          "pt": "Obter Cotação do Produto"
+        },
+        "link": "#contact",
+        "primary": true
+      },
+      {
+        "text": {
+          "zh": "技术咨询",
+          "en": "Technical Consultation",
+          "th": "คำปรึกษาด้านเทคนิค",
+          "vi": "Tư Vấn Kỹ Thuật",
+          "ms": "Perundingan Teknikal",
+          "id": "Konsultasi Teknis",
+          "es": "Consultoría Técnica",
+          "pt": "Consultoria Técnica"
+        },
+        "link": "#contact",
+        "primary": false
+      }
+    ]
+  },
+  "stats": [
+    {
+      "number": "60+",
+      "label": {
+        "zh": "年技术传承",
+        "en": "Years of Technical Heritage",
+        "th": "ปีแห่งมรดกทางเทคนิค",
+        "vi": "Năm Di Sản Kỹ Thuật",
+        "ms": "Tahun Warisan Teknikal",
+        "id": "Tahun Warisan Teknis",
+        "es": "Años de Herencia Técnica",
+        "pt": "Anos de Herança Técnica"
+      }
+    },
+    {
+      "number": "8+",
+      "label": {
+        "zh": "核心合作伙伴",
+        "en": "Core Partners",
+        "th": "พันธมิตรหลัก",
+        "vi": "Đối Tác Cốt Lõi",
+        "ms": "Rakan Kongsi Teras",
+        "id": "Mitra Inti",
+        "es": "Socios Principales",
+        "pt": "Parceiros Principais"
+      }
+    },
+    {
+      "number": "12+",
+      "label": {
+        "zh": "主要产品线",
+        "en": "Main Product Lines",
+        "th": "สายผลิตภัณฑ์หลัก",
+        "vi": "Dòng Sản Phẩm Chính",
+        "ms": "Barisan Produk Utama",
+        "id": "Lini Produk Utama",
+        "es": "Líneas de Productos Principales",
+        "pt": "Principais Linhas de Produtos"
+      }
+    },
+    {
+      "number": "24/7",
+      "label": {
+        "zh": "技术支持",
+        "en": "Technical Support",
+        "th": "การสนับสนุนทางเทคนิค",
+        "vi": "Hỗ Trợ Kỹ Thuật",
+        "ms": "Sokongan Teknikal",
+        "id": "Dukungan Teknis",
+        "es": "Soporte Técnico",
+        "pt": "Suporte Técnico"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "taiwan-yunghua",
+      "name": {
+        "zh": "台湾永华钢板切割生产线",
+        "en": "Taiwan Yunghua Steel Cutting Production Line",
+        "th": "สายการผลิตเครื่องตัดแผ่นเหล็กไต้หวันยุงฮัว",
+        "vi": "Dây Chuyền Sản Xuất Cắt Thép Đài Loan Yunghua",
+        "ms": "Barisan Pengeluaran Pemotongan Keluli Taiwan Yunghua",
+        "id": "Lini Produksi Pemotongan Baja Taiwan Yunghua",
+        "es": "Línea de Producción de Corte de Acero Taiwan Yunghua",
+        "pt": "Linha de Produção de Corte de Aço Taiwan Yunghua"
+      },
+      "description": {
+        "zh": "台湾永华机械厂股份有限公司专业设计、制造金属剪切机、分条机，产品行销全球六十年，不断提升研发技能。",
+        "en": "Taiwan Yunghua Machinery Factory Co., Ltd. professionally designs and manufactures metal cutting machines and slitting machines, with products distributed globally for sixty years, continuously improving R&D skills.",
+        "th": "บริษัท Taiwan Yunghua Machinery Factory Co., Ltd. ออกแบบและผลิตเครื่องตัดโลหะและเครื่องแบ่งแผ่นอย่างมืออาชีพ ผลิตภัณฑ์จำหน่ายทั่วโลกมานานหกสิบปี พัฒนาทักษะการวิจัยและพัฒนาอย่างต่อเนื่อง",
+        "vi": "Công ty TNHH Taiwan Yunghua Machinery Factory chuyên thiết kế và sản xuất máy cắt kim loại, máy cắt dải, sản phẩm được phân phối toàn cầu trong sáu mươi năm, không ngừng nâng cao kỹ năng nghiên cứu và phát triển.",
+        "ms": "Taiwan Yunghua Machinery Factory Co., Ltd. mereka bentuk dan mengeluarkan mesin pemotong logam dan mesin pembelah secara profesional, produk dipasarkan secara global selama enam puluh tahun, terus meningkatkan kemahiran R&D.",
+        "id": "Taiwan Yunghua Machinery Factory Co., Ltd. secara profesional merancang dan memproduksi mesin pemotong logam dan mesin slitting, produk dipasarkan secara global selama enam puluh tahun, terus meningkatkan keterampilan R&D.",
+        "es": "Taiwan Yunghua Machinery Factory Co., Ltd. diseña y fabrica profesionalmente máquinas de corte de metal y máquinas de corte longitudinal, con productos distribuidos globalmente durante sesenta años, mejorando continuamente las habilidades de I+D.",
+        "pt": "A Taiwan Yunghua Machinery Factory Co., Ltd. projeta e fabrica profissionalmente máquinas de corte de metal e máquinas de fendimento, com produtos distribuídos globalmente por sessenta anos, melhorando continuamente as habilidades de P&D."
+      },
+      "features": {
+        "zh": ["领先技术", "完美品质", "快捷服务", "精良工艺"],
+        "en": ["Advanced Technology", "Perfect Quality", "Fast Service", "Exquisite Craftsmanship"],
+        "th": ["เทคโนโลยีล้ำสมัย", "คุณภาพสมบูรณ์แบบ", "บริการรวดเร็ว", "งานฝีมือประณีต"],
+        "vi": ["Công Nghệ Tiên Tiến", "Chất Lượng Hoàn Hảo", "Dịch Vụ Nhanh Chóng", "Tay Nghề Tinh Xảo"],
+        "ms": ["Teknologi Termaju", "Kualiti Sempurna", "Perkhidmatan Pantas", "Ketukangan Istimewa"],
+        "id": ["Teknologi Canggih", "Kualitas Sempurna", "Layanan Cepat", "Keahlian Luar Biasa"],
+        "es": ["Tecnología Avanzada", "Calidad Perfecta", "Servicio Rápido", "Artesanía Exquisita"],
+        "pt": ["Tecnologia Avançada", "Qualidade Perfeita", "Serviço Rápido", "Artesanato Requintado"]
+      },
+      "image": "/images/products/yunghua.jpg",
+      "category": "steelCutting"
+    },
+    {
+      "id": "large-equipment",
+      "name": {
+        "zh": "大型钢板切割加工设备",
+        "en": "Large-scale Steel Plate Cutting Processing Equipment",
+        "th": "อุปกรณ์แปรรูปตัดแผ่นเหล็กขนาดใหญ่",
+        "vi": "Thiết Bị Gia Công Cắt Thép Quy Mô Lớn",
+        "ms": "Peralatan Pemprosesan Pemotongan Plat Keluli Berskala Besar",
+        "id": "Peralatan Pemrosesan Pemotongan Pelat Baja Skala Besar",
+        "es": "Equipos de Procesamiento de Corte de Placas de Acero a Gran Escala",
+        "pt": "Equipamentos de Processamento de Corte de Chapas de Aço em Grande Escala"
+      },
+      "description": {
+        "zh": "专业大型钢板切割加工设备，采用先进的切割技术，适用于各种钢材的精密加工。",
+        "en": "Professional large-scale steel plate cutting processing equipment with advanced cutting technology, suitable for precision processing of various steel materials.",
+        "th": "อุปกรณ์แปรรูปตัดแผ่นเหล็กขนาดใหญ่แบบมืออาชีพ พร้อมเทคโนโลยีการตัดที่ทันสมัย เหมาะสำหรับการแปรรูปเหล็กประเภทต่าง ๆ อย่างแม่นยำ",
+        "vi": "Thiết bị gia công cắt thép quy mô lớn chuyên nghiệp với công nghệ cắt tiên tiến, phù hợp cho gia công chính xác các loại vật liệu thép khác nhau.",
+        "ms": "Peralatan pemprosesan pemotongan plat keluli berskala besar yang profesional dengan teknologi pemotongan termaju, sesuai untuk pemprosesan tepat pelbagai bahan keluli.",
+        "id": "Peralatan pemrosesan pemotongan pelat baja skala besar yang profesional dengan teknologi pemotongan canggih, cocok untuk pemrosesan presisi berbagai bahan baja.",
+        "es": "Equipos profesionales de procesamiento de corte de placas de acero a gran escala con tecnología de corte avanzada, adecuados para el procesamiento de precisión de varios materiales de acero.",
+        "pt": "Equipamentos profissionais de processamento de corte de chapas de aço em grande escala com tecnologia de corte avançada, adequados para processamento de precisão de vários materiais de aço."
+      },
+      "features": {
+        "zh": ["先进切割技术", "高精度切割能力", "稳定可靠运行", "适用多种钢材规格"],
+        "en": ["Advanced Cutting Technology", "High Precision Cutting Capability", "Stable and Reliable Operation", "Suitable for Various Steel Specifications"],
+        "th": ["เทคโนโลยีการตัดที่ทันสมัย", "ความสามารถในการตัดที่แม่นยำสูง", "การทำงานที่เสถียรและเชื่อถือได้", "เหมาะสำหรับข้อกำหนดเหล็กหลากหลาย"],
+        "vi": ["Công Nghệ Cắt Tiên Tiến", "Khả Năng Cắt Chính Xác Cao", "Hoạt Động Ổn Định Và Đáng Tin Cậy", "Phù Hợp Với Nhiều Thông Số Kỹ Thuật Thép"],
+        "ms": ["Teknologi Pemotongan Termaju", "Keupayaan Pemotongan Ketepatan Tinggi", "Operasi Stabil Dan Boleh Dipercayai", "Sesuai Untuk Pelbagai Spesifikasi Keluli"],
+        "id": ["Teknologi Pemotongan Canggih", "Kemampuan Pemotongan Presisi Tinggi", "Operasi Stabil Dan Andal", "Cocok Untuk Berbagai Spesifikasi Baja"],
+        "es": ["Tecnología de Corte Avanzada", "Capacidad de Corte de Alta Precisión", "Operación Estable y Confiable", "Adecuado para Varias Especificaciones de Acero"],
+        "pt": ["Tecnologia de Corte Avançada", "Capacidade de Corte de Alta Precisão", "Operação Estável e Confiável", "Adequado para Várias Especificações de Aço"]
+      },
+      "image": "/images/products/large-equipment.jpg",
+      "category": "steelCutting"
+    }
+  ],
+  "services": [
+    {
+      "id": "equipment-maintenance",
+      "name": {
+        "zh": "设备维修、保养与改造",
+        "en": "Equipment Repair, Maintenance & Modification",
+        "th": "การซ่อมแซม บำรุงรักษา และปรับปรุงอุปกรณ์",
+        "vi": "Sửa Chữa, Bảo Trì & Cải Tiến Thiết Bị",
+        "ms": "Pembaikan, Penyelenggaraan & Pengubahsuaian Peralatan",
+        "id": "Perbaikan, Pemeliharaan & Modifikasi Peralatan",
+        "es": "Reparación, Mantenimiento y Modificación de Equipos",
+        "pt": "Reparo, Manutenção e Modificação de Equipamentos"
+      },
+      "description": {
+        "zh": "根据客户设备的购买时间、数量及加工能力，定制月度、季度、年度维护计划。专业技术人员进行全面检查、调试、维修和升级。",
+        "en": "According to the purchase period, quantity and processing capacity of customer equipment, customize monthly, quarterly and annual maintenance plans. Professional technicians conduct comprehensive inspection, debugging, repair and upgrade.",
+        "th": "ตามระยะเวลาการซื้อ ปริมาณ และความสามารถในการแปรรูปของอุปกรณ์ลูกค้า จัดทำแผนการบำรุงรักษารายเดือน รายไตรมาส และรายปี ช่างเทคนิคมืออาชีพดำเนินการตรวจสอบ ดีบัก ซ่อมแซม และอัปเกรดอย่างครอบคลุม",
+        "vi": "Theo thời gian mua, số lượng và khả năng xử lý của thiết bị khách hàng, tùy chỉnh kế hoạch bảo trì hàng tháng, hàng quý và hàng năm. Kỹ thuật viên chuyên nghiệp tiến hành kiểm tra toàn diện, gỡ lỗi, sửa chữa và nâng cấp.",
+        "ms": "Mengikut tempoh pembelian, kuantiti dan kapasiti pemprosesan peralatan pelanggan, sesuaikan rancangan penyelenggaraan bulanan, suku tahunan dan tahunan. Juruteknik profesional menjalankan pemeriksaan menyeluruh, penyahpepijatan, pembaikan dan peningkatan.",
+        "id": "Sesuai dengan periode pembelian, kuantitas dan kapasitas pemrosesan peralatan pelanggan, sesuaikan rencana pemeliharaan bulanan, kuartalan dan tahunan. Teknisi profesional melakukan inspeksi menyeluruh, debugging, perbaikan dan upgrade.",
+        "es": "Según el período de compra, cantidad y capacidad de procesamiento del equipo del cliente, personalizar planes de mantenimiento mensual, trimestral y anual. Los técnicos profesionales realizan inspección integral, depuración, reparación y actualización.",
+        "pt": "De acordo com o período de compra, quantidade e capacidade de processamento do equipamento do cliente, personalizar planos de manutenção mensais, trimestrais e anuais. Técnicos profissionais realizam inspeção abrangente, depuração, reparo e atualização."
+      },
+      "icon": "🔧"
+    },
+    {
+      "id": "dust-proof-shed",
+      "name": {
+        "zh": "防尘棚制作安装",
+        "en": "Dust-proof Shed Manufacturing & Installation",
+        "th": "การผลิตและติดตั้งโรงเก็บกันฝุ่น",
+        "vi": "Sản Xuất & Lắp Đặt Nhà Chống Bụi",
+        "ms": "Pembuatan & Pemasangan Pondok Anti Habuk",
+        "id": "Pembuatan & Pemasangan Gudang Anti Debu",
+        "es": "Fabricación e Instalación de Cobertizo Antipolvo",
+        "pt": "Fabricação e Instalação de Galpão À Prova de Poeira"
+      },
+      "description": {
+        "zh": "根据客户车间条件和生产需求，设计、制造和安装专业防尘棚系统。采用高品质材料和先进工艺，有效控制粉尘污染。",
+        "en": "Based on customer workshop conditions and production requirements, design, manufacture and install professional dust-proof shed systems. Using high-quality materials and advanced technology to effectively control dust pollution.",
+        "th": "ตามสภาพการทำงานของลูกค้าและความต้องการในการผลิต ออกแบบ ผลิต และติดตั้งระบบโรงเก็บกันฝุ่นแบบมืออาชีพ ใช้วัสดุคุณภาพสูงและเทคโนโลยีขั้นสูงเพื่อควบคุมมลพิษฝุ่นได้อย่างมีประสิทธิภาพ",
+        "vi": "Dựa trên điều kiện xưởng và yêu cầu sản xuất của khách hàng, thiết kế, sản xuất và lắp đặt hệ thống nhà chống bụi chuyên nghiệp. Sử dụng vật liệu chất lượng cao và công nghệ tiên tiến để kiểm soát ô nhiễm bụi hiệu quả.",
+        "ms": "Berdasarkan keadaan bengkel pelanggan dan keperluan pengeluaran, reka bentuk, keluarkan dan pasang sistem pondok anti habuk profesional. Menggunakan bahan berkualiti tinggi dan teknologi canggih untuk mengawal pencemaran habuk dengan berkesan.",
+        "id": "Berdasarkan kondisi bengkel pelanggan dan kebutuhan produksi, merancang, memproduksi dan memasang sistem gudang anti debu profesional. Menggunakan bahan berkualitas tinggi dan teknologi canggih untuk mengontrol polusi debu secara efektif.",
+        "es": "Basado en las condiciones del taller del cliente y los requisitos de producción, diseñar, fabricar e instalar sistemas profesionales de cobertizo antipolvo. Utilizando materiales de alta calidad y tecnología avanzada para controlar eficazmente la contaminación por polvo.",
+        "pt": "Com base nas condições da oficina do cliente e requisitos de produção, projetar, fabricar e instalar sistemas profissionais de galpão à prova de poeira. Utilizando materiais de alta qualidade e tecnologia avançada para controlar eficazmente a poluição por poeira."
+      },
+      "icon": "🏭"
+    },
+    {
+      "id": "grinding-processing",
+      "name": {
+        "zh": "圆盘刀片、矫平辊筒磨削加工",
+        "en": "Circular Blade & Leveling Roller Grinding Processing",
+        "th": "การแปรรูปการขัดใบมีดวงกลมและลูกกลิ้งปรับระดับ",
+        "vi": "Gia Công Mài Lưỡi Tròn & Con Lăn San Bằng",
+        "ms": "Pemprosesan Pengisaran Mata Pisau Bulat & Roller Meratakan",
+        "id": "Pemrosesan Penggilingan Pisau Bundar & Roller Perata",
+        "es": "Procesamiento de Rectificado de Cuchilla Circular y Rodillo Nivelador",
+        "pt": "Processamento de Retificação de Lâmina Circular e Rolo Nivelador"
+      },
+      "description": {
+        "zh": "提供圆盘刀片和矫平辊筒的专业精密磨削服务。使用先进的磨削设备和工艺，确保刀具和辊筒的精度和表面质量。",
+        "en": "Providing professional precision grinding services for circular blades and leveling rollers. Using advanced grinding equipment and technology to ensure the accuracy and surface quality of tools and rollers.",
+        "th": "ให้บริการขัดความแม่นยำอย่างมืออาชีพสำหรับใบมีดวงกลมและลูกกลิ้งปรับระดับ ใช้อุปกรณ์ขัดและเทคโนโลยีขั้นสูงเพื่อรับประกันความแม่นยำและคุณภาพผิวหน้าของเครื่องมือและลูกกลิ้ง",
+        "vi": "Cung cấp dịch vụ mài chính xác chuyên nghiệp cho lưỡi tròn và con lăn san bằng. Sử dụng thiết bị và công nghệ mài tiên tiến để đảm bảo độ chính xác và chất lượng bề mặt của dụng cụ và con lăn.",
+        "ms": "Menyediakan perkhidmatan pengisaran ketepatan profesional untuk mata pisau bulat dan roller meratakan. Menggunakan peralatan dan teknologi pengisaran termaju untuk memastikan ketepatan dan kualiti permukaan alatan dan roller.",
+        "id": "Menyediakan layanan penggilingan presisi profesional untuk pisau bundar dan roller perata. Menggunakan peralatan dan teknologi penggilingan canggih untuk memastikan akurasi dan kualitas permukaan alat dan roller.",
+        "es": "Proporcionando servicios profesionales de rectificado de precisión para cuchillas circulares y rodillos niveladores. Utilizando equipos y tecnología de rectificado avanzados para asegurar la precisión y calidad superficial de herramientas y rodillos.",
+        "pt": "Fornecendo serviços profissionais de retificação de precisão para lâminas circulares e rolos niveladores. Utilizando equipamentos e tecnologia de retificação avançados para garantir a precisão e qualidade da superfície de ferramentas e rolos."
+      },
+      "icon": "⚙️"
+    }
+  ],
+  "company": {
+    "name": {
+      "zh": "深圳普耐斯机电设备有限公司",
+      "en": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+      "th": "บริษัท Shenzhen Punaise เครื่องจักรกล จำกัด",
+      "vi": "Công ty TNHH Thiết Bị Cơ Khí Shenzhen Punaise",
+      "ms": "Shenzhen Punaise Mechanical Equipment Sdn. Bhd.",
+      "id": "PT Shenzhen Punaise Mechanical Equipment",
+      "es": "Shenzhen Punaise Equipos Mecánicos, S.L.",
+      "pt": "Shenzhen Punaise Equipamentos Mecânicos Ltda."
+    },
+    "description": {
+      "zh": "作为综合性贸易公司，我们专门服务于大型钢材加工配送中心",
+      "en": "As a comprehensive trading company, we specialize in serving large steel processing and distribution centers",
+      "th": "ในฐานะบริษัทการค้าแบบครบวงจร เราเชี่ยวชาญในการให้บริการศูนย์แปรรูปและจัดจำหน่ายเหล็กขนาดใหญ่",
+      "vi": "Là một công ty thương mại tổng hợp, chúng tôi chuyên phục vụ các trung tâm chế biến và phân phối thép lớn",
+      "ms": "Sebagai syarikat perdagangan komprehensif, kami pakar dalam melayani pusat pemprosesan dan pengedaran keluli besar",
+      "id": "Sebagai perusahaan perdagangan yang komprehensif, kami mengkhususkan diri dalam melayani pusat pemrosesan dan distribusi baja besar",
+      "es": "Como empresa comercial integral, nos especializamos en servir a grandes centros de procesamiento y distribución de acero",
+      "pt": "Como empresa comercial abrangente, especializamo-nos em servir grandes centros de processamento e distribuição de aço"
+    },
+    "mission": {
+      "zh": "为金属制造行业提供最优质的钢材加工设备和专业服务，帮助客户提升生产效率和产品质量。我们致力于成为您值得信赖的设备供应合作伙伴。",
+      "en": "To provide the highest quality steel processing equipment and professional services to the metal manufacturing industry, helping customers improve production efficiency and product quality. We are committed to becoming your trusted equipment supply partner.",
+      "th": "เพื่อให้บริการอุปกรณ์แปรรูปเหล็กและบริการมืออาชีพคุณภาพสูงสุดแก่อุตสาหกรรมการผลิตโลหะ ช่วยลูกค้าปรับปรุงประสิทธิภาพการผลิตและคุณภาพผลิตภัณฑ์ เรามุ่งมั่นที่จะเป็นพันธมิตรในการจัดหาอุปกรณ์ที่ไว้ใจได้ของคุณ",
+      "vi": "Để cung cấp thiết bị gia công thép và dịch vụ chuyên nghiệp chất lượng cao nhất cho ngành sản xuất kim loại, giúp khách hàng cải thiện hiệu quả sản xuất và chất lượng sản phẩm. Chúng tôi cam kết trở thành đối tác cung cấp thiết bị đáng tin cậy của bạn.",
+      "ms": "Untuk menyediakan peralatan pemprosesan keluli dan perkhidmatan profesional berkualiti tertinggi kepada industri pembuatan logam, membantu pelanggan meningkatkan kecekapan pengeluaran dan kualiti produk. Kami komited untuk menjadi rakan kongsi bekalan peralatan yang dipercayai oleh anda.",
+      "id": "Untuk menyediakan peralatan pemrosesan baja dan layanan profesional berkualitas tertinggi kepada industri manufaktur logam, membantu pelanggan meningkatkan efisiensi produksi dan kualitas produk. Kami berkomitmen untuk menjadi mitra penyedia peralatan terpercaya Anda.",
+      "es": "Proporcionar equipos de procesamiento de acero y servicios profesionales de la más alta calidad a la industria de fabricación de metales, ayudando a los clientes a mejorar la eficiencia de producción y la calidad del producto. Estamos comprometidos a convertirnos en su socio de suministro de equipos de confianza.",
+      "pt": "Fornecer equipamentos de processamento de aço e serviços profissionais da mais alta qualidade para a indústria de fabricação de metais, ajudando os clientes a melhorar a eficiência de produção e a qualidade do produto. Estamos comprometidos em nos tornar seu parceiro confiável de fornecimento de equipamentos."
+    },
+    "contact": {
+      "phone": "0755-26443680",
+      "fax": "0755-26443750",
+      "mobile": "+86 189-3864-9300",
+      "manager": "傅经理",
+      "email": "466904802@qq.com",
+      "address": {
+        "zh": "深圳市南山区南新路1003号荔枝大厦608室",
+        "en": "Room 608, Lizhi Building, No.1003 Nanxin Road, Nanshan District, Shenzhen",
+        "th": "ห้อง 608 อาคาร Lizhi เลขที่ 1003 ถนน Nanxin เขต Nanshan เซินเจิ้น",
+        "vi": "Phòng 608, Tòa nhà Lizhi, Số 1003 Đường Nanxin, Quận Nanshan, Thâm Quyến",
+        "ms": "Bilik 608, Bangunan Lizhi, No.1003 Jalan Nanxin, Daerah Nanshan, Shenzhen",
+        "id": "Ruang 608, Gedung Lizhi, No.1003 Jalan Nanxin, Distrik Nanshan, Shenzhen",
+        "es": "Habitación 608, Edificio Lizhi, No.1003 Carretera Nanxin, Distrito Nanshan, Shenzhen",
+        "pt": "Sala 608, Edifício Lizhi, No.1003 Estrada Nanxin, Distrito Nanshan, Shenzhen"
+      }
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2024-12-31T00:00:00Z",
+    "version": "1.0.0"
+  }
+}

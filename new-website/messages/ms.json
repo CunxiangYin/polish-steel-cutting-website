@@ -1,113 +1,175 @@
 {
   "navigation": {
-    "home": "Laman Utama",
-    "products": "Produk",
+    "home": "Utama",
     "about": "Tentang Kami",
-    "contact": "Hubungi Kami",
-    "phone": "Telefon"
+    "products": "Produk",
+    "services": "Perkhidmatan",
+    "contact": "Hubungi",
+    "getQuote": "Dapatkan Sebut Harga"
   },
   "hero": {
-    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
-    "subtitle": "Pengeluar peralatan pemotongan plat keluli profesional, menyediakan penyelesaian peralatan berkualiti tinggi sejak 2005. Pakar dalam mesin pemotong plasma, laser dan jentera Taiwan Rong Hua",
-    "getQuoteButton": "Dapatkan Sebut Harga",
-    "consultButton": "Perundingan Percuma"
+    "title": "Pengeluar Peralatan Pemotongan Keluli Profesional",
+    "subtitle": "Sebagai perusahaan perdagangan yang komprehensif, kami pakar dalam melayani pusat pemprosesan dan pengedaran keluli besar. Perniagaan utama kami termasuk jualan, pemasangan, pentauliahan dan perkhidmatan selepas jualan peralatan pemotongan keluli besar dan peralatan periferal, serta jualan aksesori peralatan khas, bahan habis dan alatan.",
+    "slogan": "Perkhidmatan Profesional, Komprehensif, Berdedikasi",
+    "getQuoteButton": "Dapatkan Sebut Harga Produk",
+    "consultButton": "Perundingan Teknikal"
   },
   "stats": {
-    "experience": {
-      "number": "19+",
-      "label": "Tahun Pengalaman"
+    "heritage": {
+      "number": "60+",
+      "label": "Tahun Warisan Teknikal"
     },
-    "companies": {
-      "number": "500+",
-      "label": "Syarikat Dipercayai"
+    "partners": {
+      "number": "8+",
+      "label": "Rakan Kongsi Teras"
     },
-    "sales": {
-      "number": "1000+",
-      "label": "Mesin Dijual"
+    "products": {
+      "number": "12+",
+      "label": "Barisan Produk Utama"
     },
     "support": {
       "number": "24/7",
-      "label": "Sokongan"
+      "label": "Sokongan Teknikal"
     }
   },
   "products": {
-    "title": "Produk dan Perkhidmatan",
-    "subtitle": "Peralatan pemotongan plat keluli berkualiti tinggi untuk semua keperluan",
+    "title": "Barisan Produk Teras",
+    "subtitle": "Peralatan pemotongan dan pemprosesan keluli profesional berdasarkan 60 tahun warisan teknikal",
+    "badgeText": "Produk Teras",
+    "viewAll": "Lihat Semua Produk",
     "getQuote": "Dapatkan Sebut Harga",
-    "plasma": {
-      "title": "Mesin Pemotong Plasma CNC",
-      "description": "Mesin pemotong plasma CNC ketepatan tinggi, sesuai untuk memotong plat keluli sederhana",
-      "thickness": "Ketebalan: 0.5-30mm",
-      "accuracy": "Ketepatan: ±0.1mm",
-      "features": [
-        "Sistem kawalan CNC termaju",
-        "Kelajuan pemotongan tinggi",
-        "Permukaan potong licin",
-        "Kos pengendalian rendah"
-      ]
+    "getQuoteToast": "Menghasilkan sebut harga untuk anda...",
+    "viewAllToast": "Memaparkan semua maklumat produk...",
+    "imageDisclaimer": "Gambar produk hanya untuk rujukan, sila hubungi kami untuk spesifikasi terperinci",
+    "categories": {
+      "steelCutting": "Peralatan Pemotongan Keluli",
+      "peripheralEquipment": "Peralatan Periferal",
+      "specializedParts": "Bahagian Khusus",
+      "auxiliary": "Peralatan Tambahan"
     },
-    "laser": {
-      "title": "Mesin Pemotong Laser",
-      "description": "Mesin pemotong laser fiber ketepatan tinggi untuk kerja halus dan pemotongan bentuk kompleks",
-      "thickness": "Ketebalan: 0.1-25mm",
-      "accuracy": "Ketepatan: ±0.05mm",
-      "features": [
-        "Laser fiber prestasi tinggi",
-        "Pemotongan tanpa sentuhan",
-        "Ketepatan peringkat mikron",
-        "Pelbagai bahan"
-      ]
+    "featured": {
+      "taiwanYunghua": {
+        "name": "Barisan Pengeluaran Pemotongan Keluli Taiwan Yunghua",
+        "description": "Taiwan Yunghua Machinery Factory Co., Ltd. secara profesional mereka bentuk dan mengeluarkan mesin pemotongan logam dan mesin belahan, dengan produk yang diedarkan di seluruh dunia selama enam puluh tahun, terus meningkatkan kemahiran R&D.",
+        "features": [
+          "Teknologi Termaju",
+          "Kualiti Sempurna",
+          "Perkhidmatan Pantas",
+          "Kraf Halus"
+        ]
+      },
+      "largeEquipment": {
+        "name": "Peralatan Pemprosesan Pemotongan Keluli Berskala Besar",
+        "description": "Peralatan pemprosesan pemotongan keluli berskala besar yang profesional dengan teknologi pemotongan termaju, sesuai untuk pemprosesan tepat pelbagai bahan keluli.",
+        "features": [
+          "Teknologi Pemotongan Termaju",
+          "Keupayaan Pemotongan Ketepatan Tinggi",
+          "Operasi Stabil dan Boleh Dipercayai",
+          "Sesuai untuk Pelbagai Spesifikasi Keluli"
+        ]
+      },
+      "steelCoilCart": {
+        "name": "Kereta Gerak Alih Gegelung Keluli",
+        "description": "Digunakan untuk mengangkut gegelung keluli lebar, peralatan beroperasi dengan lancar dengan bunyi bising yang rendah. Kereta dilengkapi dengan peranti keselamatan untuk mencegah gegelung keluli terbalik.",
+        "features": [
+          "Operasi Lancar, Bunyi Bising Rendah",
+          "Peranti Keselamatan Mencegah Terbalik",
+          "Kawalan Elektrik, Operasi Mudah",
+          "Kelajuan Bergerak 10-20M/MIN"
+        ]
+      },
+      "jdcTensioner": {
+        "name": "Penegang Tali Pinggang JDC Jepun",
+        "description": "Produk berteknologi tinggi berpaten dari Syarikat JDC Jepun. Meningkatkan ketegangan gegelung, mencegah calar permukaan pada gegelung keluli, dan memastikan gegelung yang kemas dan cantik.",
+        "features": [
+          "Teknologi Paten Jepun",
+          "Meningkatkan Ketegangan Gegelung",
+          "Mencegah Calar Permukaan",
+          "Gegelung Kemas dan Cantik"
+        ]
+      },
+      "hydraulicNut": {
+        "name": "Nat Hidraulik",
+        "description": "Aplikasi: Lekapan pengikat mata pisau bulat mesin belahan logam. Boleh mencapai daya pengapit paksi 20-30 tan, mengurangkan kesan mekanikal pada aci mata pisau.",
+        "features": [
+          "Daya Pengapit Paksi 20-30 Tan",
+          "Pengagihan Tekanan Seragam",
+          "Mengurangkan Kesan Aci Mata Pisau",
+          "Operasi Mudah dan Senang"
+        ]
+      }
+    }
+  },
+  "services": {
+    "title": "Perkhidmatan Teknikal Profesional",
+    "subtitle": "Menyediakan perkhidmatan penyelenggaraan peralatan, pengubahsuaian dan sokongan teknikal yang komprehensif",
+    "equipmentMaintenance": {
+      "name": "Pembaikan, Penyelenggaraan & Pengubahsuaian Peralatan",
+      "description": "Mengikut tempoh pembelian peralatan pelanggan, kuantiti dan kapasiti pemprosesan, menyesuaikan pelan penyelenggaraan bulanan, suku tahunan, dan tahunan. Juruteknik profesional menjalankan pemeriksaan menyeluruh, penyahpepijatan, pembaikan dan peningkatan."
     },
-    "flame": {
-      "title": "Mesin Pemotong Api",
-      "description": "Mesin pemotong api untuk plat keluli tebal, jimat kos, sesuai untuk kerja berskala besar",
-      "thickness": "Ketebalan: 5-300mm",
-      "economic": "Jimat Kos",
-      "features": [
-        "Sesuai untuk plat keluli tebal",
-        "Kos pengendalian rendah",
-        "Kelajuan pemotongan tinggi",
-        "Sistem bahan bakar automatik"
-      ]
+    "dustProofShed": {
+      "name": "Pembuatan & Pemasangan Bangsal Kalis Habuk",
+      "description": "Berdasarkan keadaan bengkel pelanggan dan keperluan pengeluaran, mereka bentuk, mengeluarkan dan memasang sistem bangsal kalis habuk profesional. Menggunakan bahan berkualiti tinggi dan teknologi termaju untuk mengawal pencemaran habuk dengan berkesan."
+    },
+    "grindingProcessing": {
+      "name": "Pengisaran Mata Pisau Bulat & Roller Perataan",
+      "description": "Menyediakan perkhidmatan pengisaran tepat profesional untuk mata pisau bulat dan roller perataan. Menggunakan peralatan dan teknologi pengisaran termaju untuk memastikan ketepatan dan kualiti permukaan alatan dan roller."
+    },
+    "advantages": {
+      "professional": {
+        "title": "Teknologi Profesional",
+        "description": "60 tahun kepakaran teknikal yang diwarisi"
+      },
+      "comprehensive": {
+        "title": "Perkhidmatan Komprehensif",
+        "description": "Penyelesaian peralatan sehenti"
+      },
+      "quality": {
+        "title": "Jaminan Kualiti",
+        "description": "Sistem kawalan kualiti yang ketat"
+      },
+      "support": {
+        "title": "Respons Tepat Masa",
+        "description": "Talian hotline sokongan teknikal 24 jam"
+      }
     }
   },
   "about": {
     "title": "Tentang Punaise",
-    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. ditubuhkan pada tahun 2005, adalah pengeluar peralatan pemotongan plat keluli profesional dan ejen jentera Taiwan Rong Hua di China. Kami komited untuk membangunkan teknologi pembuatan dan melayani pelanggan dengan cemerlang",
-    "serviceTitle": "Perkhidmatan Kami",
-    "servicePoints": [
-      "Perundingan dan reka bentuk penyelesaian percuma",
-      "Pemasangan dan latihan jentera",
-      "Perkhidmatan selepas jualan dan penyelenggaraan",
-      "Bekalan alat ganti dan aksesori",
-      "Naik taraf dan penambahbaikan jentera"
-    ],
-    "advantages": {
-      "manufacturing": {
-        "title": "Pembuatan Maju",
-        "description": "Teknologi pembuatan moden"
-      },
-      "technology": {
-        "title": "Teknologi Terdepan",
-        "description": "Sistem kawalan CNC dan perisian terkini"
-      },
-      "service": {
-        "title": "Perkhidmatan Menyeluruh",
-        "description": "Dari perundingan hingga selepas jualan"
-      },
-      "support": {
-        "title": "Sokongan 24/7",
-        "description": "Pasukan teknikal sedia membantu setiap masa"
-      }
+    "companyName": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "description": "Sebagai perusahaan perdagangan yang komprehensif, kami pakar dalam melayani pusat pemprosesan dan pengedaran keluli besar",
+    "coreValues": "Dengan \"Perkhidmatan Profesional, Komprehensif, Berdedikasi\" sebagai falsafah perniagaan kami, kami menyediakan perkhidmatan teknikal profesional kepada pelanggan, bekerja sama untuk pembangunan bersama",
+    "mission": "Misi Kami",
+    "missionDescription": "Untuk menyediakan peralatan pemprosesan keluli berkualiti tertinggi dan perkhidmatan profesional kepada industri pembuatan logam, membantu pelanggan meningkatkan kecekapan pengeluaran dan kualiti produk. Kami komited untuk menjadi rakan kongsi pembekal peralatan yang dipercayai.",
+    "coreValuesTitle": "Nilai Teras",
+    "partnerships": "Perkongsian Utama",
+    "customers": "Kumpulan Pelanggan Sasaran",
+    "achievements": {
+      "title": "Pencapaian Pembangunan",
+      "items": [
+        "Kerjasama mendalam dengan Taiwan Yunghua Machinery Factory",
+        "Ejen berkelayakan Syarikat JDC Jepun",
+        "Melayani kumpulan perusahaan keluli besar",
+        "Sokongan teknikal meliputi seluruh negara"
+      ]
     }
   },
   "contact": {
     "title": "Hubungi Kami",
-    "subtitle": "Sedia untuk perundingan dan perkhidmatan profesional",
+    "subtitle": "Dapatkan penyelesaian peralatan profesional dan sokongan teknikal",
     "info": "Maklumat Hubungan",
     "phone": {
       "label": "Telefon",
-      "number": "+86 755-8888-9999"
+      "number": "0755-26443680"
+    },
+    "fax": {
+      "label": "Faks",
+      "number": "0755-26443750"
+    },
+    "mobile": {
+      "label": "Telefon Bimbit",
+      "number": "+86 189-3864-9300",
+      "manager": "Pengurus Fu"
     },
     "email": {
       "label": "E-mel",
@@ -115,46 +177,54 @@
     },
     "address": {
       "label": "Alamat",
-      "location": "Shenzhen, Guangdong, China"
+      "location": "Bilik 608, Bangunan Lizhi, No.1003 Jalan Nanxin, Daerah Nanshan, Shenzhen"
     },
     "commitment": {
-      "title": "Komitmen Kami",
-      "description": "Kami berkomitmen untuk menyediakan perkhidmatan dan produk berkualiti tinggi dengan sokongan teknikal dan perkhidmatan selepas jualan yang komprehensif"
+      "title": "Komitmen Perkhidmatan",
+      "description": "Dengan \"Perkhidmatan Profesional, Komprehensif, Berdedikasi\" sebagai falsafah perniagaan kami, kami menyediakan perkhidmatan teknikal profesional kepada pelanggan, bekerja sama untuk pembangunan bersama"
     },
     "form": {
-      "title": "Hantar Mesej kepada Kami",
-      "name": "Nama",
-      "phone": "Telefon",
-      "email": "E-mel",
-      "company": "Syarikat",
-      "message": "Mesej",
-      "submit": "Hantar Mesej",
-      "submitSuccess": "Mesej berjaya dihantar!"
+      "title": "Pertanyaan Sebut Harga Pantas",
+      "name": "Nama Anda",
+      "phone": "Telefon Hubungan",
+      "email": "Alamat E-mel",
+      "company": "Nama Syarikat",
+      "message": "Sila huraikan keperluan peralatan atau isu teknikal anda",
+      "submit": "Hantar Pertanyaan",
+      "submitSuccess": "Terima kasih atas pertanyaan anda, kami akan menghubungi anda dalam 24 jam!"
     }
   },
   "footer": {
     "company": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
-    "tagline": "Pengeluar Peralatan Pemotongan Plat Keluli Profesional",
-    "products": "Produk",
-    "productList": [
-      "Mesin Pemotong Plasma CNC",
-      "Mesin Pemotong Laser",
-      "Mesin Pemotong Api",
-      "Jentera Taiwan Rong Hua"
-    ],
-    "services": "Perkhidmatan",
-    "serviceList": [
-      "Perundingan dan reka bentuk",
-      "Pemasangan",
-      "Latihan",
-      "Penyelenggaraan"
-    ],
+    "tagline": "Pembekal Peralatan Pemotongan Keluli Profesional",
+    "products": "Produk Utama",
+    "services": "Perkhidmatan Teknikal",
     "contactInfo": "Maklumat Hubungan",
-    "copyright": "© 2024 Shenzhen Punaise Mechanical Equipment Co., Ltd. Hak cipta terpelihara."
+    "copyright": "Semua Hak Terpelihara",
+    "links": {
+      "privacy": "Dasar Privasi",
+      "terms": "Terma Perkhidmatan",
+      "sitemap": "Peta Laman"
+    }
   },
   "common": {
-    "loading": "Memuatkan",
+    "loading": "Memuatkan...",
     "error": "Ralat berlaku",
-    "success": "Berjaya"
+    "tryAgain": "Cuba Lagi",
+    "close": "Tutup",
+    "confirm": "Sahkan",
+    "cancel": "Batal",
+    "features": "Ciri-ciri",
+    "applications": "Aplikasi",
+    "specifications": "Spesifikasi",
+    "products": " produk",
+    "readMore": "Baca Lagi",
+    "contactUs": "Hubungi Kami",
+    "backToTop": "Kembali ke Atas"
+  },
+  "meta": {
+    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Pengeluar Peralatan Pemotongan Keluli Profesional",
+    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. secara profesional menyediakan barisan pengeluaran pemotongan keluli Taiwan Yunghua, peralatan pemprosesan pemotongan keluli berskala besar, kereta gerak alih gegelung keluli, penegang tali pinggang JDC Jepun dan produk lain' jualan, pemasangan pentauliahan dan perkhidmatan selepas jualan. 60 tahun warisan teknikal, perkhidmatan profesional, komprehensif, berdedikasi.",
+    "keywords": "peralatan pemotongan keluli,Taiwan Yunghua,peralatan pemprosesan keluli,kereta gegelung keluli,penegang tali pinggang,nat hidraulik,Shenzhen Punaise"
   }
 }

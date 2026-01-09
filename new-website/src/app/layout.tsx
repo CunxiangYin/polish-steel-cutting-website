@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   title: "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
   description: "Professional steel cutting equipment manufacturer",
   metadataBase: new URL(process.env.NODE_ENV === 'production' 
-    ? 'https://cute-jelly-dc03bf.netlify.app' 
+    ? 'https://punaise-equipment.netlify.app' 
     : 'http://localhost:3000'),
 };
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const baseUrl = process.env.NODE_ENV === 'production' 
-    ? 'https://cute-jelly-dc03bf.netlify.app' 
+    ? 'https://punaise-equipment.netlify.app' 
     : 'http://localhost:3000';
 
   // Structured Data JSON-LD
@@ -45,7 +46,7 @@ export default function RootLayout({
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+86-755-2644-3680",
+      "telephone": "+86-755-26443680",
       "email": "466904802@qq.com",
       "contactType": "customer service",
       "availableLanguage": ["zh", "en", "th", "vi", "ms", "id", "es", "pt"]
@@ -115,15 +116,15 @@ export default function RootLayout({
         <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b82f6" />
-        <link rel="alternate" hrefLang="zh" href="https://cute-jelly-dc03bf.netlify.app/zh" />
-        <link rel="alternate" hrefLang="en" href="https://cute-jelly-dc03bf.netlify.app/en" />
-        <link rel="alternate" hrefLang="th" href="https://cute-jelly-dc03bf.netlify.app/th" />
-        <link rel="alternate" hrefLang="vi" href="https://cute-jelly-dc03bf.netlify.app/vi" />
-        <link rel="alternate" hrefLang="ms" href="https://cute-jelly-dc03bf.netlify.app/ms" />
-        <link rel="alternate" hrefLang="id" href="https://cute-jelly-dc03bf.netlify.app/id" />
-        <link rel="alternate" hrefLang="es" href="https://cute-jelly-dc03bf.netlify.app/es" />
-        <link rel="alternate" hrefLang="pt" href="https://cute-jelly-dc03bf.netlify.app/pt" />
-        <link rel="alternate" hrefLang="x-default" href="https://cute-jelly-dc03bf.netlify.app/zh" />
+        <link rel="alternate" hrefLang="zh" href="https://punaise-equipment.netlify.app/zh" />
+        <link rel="alternate" hrefLang="en" href="https://punaise-equipment.netlify.app/en" />
+        <link rel="alternate" hrefLang="th" href="https://punaise-equipment.netlify.app/th" />
+        <link rel="alternate" hrefLang="vi" href="https://punaise-equipment.netlify.app/vi" />
+        <link rel="alternate" hrefLang="ms" href="https://punaise-equipment.netlify.app/ms" />
+        <link rel="alternate" hrefLang="id" href="https://punaise-equipment.netlify.app/id" />
+        <link rel="alternate" hrefLang="es" href="https://punaise-equipment.netlify.app/es" />
+        <link rel="alternate" hrefLang="pt" href="https://punaise-equipment.netlify.app/pt" />
+        <link rel="alternate" hrefLang="x-default" href="https://punaise-equipment.netlify.app/zh" />
         
         {/* Structured Data JSON-LD */}
         <script
@@ -140,6 +141,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased" style={{'--font-inter': inter.style.fontFamily} as any}>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>

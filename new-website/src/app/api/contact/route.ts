@@ -62,7 +62,7 @@ async function sendEmail(data: z.infer<typeof contactFormSchema>) {
         </div>
         <div style="margin-top: 20px; padding: 15px; background: #f1f5f9; border-radius: 6px;">
           <small style="color: #64748b;">
-            此邮件由 ${process.env.NODE_ENV === 'production' ? 'https://cute-jelly-dc03bf.netlify.app' : 'localhost:3000'} 自动发送<br>
+            此邮件由 ${process.env.NODE_ENV === 'production' ? 'https://punaise-equipment.netlify.app' : 'localhost:3000'} 自动发送<br>
             发送时间: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
           </small>
         </div>
@@ -145,7 +145,7 @@ export async function OPTIONS() {
     status: 200,
     headers: {
       'Access-Control-Allow-Origin': process.env.NODE_ENV === 'production' 
-        ? 'https://cute-jelly-dc03bf.netlify.app' 
+        ? 'https://punaise-equipment.netlify.app' 
         : '*',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Authorization',

@@ -40,19 +40,19 @@ export default function FAQSection() {
     {
       id: 'industries-served',
       question: '你们为哪些行业服务？',
-      answer: '我们为各种行业服务，包括金属制造、建筑、造船、汽车制造、重型机械和钢材加工中心。我们的设备适用于中国和东南亚的大规模工业操作和小型制造车间。',
+      answer: '我们主要为大型钢铁企业、钢材加工配送中心服务。主要客户包括宝钢、攀钢、鞍钢、马钢等大型钢铁企业，海尔、长虹、美的等制造业集团下属加工中心，以及日本JFE、三井等国际钢铁集团。',
       category: 'industry'
     },
     {
       id: 'quotation-process',
       question: '如何获取设备报价？',
-      answer: '您可以通过我们网站的联系表单、致电+86 (755) 2644-3680或发送邮件至466904802@qq.com来申请报价。请提供您的切割要求、材料规格和产量的详细信息以获得准确报价。付经理将亲自协助技术规格制定。',
+      answer: '您可以通过我们网站的联系表单、致电+86 755-26443680或发送邮件至466904802@qq.com来申请报价。请提供您的切割要求、材料规格和产量的详细信息以获得准确报价。付经理将亲自协助技术规格制定。',
       category: 'sales'
     },
     {
       id: 'quality-assurance',
       question: '你们如何确保设备质量？',
-      answer: '我们只与经过认证的制造商合作，包括台湾荣华等知名品牌。所有设备在发货前都经过严格的质量检查，我们提供全面的保修服务。我们的技术团队定期接受培训以确保最高的服务标准。',
+      answer: '我们是台湾荣华机械厂股份有限公司国内代表处，代理销售60年技术传承的专业设备。同时也是日本JDC合格代理商。所有设备都经过严格的出厂检验，我们提供完善的安装调试和售后服务体系。',
       category: 'quality'
     },
     {
@@ -60,6 +60,24 @@ export default function FAQSection() {
       question: '支付条款和方式是什么？',
       answer: '我们接受多种支付方式，包括银行转账、信用证和分期付款计划。具体的支付条款根据设备类型和订单金额而定。我们的销售团队会为您制定灵活的支付方案。',
       category: 'payment'
+    },
+    {
+      id: 'taiwan-yunghua-partnership',
+      question: '你们与台湾荣华机械的关系是什么？',
+      answer: '我们是台湾荣华机械厂股份有限公司在中国大陆的国内代表处，负责荣华机械大型分条机、剪板机的销售、安装调试以及售后服务。荣华机械拥有60年的专业技术经验，产品遍及世界各地。',
+      category: 'partnership'
+    },
+    {
+      id: 'jdc-products',
+      question: '你们的日本JDC皮带张紧器有什么特点？',
+      answer: '我们是日本JDC公司合格代理商。JDC皮带张紧器是该公司的专利高技术产品，能够增加卷紧张力，避免钢卷表面擦痕，特别适用于不锈钢、彩涂板、铝板等高表面要求材料的加工。',
+      category: 'product'
+    },
+    {
+      id: 'technical-services',
+      question: '你们提供哪些技术服务？',
+      answer: '我们提供全面的技术服务，包括：1.设备维修、保养、改造（定制月度、季度、年度维护计划）；2.防尘棚制作（针对铝板、不锈钢板、汽车面板加工）；3.圆刀、整平辊研磨及辊子包胶（拥有上海机床厂精密外圆磨床）。',
+      category: 'service'
     }
   ];
 
@@ -67,6 +85,7 @@ export default function FAQSection() {
     { id: 'all', name: '全部问题', count: faqs.length },
     { id: 'product', name: '产品相关', count: faqs.filter(f => f.category === 'product').length },
     { id: 'service', name: '服务支持', count: faqs.filter(f => f.category === 'service').length },
+    { id: 'partnership', name: '合作伙伴', count: faqs.filter(f => f.category === 'partnership').length },
     { id: 'logistics', name: '物流交付', count: faqs.filter(f => f.category === 'logistics').length },
     { id: 'sales', name: '销售咨询', count: faqs.filter(f => f.category === 'sales').length }
   ];

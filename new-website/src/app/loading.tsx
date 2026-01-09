@@ -11,11 +11,11 @@ export default function Loading() {
           </div>
           
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
-            正在加载...
+            Loading...
           </h2>
-          
+
           <p className="text-gray-600 text-sm">
-            请稍候，我们正在为您准备内容
+            Please wait while we prepare the content
           </p>
 
           {/* Loading progress animation */}
@@ -33,7 +33,7 @@ export default function Loading() {
           </div>
 
           <p className="text-xs text-gray-400 mt-4">
-            深圳普耐斯机电设备有限公司
+            Punaise Mechanical Equipment
           </p>
         </CardContent>
       </Card>

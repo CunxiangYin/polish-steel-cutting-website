@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 // Base URL for the website
 export const baseUrl = process.env.NODE_ENV === 'production'
-  ? 'https://cute-jelly-dc03bf.netlify.app'
+  ? 'https://punaise-equipment.netlify.app'
   : 'http://localhost:3000';
 
 // Language and region mappings for better SEO
@@ -119,8 +119,8 @@ export function generateCompanyStructuredData(locale: Locale) {
       streetAddress: 'Shenzhen, China',
       addressCountry: 'CN',
     },
-    telephone: '+86 135-1099-2218',
-    email: 'info@punaise.com',
+    telephone: '+86 189-3864-9300',
+    email: '466904802@qq.com',
     foundingDate: '2005',
     industry: 'Industrial Equipment Manufacturing',
     keywords: marketKeywords[locale].join(', '),

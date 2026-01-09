@@ -1,0 +1,132 @@
+{
+  "analysis_results": {
+    "taiwan-yunghua-cutting-line": {
+      "size": [
+        800,
+        599
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 1.34,
+      "brightness_avg": 114.89,
+      "file_size": 149752,
+      "is_landscape": true,
+      "is_square": false,
+      "is_large": false
+    },
+    "steel-coil-cart": {
+      "size": [
+        449,
+        600
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 0.75,
+      "brightness_avg": 113.71,
+      "file_size": 92965,
+      "is_landscape": false,
+      "is_square": false,
+      "is_large": false
+    },
+    "mechanical-coil-flipper": {
+      "size": [
+        800,
+        599
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 1.34,
+      "brightness_avg": 118.66,
+      "file_size": 129595,
+      "is_landscape": true,
+      "is_square": false,
+      "is_large": false
+    },
+    "steel-strip-cutter": {
+      "size": [
+        800,
+        599
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 1.34,
+      "brightness_avg": 129.58,
+      "file_size": 142080,
+      "is_landscape": true,
+      "is_square": false,
+      "is_large": false
+    },
+    "jdc-belt-tensioner": {
+      "size": [
+        569,
+        600
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 0.95,
+      "brightness_avg": 84.57,
+      "file_size": 90717,
+      "is_landscape": false,
+      "is_square": true,
+      "is_large": false
+    },
+    "hydraulic-nut": {
+      "size": [
+        800,
+        526
+      ],
+      "mode": "RGB",
+      "format": "JPEG",
+      "aspect_ratio": 1.52,
+      "brightness_avg": 127.94,
+      "file_size": 100784,
+      "is_landscape": true,
+      "is_square": false,
+      "is_large": false
+    }
+  },
+  "matching_scores": {
+    "taiwan-yunghua-cutting-line": {
+      "score": 1,
+      "max_score": 2,
+      "percentage": 50.0,
+      "expected": "大型横向设备，工业环境背景",
+      "importance": "高"
+    },
+    "steel-coil-cart": {
+      "score": 0,
+      "max_score": 1,
+      "percentage": 0.0,
+      "expected": "移动设备，可能有轮子，承载钢卷",
+      "importance": "中"
+    },
+    "mechanical-coil-flipper": {
+      "score": 1,
+      "max_score": 1,
+      "percentage": 100.0,
+      "expected": "机械臂或翻转装置",
+      "importance": "中"
+    },
+    "steel-strip-cutter": {
+      "score": 0,
+      "max_score": 0,
+      "percentage": 50,
+      "expected": "相对较小的切割设备",
+      "importance": "中"
+    },
+    "jdc-belt-tensioner": {
+      "score": 0,
+      "max_score": 0,
+      "percentage": 50,
+      "expected": "较小的机械部件",
+      "importance": "低"
+    },
+    "hydraulic-nut": {
+      "score": 0,
+      "max_score": 0,
+      "percentage": 50,
+      "expected": "小型紧固件或部件特写",
+      "importance": "低"
+    }
+  }
+}

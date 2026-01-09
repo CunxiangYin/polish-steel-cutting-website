@@ -5,6 +5,22 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Netlify Functions 配置
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# API 路由重定向到 Netlify Functions
+[[redirects]]
+  from = "/api/auth/login"
+  to = "/.netlify/functions/auth-login"
+  status = 200
+
+[[redirects]]
+  from = "/api/auth/verify"
+  to = "/.netlify/functions/auth-verify"
+  status = 200
+
 # 多语言重定向规则
 [[redirects]]
   from = "/"
@@ -59,7 +75,7 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
+    Content-Security-Policy = "default-src 'self' https://embed.tawk.to https://va.tawk.to wss://va.tawk.to https://*.tawk.to wss://*.tawk.to; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.tawk.to https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://embed.tawk.to; img-src 'self' data: https: https://embed.tawk.to https://va.tawk.to https://*.tawk.to https://www.google-analytics.com; font-src 'self' data: https://embed.tawk.to; connect-src 'self' https://embed.tawk.to https://va.tawk.to wss://va.tawk.to https://*.tawk.to wss://*.tawk.to https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com; frame-src https://embed.tawk.to https://va.tawk.to https://*.tawk.to; media-src https://embed.tawk.to https://va.tawk.to https://*.tawk.to;"
 
 # 缓存设置
 [[headers]]
@@ -81,4 +97,4 @@
 [[headers]]
   for = "/zh/"
   [headers.values]
-    Link = '''<https://cute-jelly-dc03bf.netlify.app/zh/>; rel="alternate"; hreflang="zh", <https://cute-jelly-dc03bf.netlify.app/en/>; rel="alternate"; hreflang="en", <https://cute-jelly-dc03bf.netlify.app/th/>; rel="alternate"; hreflang="th", <https://cute-jelly-dc03bf.netlify.app/vi/>; rel="alternate"; hreflang="vi", <https://cute-jelly-dc03bf.netlify.app/ms/>; rel="alternate"; hreflang="ms", <https://cute-jelly-dc03bf.netlify.app/id/>; rel="alternate"; hreflang="id", <https://cute-jelly-dc03bf.netlify.app/es/>; rel="alternate"; hreflang="es", <https://cute-jelly-dc03bf.netlify.app/pt/>; rel="alternate"; hreflang="pt", <https://cute-jelly-dc03bf.netlify.app/zh/>; rel="alternate"; hreflang="x-default"'''
+    Link = '''<https://punaise-equipment.netlify.app/zh/>; rel="alternate"; hreflang="zh", <https://punaise-equipment.netlify.app/en/>; rel="alternate"; hreflang="en", <https://punaise-equipment.netlify.app/th/>; rel="alternate"; hreflang="th", <https://punaise-equipment.netlify.app/vi/>; rel="alternate"; hreflang="vi", <https://punaise-equipment.netlify.app/ms/>; rel="alternate"; hreflang="ms", <https://punaise-equipment.netlify.app/id/>; rel="alternate"; hreflang="id", <https://punaise-equipment.netlify.app/es/>; rel="alternate"; hreflang="es", <https://punaise-equipment.netlify.app/pt/>; rel="alternate"; hreflang="pt", <https://punaise-equipment.netlify.app/zh/>; rel="alternate"; hreflang="x-default"'''

@@ -6,6 +6,17 @@ const defaultLocale = 'zh';
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
+  // Skip middleware for admin routes (more comprehensive check)
+  if (pathname.startsWith('/admin') || pathname === '/admin') {
+    return NextResponse.next();
+  }
+  
+  // Also skip for paths that should not be localized
+  if (pathname.startsWith('/_next') || pathname.startsWith('/api') || 
+      pathname.includes('.') || pathname.startsWith('/favicon')) {
+    return NextResponse.next();
+  }
+  
   // Check if the pathname already has a locale
   const hasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

@@ -1,11 +1,12 @@
 import { Company, NavigationItem, Language, SocialLink } from '@/types/common';
 
 export const COMPANY_INFO: Company = {
-  name: '深圳普耐斯机电设备有限公司',
-  nameEn: 'Shenzhen Punaise Mechanical and Electrical Equipment Co., Ltd.',
+  name: '深圳市普耐斯机电设备有限公司',
+  nameEn: 'Shenzhen Punaise Mechanical Equipment Co., Ltd.',
   logo: '/logo-main.svg',
-  description: '钢板销售、钢板加工设备、辅助设备、零配件及周边材料销售，提供相关产品技术维修和咨询服务，主营台湾荣华精密机械。',
+  description: '为综合性商贸企业，专业服务于大型钢材加工配送中心。主要经营大型钢材裁切设备及周边设备的销售、安装调试和售后服务，并提供设备专用配件、专用耗材和专用工具的销售。',
   founded: '2005',
+  slogan: '专业、全面、用心之服务',
   address: {
     street: '南新路1003号荔枝大厦608室',
     city: '深圳市南山区',
@@ -14,22 +15,35 @@ export const COMPANY_INFO: Company = {
     country: '中国'
   },
   contact: {
-    phone: '+86 755-2644-3680',
-    mobile: '+86 135-1099-2218',
+    phone: '0755-26443680',
+    fax: '0755-26443750',
+    mobile: '+86 189-3864-9300',
     email: '466904802@qq.com',
+    website: 'http://szpolish.com.cn/',
     manager: '付经理'
   },
   services: [
-    '钢板加工设备销售',
-    '台湾荣华机械代理',
-    '设备技术咨询',
-    '维修保养服务',
-    '零配件供应'
+    '钢材裁剪设备的销售、安装和售后服务',
+    '周边设备制作（移动台车、翻倒机、钢带剪断机等）',
+    '专用配件销售（张力皮带、液压螺母、固体润滑条、液体润滑剂等）',
+    '专用耗材经营（钢板呢、纸夹垫、橡胶圈、内径胶套等）',
+    '专业技术服务（设备维修保养改造、防尘棚制作、圆刀、整平辊研磨等）'
   ],
   certifications: [
-    '统一社会信用代码: 914403007703327657',
-    '台湾荣华授权代理商',
-    'ISO质量认证'
+    '台湾荣华机械厂股份有限公司国内代表处',
+    '台湾正记机械股份有限公司合作伙伴',
+    '台湾道德企业有限公司合作伙伴', 
+    '日本米盛铁工所合作伙伴',
+    '日本JDC合格代理商',
+    '六十年专业技术传承'
+  ],
+  coreValues: '以"专业、全面、尽心之服务"为经营方针，为客户提供专业技术服务，携手客户，共同发展',
+  targetCustomers: [
+    '宝钢、攀钢、鞍钢、马钢集团等大型钢铁企业',
+    '海尔、长虹、美的集团下属加工中心',
+    '烨辉钢铁物流中心',
+    '华联五金、富鸿实业、苏利宝钢铁等',
+    '日本JFE(株式)、三井(株式)等国际钢铁集团的下属钢板配送中心'
   ]
 };
 

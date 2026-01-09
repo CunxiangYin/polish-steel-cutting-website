@@ -73,7 +73,7 @@ export default function manifest(): MetadataRoute.Manifest {
     related_applications: [
       {
         platform: 'webapp',
-        url: 'https://cute-jelly-dc03bf.netlify.app/manifest.webmanifest',
+        url: 'https://punaise-equipment.netlify.app/manifest.webmanifest',
       },
     ],
     prefer_related_applications: false,

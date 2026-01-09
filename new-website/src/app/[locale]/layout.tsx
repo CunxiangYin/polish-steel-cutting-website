@@ -196,6 +196,8 @@ export default async function LocaleLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//embed.tawk.to" />
+        <link rel="preconnect" href="https://embed.tawk.to" />
         
         {/* Language-specific optimizations */}
         {validLocale === 'zh' && (
@@ -204,6 +206,23 @@ export default async function LocaleLayout({
             <link rel="dns-prefetch" href="//weibo.com" />
           </>
         )}
+        
+        {/* Tawk.to Chat Widget */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/695496a6d5d3bd197b4d7fbd/1jdp6ovkg';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+              })();
+            `,
+          }}
+        />
       </head>
       <body>
         <TranslationProvider messages={messages} locale={validLocale}>

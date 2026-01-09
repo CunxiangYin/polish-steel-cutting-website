@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Input } from '@/components/ui/input';
 import ProductCard from '@/components/cards/ProductCard';
 import { Search, Filter, Grid, List } from 'lucide-react';
-import { PRODUCTS, getFeaturedProducts } from '@/data/products';
+import { products, getFeaturedProducts } from '@/data/products';
 import { ProductCategory } from '@/types/product';
 import { toast } from 'sonner';
 
@@ -17,13 +17,13 @@ export default function ProductsSection() {
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory | 'all'>('all');
 
   const categories = [
-    { id: 'all', name: '全部产品', count: PRODUCTS.length },
+    { id: 'all', name: '全部产品', count: products.length },
     { id: ProductCategory.STEEL_PLATE_PROCESSING, name: '钢板加工设备', count: 1 },
     { id: ProductCategory.CONVEYOR_SYSTEMS, name: '输送带系统', count: 1 },
     { id: ProductCategory.TAIWAN_RONGHUA, name: '台湾荣华分条机', count: 1 }
   ];
 
-  const filteredProducts = PRODUCTS.filter(product => {
+  const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
     const matchesSearch = searchQuery === '' || 
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -32,7 +32,7 @@ export default function ProductsSection() {
   });
 
   const handleGetQuote = (productId: string) => {
-    const product = PRODUCTS.find(p => p.id === productId);
+    const product = products.find(p => p.id === productId);
     toast.success(`已为您打开${product?.name}的询价窗口`, {
       description: '我们的销售代表将在24小时内与您联系',
     });
@@ -44,7 +44,7 @@ export default function ProductsSection() {
   };
 
   const handleDownloadSpecs = (productId: string) => {
-    const product = PRODUCTS.find(p => p.id === productId);
+    const product = products.find(p => p.id === productId);
     toast.success(`正在下载${product?.name}技术规格书`, {
       description: 'PDF文件将在几秒钟后开始下载',
     });
