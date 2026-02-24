@@ -36,7 +36,7 @@ export default function RootLayout({
     "url": baseUrl,
     "logo": `${baseUrl}/logo-main.svg`,
     "image": `${baseUrl}/logo-main.svg`,
-    "description": "专业从事钢板切割设备、台湾荣华分条机、等离子激光切割系统制造。自2005年起为客户提供优质设备解决方案。",
+    "description": "专业从事钢材裁切设备销售与服务，提供台湾荣华分条机、裁切生产线、皮带张紧器、液压螺母等产品。自2005年起服务全球钢材加工配送中心。",
     "foundingDate": "2005",
     "address": {
       "@type": "PostalAddress",
@@ -52,41 +52,42 @@ export default function RootLayout({
       "availableLanguage": ["zh", "en", "th", "vi", "ms", "id", "es", "pt"]
     },
     "sameAs": [
-      "https://www.linkedin.com/company/punaise",
-      "https://www.facebook.com/punaise",
-      "https://twitter.com/punaise"
+      // TODO: Add real social media links when available
     ],
     "areaServed": [
       "CN", "TH", "VN", "MY", "ID", "ES", "PT", "US", "CA", "AU"
     ],
     "knowsAbout": [
-      "钢板切割设备", "CNC切割设备", "等离子切割", "激光切割", "火焰切割", 
-      "金属制造", "工业切割", "台湾荣华机械"
+      "钢材裁切设备", "分条机", "钢卷分条生产线", "裁切生产线",
+      "皮带张紧器", "液压螺母", "台湾荣华机械", "钢材加工设备"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "钢板切割设备产品目录",
+      "name": "钢材裁切设备产品目录",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Product",
-            "name": "CNC等离子切割机",
-            "description": "高精度CNC等离子切割设备，适用于各种金属材料切割"
+            "name": "台湾荣华钢材裁切生产线",
+            "description": "专业钢材裁切生产线，适用于大型钢材加工配送中心"
           }
         },
         {
           "@type": "Offer", 
           "itemOffered": {
             "@type": "Product",
-            "name": "激光切割系统",
-            "description": "先进的激光切割技术，提供高精度、高效率的金属切割解决方案"
+            "name": "分条机及分条生产线",
+            "description": "高精度钢卷分条设备，台湾荣华品牌"
           }
         },
         {
-          "@type": "Product",
-          "name": "台湾荣华分条机",
-          "description": "台湾荣华品牌分条机设备，专业的金属分条解决方案"
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "皮带张紧器与液压螺母",
+            "description": "钢材裁切设备专用配件，日本JDC公司专利产品"
+          }
         }
       ]
     }
@@ -116,15 +117,15 @@ export default function RootLayout({
         <link rel="alternate icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b82f6" />
-        <link rel="alternate" hrefLang="zh" href="https://punaise-equipment.netlify.app/zh" />
-        <link rel="alternate" hrefLang="en" href="https://punaise-equipment.netlify.app/en" />
-        <link rel="alternate" hrefLang="th" href="https://punaise-equipment.netlify.app/th" />
-        <link rel="alternate" hrefLang="vi" href="https://punaise-equipment.netlify.app/vi" />
-        <link rel="alternate" hrefLang="ms" href="https://punaise-equipment.netlify.app/ms" />
-        <link rel="alternate" hrefLang="id" href="https://punaise-equipment.netlify.app/id" />
-        <link rel="alternate" hrefLang="es" href="https://punaise-equipment.netlify.app/es" />
-        <link rel="alternate" hrefLang="pt" href="https://punaise-equipment.netlify.app/pt" />
-        <link rel="alternate" hrefLang="x-default" href="https://punaise-equipment.netlify.app/zh" />
+        <link rel="alternate" hrefLang="zh" href="https://punaise-equipment.netlify.app/zh/" />
+        <link rel="alternate" hrefLang="en" href="https://punaise-equipment.netlify.app/en/" />
+        <link rel="alternate" hrefLang="th" href="https://punaise-equipment.netlify.app/th/" />
+        <link rel="alternate" hrefLang="vi" href="https://punaise-equipment.netlify.app/vi/" />
+        <link rel="alternate" hrefLang="ms" href="https://punaise-equipment.netlify.app/ms/" />
+        <link rel="alternate" hrefLang="id" href="https://punaise-equipment.netlify.app/id/" />
+        <link rel="alternate" hrefLang="es" href="https://punaise-equipment.netlify.app/es/" />
+        <link rel="alternate" hrefLang="pt" href="https://punaise-equipment.netlify.app/pt/" />
+        <link rel="alternate" hrefLang="x-default" href="https://punaise-equipment.netlify.app/zh/" />
         
         {/* Structured Data JSON-LD */}
         <script

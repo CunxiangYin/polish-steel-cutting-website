@@ -29,8 +29,8 @@ const nextConfig: NextConfig = {
   compress: true,
   
   // 注意：安全头配置在静态导出中无效，需要在netlify.toml中配置
-  // Turbopack配置 (空配置以避免构建错误)
-  turbopack: {},
+  // Turbopack disabled for WASM compatibility
+  // turbopack: {},
   
   // 实验性功能
   experimental: {

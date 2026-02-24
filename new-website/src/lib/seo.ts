@@ -18,72 +18,74 @@ export const localeRegions: Record<Locale, string> = {
   pt: 'pt_BR',
 };
 
-// Market-specific keywords for each language
+// Market-specific keywords for each language - corrected to match actual products
 export const marketKeywords: Record<Locale, string[]> = {
   zh: [
-    '钢板切割设备', 'CNC切割设备', '等离子切割', '激光切割', '火焰切割', 
-    '金属制造', '工业切割', '台湾荣华机械', '深圳普耐斯', '钢铁加工设备',
-    '数控切割机', '钢板加工', '金属切割解决方案', '工业自动化', '制造业设备'
+    '钢材裁切设备', '分条机', '钢卷分条生产线', '台湾荣华机械', '深圳普耐斯',
+    '皮带张紧器', '液压螺母', '钢卷移动台车', '钢材加工设备', '裁切生产线',
+    '钢板加工', '钢材配送中心设备', '分条机刀片', '整平辊研磨', '工业设备供应商'
   ],
   en: [
-    'steel plate cutting', 'CNC cutting equipment', 'plasma cutting', 'laser cutting', 
-    'flame cutting', 'metal fabrication', 'industrial cutting', 'Taiwan Runghua machinery',
-    'Shenzhen Punaise', 'steel processing equipment', 'CNC cutting machine', 'steel plate processing',
-    'metal cutting solutions', 'industrial automation', 'manufacturing equipment'
+    'steel slitting line', 'slitting machine', 'steel coil processing', 'Taiwan Runghua machinery',
+    'Shenzhen Punaise', 'belt tensioner', 'hydraulic nut', 'coil transfer car',
+    'steel processing equipment', 'cut-to-length line', 'steel plate processing',
+    'steel service center equipment', 'slitter blade', 'leveling roller grinding', 'industrial equipment supplier'
   ],
   th: [
-    'อุปกรณ์ตัดเหล็กแผ่น', 'เครื่องตัด CNC', 'ตัดพลาสม่า', 'ตัดเลเซอร์', 'ตัดเปลวไฟ',
-    'การผลิตโลหะ', 'การตัดอุตสาหกรรม', 'เครื่องจักรไต้หวันรุ่งฮั่ว', 'เซินเจิ้นปูไนส์',
-    'อุปกรณ์แปรรูปเหล็ก', 'เครื่องตัดซีเอ็นซี', 'โซลูชันการตัดโลหะ'
+    'เครื่องตัดแบ่งเหล็ก', 'สายการตัดเหล็กม้วน', 'อุปกรณ์แปรรูปเหล็ก', 'เครื่องจักรไต้หวันรุ่งฮั่ว',
+    'เซินเจิ้นปูไนส์', 'ตัวปรับความตึงสายพาน', 'น็อตไฮดรอลิก', 'รถเข็นเหล็กม้วน',
+    'สายการผลิตตัดเหล็ก', 'เครื่องตัดเหล็กแผ่น', 'อุปกรณ์ศูนย์บริการเหล็ก'
   ],
   vi: [
-    'thiết bị cắt tấm thép', 'máy cắt CNC', 'cắt plasma', 'cắt laser', 'cắt khí',
-    'chế tạo kim loại', 'cắt công nghiệp', 'máy móc Đài Loan Rong Hua', 'Shenzhen Punaise',
-    'thiết bị gia công thép', 'máy cắt CNC', 'giải pháp cắt kim loại'
+    'dây chuyền xả băng thép', 'máy xả cuộn thép', 'thiết bị gia công thép', 'máy móc Đài Loan Rong Hua',
+    'Shenzhen Punaise', 'bộ căng đai', 'đai ốc thủy lực', 'xe chuyển cuộn thép',
+    'dây chuyền cắt thép', 'thiết bị trung tâm phân phối thép'
   ],
   ms: [
-    'peralatan pemotongan plat keluli', 'mesin pemotong CNC', 'pemotongan plasma', 
-    'pemotongan laser', 'pemotongan api', 'pembuatan logam', 'pemotongan industri',
-    'jentera Taiwan Rong Hua', 'Shenzhen Punaise', 'peralatan pemprosesan keluli'
+    'mesin slitting keluli', 'barisan pemprosesan keluli', 'peralatan pemprosesan keluli',
+    'jentera Taiwan Rong Hua', 'Shenzhen Punaise', 'pengikat tali sawat', 'nat hidraulik',
+    'troli pemindahan gegelung', 'barisan pemotongan keluli', 'peralatan pusat perkhidmatan keluli'
   ],
   id: [
-    'peralatan pemotongan pelat baja', 'mesin pemotong CNC', 'pemotongan plasma',
-    'pemotongan laser', 'pemotongan api', 'manufaktur logam', 'pemotongan industri',
-    'mesin Taiwan Rong Hua', 'Shenzhen Punaise', 'peralatan pengolahan baja'
+    'mesin slitting baja', 'jalur pemrosesan baja', 'peralatan pengolahan baja',
+    'mesin Taiwan Rong Hua', 'Shenzhen Punaise', 'tensioner sabuk', 'mur hidrolik',
+    'troli transfer koil', 'jalur pemotongan baja', 'peralatan pusat layanan baja'
   ],
   es: [
-    'equipos de corte de placas de acero', 'máquinas de corte CNC', 'corte por plasma',
-    'corte por láser', 'corte por llama', 'fabricación de metales', 'corte industrial',
-    'maquinaria Taiwan Rong Hua', 'Shenzhen Punaise', 'equipos de procesamiento de acero'
+    'línea de corte longitudinal de acero', 'máquina cortadora de bobinas', 'equipos de procesamiento de acero',
+    'maquinaria Taiwan Rong Hua', 'Shenzhen Punaise', 'tensor de correa', 'tuerca hidráulica',
+    'carro de transferencia de bobinas', 'línea de corte a medida', 'equipos de centro de servicio de acero'
   ],
   pt: [
-    'equipamentos de corte de chapas de aço', 'máquinas de corte CNC', 'corte por plasma',
-    'corte a laser', 'corte por chama', 'fabricação de metais', 'corte industrial',
-    'maquinário Taiwan Rong Hua', 'Shenzhen Punaise', 'equipamentos de processamento de aço'
+    'linha de corte longitudinal de aço', 'máquina de corte de bobinas', 'equipamentos de processamento de aço',
+    'maquinário Taiwan Rong Hua', 'Shenzhen Punaise', 'tensor de correia', 'porca hidráulica',
+    'carro de transferência de bobinas', 'linha de corte sob medida', 'equipamentos de centro de serviço de aço'
   ],
 };
 
-// Generate hreflang links for all languages
+// Generate hreflang links for all languages - with trailing slash to match trailingSlash config
 export function generateHreflangLinks(currentLocale: Locale, pathname: string = ''): Record<string, string> {
   const hreflangLinks: Record<string, string> = {};
   
-  // Add all language alternatives
+  // Ensure pathname ends with trailing slash for consistency with trailingSlash: true
+  const normalizedPath = pathname && !pathname.endsWith('/') ? `${pathname}/` : pathname || '/';
+  
   locales.forEach((locale) => {
-    hreflangLinks[locale] = `${baseUrl}/${locale}${pathname}`;
+    hreflangLinks[locale] = `${baseUrl}/${locale}${normalizedPath}`;
   });
   
-  // Add x-default pointing to Chinese (default locale)
-  hreflangLinks['x-default'] = `${baseUrl}/zh${pathname}`;
+  hreflangLinks['x-default'] = `${baseUrl}/zh${normalizedPath}`;
   
   return hreflangLinks;
 }
 
-// Generate canonical URL
+// Generate canonical URL - with trailing slash
 export function generateCanonicalUrl(locale: Locale, pathname: string = ''): string {
-  return `${baseUrl}/${locale}${pathname}`;
+  const normalizedPath = pathname && !pathname.endsWith('/') ? `${pathname}/` : pathname || '/';
+  return `${baseUrl}/${locale}${normalizedPath}`;
 }
 
-// Create structured data for the company
+// Create structured data for the company - corrected to match actual business
 export function generateCompanyStructuredData(locale: Locale) {
   const companyNames = {
     zh: '深圳普耐斯机电设备有限公司',
@@ -97,14 +99,14 @@ export function generateCompanyStructuredData(locale: Locale) {
   };
 
   const descriptions = {
-    zh: '专业从事钢板切割设备、台湾荣华分条机、等离子激光切割系统制造的企业',
-    en: 'Professional manufacturer of steel cutting equipment, Taiwan Runghua slitting machines, and plasma laser cutting systems',
-    th: 'ผู้ผลิตอุปกรณ์ตัดเหล็กแผ่น เครื่องจักรไต้หวันรุ่งฮั่ว และระบบตัดพลาสม่าเลเซอร์อย่างมืออาชีพ',
-    vi: 'Nhà sản xuất chuyên nghiệp thiết bị cắt tấm thép, máy móc Đài Loan Rong Hua và hệ thống cắt plasma laser',
-    ms: 'Pengeluar profesional peralatan pemotongan plat keluli, jentera Taiwan Rong Hua dan sistem pemotong plasma laser',
-    id: 'Produsen profesional peralatan pemotongan pelat baja, mesin Taiwan Rong Hua dan sistem pemotong plasma laser',
-    es: 'Fabricante profesional de equipos de corte de placas de acero, maquinaria Taiwan Rong Hua y sistemas de corte por plasma láser',
-    pt: 'Fabricante profissional de equipamentos de corte de chapas de aço, maquinário Taiwan Rong Hua e sistemas de corte por plasma laser',
+    zh: '专业从事钢材裁切设备销售与服务，提供台湾荣华分条机、裁切生产线、皮带张紧器、液压螺母等产品',
+    en: 'Professional steel slitting and cut-to-length equipment supplier, offering Taiwan Runghua slitting lines, belt tensioners, hydraulic nuts and coil handling equipment',
+    th: 'ผู้จัดจำหน่ายเครื่องตัดแบ่งเหล็กและอุปกรณ์แปรรูปเหล็กมืออาชีพ สายการผลิตตัดเหล็กไต้หวันรุ่งฮั่ว',
+    vi: 'Nhà cung cấp chuyên nghiệp thiết bị xả băng và cắt thép, dây chuyền xả băng Đài Loan Rong Hua',
+    ms: 'Pembekal profesional peralatan slitting dan pemotongan keluli, barisan slitting Taiwan Rong Hua',
+    id: 'Pemasok profesional peralatan slitting dan pemotongan baja, jalur slitting Taiwan Rong Hua',
+    es: 'Proveedor profesional de equipos de corte longitudinal y transversal de acero, líneas de corte Taiwan Rong Hua',
+    pt: 'Fornecedor profissional de equipamentos de corte longitudinal e transversal de aço, linhas de corte Taiwan Rong Hua',
   };
 
   return {
@@ -112,47 +114,48 @@ export function generateCompanyStructuredData(locale: Locale) {
     '@type': 'Organization',
     name: companyNames[locale],
     description: descriptions[locale],
-    url: `${baseUrl}/${locale}`,
+    url: `${baseUrl}/${locale}/`,
     logo: `${baseUrl}/logo-main.svg`,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Shenzhen, China',
+      streetAddress: '南新路1003号荔枝大厦608室',
+      addressLocality: '深圳市南山区',
+      addressRegion: '广东省',
+      postalCode: '518052',
       addressCountry: 'CN',
     },
-    telephone: '+86 189-3864-9300',
+    telephone: '0755-26443680',
     email: '466904802@qq.com',
     foundingDate: '2005',
-    industry: 'Industrial Equipment Manufacturing',
+    industry: 'Steel Processing Equipment',
     keywords: marketKeywords[locale].join(', '),
-    sameAs: [
-      // Add social media links when available
-    ],
+    sameAs: [],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Steel Cutting Equipment',
+      name: 'Steel Cutting & Slitting Equipment',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Product',
-            name: 'CNC Plasma Cutting Equipment',
-            description: 'Professional CNC plasma cutting machines for steel processing',
+            name: locale === 'zh' ? '台湾荣华钢材裁切生产线' : 'Taiwan Runghua Steel Cut-to-Length Line',
+            description: locale === 'zh' ? '专业钢材裁切生产线，适用于大型钢材加工配送中心' : 'Professional steel cut-to-length production line for steel service centers',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Product',
-            name: 'Laser Cutting Equipment',
-            description: 'High-precision laser cutting systems for metal fabrication',
+            name: locale === 'zh' ? '分条机及分条生产线' : 'Slitting Machine & Slitting Line',
+            description: locale === 'zh' ? '高精度钢卷分条设备，台湾荣华品牌' : 'High-precision steel coil slitting equipment, Taiwan Runghua brand',
           },
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Product',
-            name: 'Flame Cutting Equipment',
-            description: 'Economic flame cutting solutions for thick steel plates',
+            name: locale === 'zh' ? '皮带张紧器与液压螺母' : 'Belt Tensioner & Hydraulic Nut',
+            description: locale === 'zh' ? '钢材裁切设备专用配件' : 'Specialized accessories for steel cutting equipment',
           },
         },
       ],
@@ -160,38 +163,38 @@ export function generateCompanyStructuredData(locale: Locale) {
   };
 }
 
-// Generate product structured data
+// Generate product structured data - corrected to match actual products
 export function generateProductStructuredData(locale: Locale) {
   const productNames = {
-    plasma: {
-      zh: 'CNC等离子切割设备',
-      en: 'CNC Plasma Cutting Equipment',
-      th: 'อุปกรณ์ตัดพลาสม่า CNC',
-      vi: 'Thiết bị cắt plasma CNC',
-      ms: 'Peralatan Pemotongan Plasma CNC',
-      id: 'Peralatan Pemotongan Plasma CNC',
-      es: 'Equipo de Corte por Plasma CNC',
-      pt: 'Equipamento de Corte por Plasma CNC',
+    slittingLine: {
+      zh: '台湾荣华钢材裁切生产线',
+      en: 'Taiwan Runghua Steel Cut-to-Length Line',
+      th: 'สายการผลิตตัดเหล็กไต้หวันรุ่งฮั่ว',
+      vi: 'Dây chuyền cắt thép Đài Loan Rong Hua',
+      ms: 'Barisan Pemotongan Keluli Taiwan Rong Hua',
+      id: 'Jalur Pemotongan Baja Taiwan Rong Hua',
+      es: 'Línea de Corte de Acero Taiwan Rong Hua',
+      pt: 'Linha de Corte de Aço Taiwan Rong Hua',
     },
-    laser: {
-      zh: '激光切割设备',
-      en: 'Laser Cutting Equipment',
-      th: 'อุปกรณ์ตัดเลเซอร์',
-      vi: 'Thiết bị cắt laser',
-      ms: 'Peralatan Pemotongan Laser',
-      id: 'Peralatan Pemotongan Laser',
-      es: 'Equipo de Corte por Láser',
-      pt: 'Equipamento de Corte a Laser',
+    slittingMachine: {
+      zh: '分条机及分条生产线',
+      en: 'Slitting Machine & Slitting Line',
+      th: 'เครื่องตัดแบ่งเหล็กและสายการผลิต',
+      vi: 'Máy xả băng và dây chuyền xả băng',
+      ms: 'Mesin Slitting dan Barisan Slitting',
+      id: 'Mesin Slitting dan Jalur Slitting',
+      es: 'Máquina de Corte Longitudinal y Línea',
+      pt: 'Máquina de Corte Longitudinal e Linha',
     },
-    flame: {
-      zh: '火焰切割设备',
-      en: 'Flame Cutting Equipment',
-      th: 'อุปกรณ์ตัดเปลวไฟ',
-      vi: 'Thiết bị cắt khí',
-      ms: 'Peralatan Pemotongan Api',
-      id: 'Peralatan Pemotongan Api',
-      es: 'Equipo de Corte por Llama',
-      pt: 'Equipamento de Corte por Chama',
+    accessories: {
+      zh: '皮带张紧器·液压螺母·钢卷移动台车',
+      en: 'Belt Tensioner · Hydraulic Nut · Coil Transfer Car',
+      th: 'ตัวปรับความตึงสายพาน · น็อตไฮดรอลิก · รถเข็นเหล็กม้วน',
+      vi: 'Bộ căng đai · Đai ốc thủy lực · Xe chuyển cuộn',
+      ms: 'Pengikat Tali Sawat · Nat Hidraulik · Troli Gegelung',
+      id: 'Tensioner Sabuk · Mur Hidrolik · Troli Transfer Koil',
+      es: 'Tensor de Correa · Tuerca Hidráulica · Carro de Bobinas',
+      pt: 'Tensor de Correia · Porca Hidráulica · Carro de Bobinas',
     },
   };
 
@@ -201,9 +204,9 @@ export function generateProductStructuredData(locale: Locale) {
     itemListElement: [
       {
         '@type': 'Product',
-        '@id': `${baseUrl}/${locale}#plasma-cutting`,
-        name: productNames.plasma[locale],
-        category: 'Industrial Equipment',
+        '@id': `${baseUrl}/${locale}/#slitting-line`,
+        name: productNames.slittingLine[locale],
+        category: 'Steel Processing Equipment',
         manufacturer: {
           '@type': 'Organization',
           name: 'Shenzhen Punaise Mechanical Equipment Co., Ltd.',
@@ -216,9 +219,9 @@ export function generateProductStructuredData(locale: Locale) {
       },
       {
         '@type': 'Product',
-        '@id': `${baseUrl}/${locale}#laser-cutting`,
-        name: productNames.laser[locale],
-        category: 'Industrial Equipment',
+        '@id': `${baseUrl}/${locale}/#slitting-machine`,
+        name: productNames.slittingMachine[locale],
+        category: 'Steel Processing Equipment',
         manufacturer: {
           '@type': 'Organization',
           name: 'Shenzhen Punaise Mechanical Equipment Co., Ltd.',
@@ -231,9 +234,9 @@ export function generateProductStructuredData(locale: Locale) {
       },
       {
         '@type': 'Product',
-        '@id': `${baseUrl}/${locale}#flame-cutting`,
-        name: productNames.flame[locale],
-        category: 'Industrial Equipment',
+        '@id': `${baseUrl}/${locale}/#accessories`,
+        name: productNames.accessories[locale],
+        category: 'Steel Processing Equipment Accessories',
         manufacturer: {
           '@type': 'Organization',
           name: 'Shenzhen Punaise Mechanical Equipment Co., Ltd.',
@@ -266,14 +269,9 @@ export function generateBreadcrumbStructuredData(locale: Locale, pathname: strin
       '@type': 'ListItem',
       position: 1,
       name: homeLabels[locale],
-      item: `${baseUrl}/${locale}`,
+      item: `${baseUrl}/${locale}/`,
     },
   ];
-
-  // Add more breadcrumb items based on pathname if needed
-  if (pathname && pathname !== '/') {
-    // This can be extended based on your routing structure
-  }
 
   return {
     '@context': 'https://schema.org',
@@ -282,7 +280,7 @@ export function generateBreadcrumbStructuredData(locale: Locale, pathname: strin
   };
 }
 
-// Enhanced metadata generation with Twitter Cards and additional OG properties
+// Enhanced metadata generation - cleaned up fake placeholders
 export function generateEnhancedMetadata(
   locale: Locale,
   pageTitle: string,
@@ -340,15 +338,14 @@ export function generateEnhancedMetadata(
       title: pageTitle,
       description: pageDescription,
       images: [finalImageUrl],
-      creator: '@punaise_mech',
-      site: '@punaise_mech',
+      // Twitter handles removed - no verified account exists
     },
     other: {
       'og:image:width': '1200',
       'og:image:height': '630',
       'og:updated_time': new Date().toISOString(),
-      'article:publisher': 'https://www.facebook.com/punaise',
-      'fb:app_id': '1234567890', // Replace with actual Facebook App ID
+      // fb:app_id removed - no real Facebook App ID
+      // article:publisher removed - no verified Facebook page
     },
   };
 }
@@ -372,30 +369,30 @@ export function generateGeoMetadata(locale: Locale) {
     'geo.country': geo.country,
     'geo.region': geo.region,
     'geo.placename': geo.city,
-    'ICBM': '22.543096,114.057865', // Shenzhen coordinates for company location
+    'ICBM': '22.543096,114.057865',
     'geo.position': '22.543096;114.057865',
   };
 }
 
-// Industry-specific keywords for different cutting technologies
+// Industry-specific keywords - corrected for actual products
 export const industryKeywords = {
-  plasma: ['CNC plasma cutting', 'plasma torch', 'metal cutting', 'steel fabrication', 'industrial cutting'],
-  laser: ['fiber laser', 'CO2 laser', 'precision cutting', 'sheet metal', 'laser technology'],
-  flame: ['oxy-fuel cutting', 'thick plate cutting', 'heavy steel', 'shipbuilding', 'construction'],
-  general: ['metal working', 'manufacturing', 'automation', 'Taiwan machinery', 'cutting solutions'],
+  slitting: ['steel slitting line', 'coil slitting', 'strip cutting', 'steel coil processing', 'slitter blade'],
+  cutToLength: ['cut-to-length line', 'steel plate cutting', 'leveling machine', 'steel sheet processing'],
+  accessories: ['belt tensioner', 'hydraulic nut', 'coil transfer car', 'solid lubricant bar', 'rubber ring'],
+  general: ['steel service center', 'steel processing', 'Taiwan Runghua', 'industrial equipment', 'steel distribution'],
 };
 
-// Generate market-specific meta descriptions
+// Generate market-specific meta descriptions - corrected
 export function getLocalizedMetaDescription(locale: Locale, productType?: string): string {
   const baseDescriptions = {
-    zh: '深圳普耐斯机电设备有限公司，专业从事钢板切割设备制造，提供CNC等离子、激光、火焰切割解决方案。自2005年起为全球客户提供优质设备。',
-    en: 'Shenzhen Punaise Mechanical Equipment Co., Ltd. specializes in steel cutting equipment manufacturing. Professional CNC plasma, laser, flame cutting solutions since 2005.',
-    th: 'เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล ผู้เชี่ยวชาญในการผลิตอุปกรณ์ตัดเหล็กแผ่น ให้บริการโซลูชันการตัด CNC พลาสม่า เลเซอร์ เปลวไฟตั้งแต่ปี 2005',
-    vi: 'Công ty Thiết bị Cơ khí Punaise Thâm Quyến chuyên sản xuất thiết bị cắt tấm thép. Giải pháp cắt CNC plasma, laser, khí chuyên nghiệp từ năm 2005.',
-    ms: 'Shenzhen Punaise Mechanical Equipment mengkhusus dalam pembuatan peralatan pemotongan plat keluli. Penyelesaian pemotongan CNC plasma, laser, api profesional sejak 2005.',
-    id: 'Shenzhen Punaise Mechanical Equipment mengkhususkan diri dalam pembuatan peralatan pemotongan pelat baja. Solusi pemotongan CNC plasma, laser, api profesional sejak 2005.',
-    es: 'Shenzhen Punaise Mechanical Equipment se especializa en fabricación de equipos de corte de placas de acero. Soluciones profesionales de corte CNC plasma, láser, llama desde 2005.',
-    pt: 'Shenzhen Punaise Equipamentos Mecânicos especializa-se na fabricação de equipamentos de corte de chapas de aço. Soluções profissionais de corte CNC plasma, laser, chama desde 2005.',
+    zh: '深圳普耐斯机电设备有限公司，专业从事钢材裁切设备销售与服务。提供台湾荣华分条机、裁切生产线、皮带张紧器、液压螺母等产品。自2005年起服务全球钢材加工配送中心。',
+    en: 'Shenzhen Punaise Mechanical Equipment Co., Ltd. specializes in steel slitting and cut-to-length equipment. Offering Taiwan Runghua slitting lines, belt tensioners, hydraulic nuts and coil handling solutions since 2005.',
+    th: 'เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล ผู้เชี่ยวชาญด้านอุปกรณ์ตัดแบ่งเหล็กและสายการผลิต จำหน่ายสายการผลิตตัดเหล็กไต้หวันรุ่งฮั่ว ตั้งแต่ปี 2005',
+    vi: 'Công ty Thiết bị Cơ khí Punaise Thâm Quyến chuyên cung cấp thiết bị xả băng và cắt thép. Dây chuyền xả băng Đài Loan Rong Hua, bộ căng đai, đai ốc thủy lực từ năm 2005.',
+    ms: 'Shenzhen Punaise Mechanical Equipment mengkhusus dalam peralatan slitting dan pemotongan keluli. Barisan slitting Taiwan Rong Hua, pengikat tali sawat, nat hidraulik sejak 2005.',
+    id: 'Shenzhen Punaise Mechanical Equipment mengkhususkan diri dalam peralatan slitting dan pemotongan baja. Jalur slitting Taiwan Rong Hua, tensioner sabuk, mur hidrolik sejak 2005.',
+    es: 'Shenzhen Punaise Mechanical Equipment se especializa en equipos de corte longitudinal y transversal de acero. Líneas de corte Taiwan Rong Hua, tensores de correa, tuercas hidráulicas desde 2005.',
+    pt: 'Shenzhen Punaise Equipamentos Mecânicos especializa-se em equipamentos de corte longitudinal e transversal de aço. Linhas de corte Taiwan Rong Hua, tensores de correia, porcas hidráulicas desde 2005.',
   };
 
   return baseDescriptions[locale];

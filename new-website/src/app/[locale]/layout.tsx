@@ -29,14 +29,14 @@ export async function generateMetadata({
   
   // Define localized metadata
   const localizedTitles = {
-    zh: "深圳普耐斯机电设备有限公司 - 专业钢板切割设备制造商 | CNC等离子激光切割",
-    en: "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Professional Steel Cutting Equipment Manufacturer | CNC Plasma Laser Cutting",
-    th: "เซินเจิ้น ปูไนส์ อุปกรณ์เครื่องจักรกล - ผู้ผลิตอุปกรณ์ตัดเหล็กแผ่นมืออาชีพ | CNC พลาสม่า เลเซอร์",
-    vi: "Công ty Thiết bị Cơ khí Punaise Thâm Quyến - Nhà sản xuất thiết bị cắt tấm thép chuyên nghiệp | CNC Plasma Laser",
-    ms: "Shenzhen Punaise Mechanical Equipment - Pengeluar Peralatan Pemotongan Plat Keluli Profesional | CNC Plasma Laser",
-    id: "Shenzhen Punaise Mechanical Equipment - Produsen Peralatan Pemotongan Pelat Baja Profesional | CNC Plasma Laser",
-    es: "Shenzhen Punaise Mechanical Equipment - Fabricante Profesional de Equipos de Corte de Placas de Acero | CNC Plasma Láser",
-    pt: "Shenzhen Punaise Mechanical Equipment - Fabricante Profissional de Equipamentos de Corte de Chapas de Aço | CNC Plasma Laser",
+    zh: "深圳普耐斯机电设备有限公司 - 专业钢材裁切设备供应商 | 分条机·裁切生产线",
+    en: "Shenzhen Punaise Mechanical Equipment - Steel Slitting & Cut-to-Length Equipment Supplier | Taiwan Runghua",
+    th: "เซินเจิ้น ปูไนส์ - ผู้จัดจำหน่ายเครื่องตัดแบ่งเหล็กและสายการผลิตตัดเหล็ก | ไต้หวันรุ่งฮั่ว",
+    vi: "Punaise Thâm Quyến - Nhà cung cấp thiết bị xả băng và cắt thép | Đài Loan Rong Hua",
+    ms: "Shenzhen Punaise - Pembekal Peralatan Slitting & Pemotongan Keluli | Taiwan Rong Hua",
+    id: "Shenzhen Punaise - Pemasok Peralatan Slitting & Pemotongan Baja | Taiwan Rong Hua",
+    es: "Shenzhen Punaise - Proveedor de Equipos de Corte Longitudinal de Acero | Taiwan Rong Hua",
+    pt: "Shenzhen Punaise - Fornecedor de Equipamentos de Corte Longitudinal de Aço | Taiwan Rong Hua",
   };
 
   const pageTitle = localizedTitles[validLocale];
@@ -84,14 +84,12 @@ export async function generateMetadata({
   return {
     ...enhancedMetadata,
     other: otherMetadata,
-    verification: {
-      google: 'your-google-site-verification', // Replace with actual verification code
-      yandex: 'your-yandex-verification', // Replace with actual verification code
-      yahoo: 'your-yahoo-verification', // Replace with actual verification code
-      other: {
-        'baidu-site-verification': 'your-baidu-verification', // For Chinese market
-      },
-    },
+    // TODO: Add verification codes when available:
+    // verification: {
+    //   google: 'your-google-site-verification',
+    //   yandex: 'your-yandex-verification',
+    //   other: { 'baidu-site-verification': 'your-baidu-verification' },
+    // },
     manifest: '/manifest.webmanifest',
     icons: {
       icon: [
