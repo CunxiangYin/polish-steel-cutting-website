@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
+import { getContent, saveAndDeploy } from '@/lib/admin/api';
 import ImageCropper from '@/components/admin/ImageCropper';
 import { getExtensionFromMime, getMimeType } from '@/utils/admin/imageCrop';
 
@@ -166,14 +167,13 @@ export default function ImagesManagementPage() {
     loadImages();
   }, [router]);
 
-  const loadImages = () => {
+  const loadImages = async () => {
     try {
-      const saved = localStorage.getItem('images_content');
-      if (saved) {
-        setImages(JSON.parse(saved));
+      const data = await getContent<ImageItem[]>('images');
+      if (data) {
+        setImages(data);
       } else {
         setImages(DEFAULT_IMAGES);
-        localStorage.setItem('images_content', JSON.stringify(DEFAULT_IMAGES));
       }
     } catch (e) {
       console.error('Failed to load images:', e);
@@ -182,12 +182,16 @@ export default function ImagesManagementPage() {
     setIsLoading(false);
   };
 
-  const saveImages = (newImages: ImageItem[]) => {
+  const saveImages = async (newImages: ImageItem[]) => {
     setIsSaving(true);
     try {
-      localStorage.setItem('images_content', JSON.stringify(newImages));
-      setImages(newImages);
-      logAdminAction('save_images', { count: newImages.length });
+      const { saved } = await saveAndDeploy('images', newImages);
+      if (saved) {
+        setImages(newImages);
+        logAdminAction('save_images', { count: newImages.length });
+      } else {
+        alert('保存失败，请重试');
+      }
     } catch (e) {
       console.error('Failed to save images:', e);
       alert('保存失败，请重试');

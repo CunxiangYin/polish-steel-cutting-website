@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAuthenticated, logAdminAction, getAdminLogs, clearAdminLogs, AdminLogEntry } from '@/lib/admin/client-auth';
+import { getContent, saveContent } from '@/lib/admin/api';
 
 interface DataStats {
   products: number;
@@ -55,27 +56,23 @@ export default function DataManager() {
     setIsLoading(false);
   }, [router]);
 
-  const loadData = () => {
-    // Calculate stats
-    const productsData = localStorage.getItem('products_content');
-    const products = productsData ? JSON.parse(productsData) : [];
-
-    let totalSize = 0;
-    STORAGE_KEYS.forEach(key => {
-      const data = localStorage.getItem(key);
-      if (data) totalSize += data.length;
-    });
+  const loadData = async () => {
+    // Load stats from API
+    const products = await getContent<unknown[]>('products');
+    const hero = await getContent('hero');
+    const about = await getContent('about');
+    const services = await getContent('services');
 
     const savedBackups = localStorage.getItem(BACKUP_KEY);
     const backupList = savedBackups ? JSON.parse(savedBackups) : [];
 
     setStats({
-      products: products.length,
-      hero: !!localStorage.getItem('hero_content'),
-      about: !!localStorage.getItem('about_content'),
-      services: !!localStorage.getItem('services_content'),
+      products: products?.length || 0,
+      hero: !!hero,
+      about: !!about,
+      services: !!services,
       lastBackup: backupList.length > 0 ? backupList[0].timestamp : null,
-      totalStorageUsed: formatBytes(totalSize * 2), // UTF-16 estimation
+      totalStorageUsed: '云端存储',
     });
 
     setBackups(backupList);
@@ -88,7 +85,7 @@ export default function DataManager() {
     return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
   };
 
-  const exportAllData = () => {
+  const exportAllData = async () => {
     try {
       const exportData: Record<string, any> = {
         exportedAt: new Date().toISOString(),
@@ -96,16 +93,11 @@ export default function DataManager() {
         data: {},
       };
 
-      STORAGE_KEYS.forEach(key => {
-        const data = localStorage.getItem(key);
-        if (data) {
-          try {
-            exportData.data[key] = JSON.parse(data);
-          } catch {
-            exportData.data[key] = data;
-          }
-        }
-      });
+      const contentTypes = ['products', 'services', 'hero', 'about', 'images'];
+      for (const type of contentTypes) {
+        const data = await getContent(type);
+        if (data) exportData.data[type] = data;
+      }
 
       const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -130,7 +122,7 @@ export default function DataManager() {
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = (e) => {
+    reader.onload = async (e) => {
       try {
         const content = e.target?.result as string;
         const importedData = JSON.parse(content);
@@ -142,12 +134,15 @@ export default function DataManager() {
         // Create backup before import
         createBackup();
 
-        // Import data
-        Object.entries(importedData.data).forEach(([key, value]) => {
-          if (STORAGE_KEYS.includes(key)) {
-            localStorage.setItem(key, typeof value === 'string' ? value : JSON.stringify(value));
+        // Import data via API
+        const validTypes = ['products', 'services', 'hero', 'about', 'images'];
+        for (const [key, value] of Object.entries(importedData.data)) {
+          // Support both old localStorage keys (e.g. products_content) and new type names
+          const type = key.replace('_content', '');
+          if (validTypes.includes(type)) {
+            await saveContent(type, value);
           }
-        });
+        }
 
         logAdminAction('import_data', {
           keysImported: Object.keys(importedData.data).length,
@@ -164,13 +159,14 @@ export default function DataManager() {
     event.target.value = '';
   };
 
-  const createBackup = () => {
+  const createBackup = async () => {
     try {
       const backupData: Record<string, any> = {};
-      STORAGE_KEYS.forEach(key => {
-        const data = localStorage.getItem(key);
-        if (data) backupData[key] = data;
-      });
+      const contentTypes = ['products', 'services', 'hero', 'about', 'images'];
+      for (const type of contentTypes) {
+        const data = await getContent(type);
+        if (data) backupData[type] = JSON.stringify(data);
+      }
 
       const backup: Backup = {
         id: Date.now().toString(),
@@ -192,18 +188,22 @@ export default function DataManager() {
     setTimeout(() => setMessage(null), 3000);
   };
 
-  const restoreBackup = (backupId: string) => {
+  const restoreBackup = async (backupId: string) => {
     try {
       const backup = backups.find(b => b.id === backupId);
       if (!backup) throw new Error('Backup not found');
 
       // Create backup before restore
-      createBackup();
+      await createBackup();
 
       const backupData = JSON.parse(backup.data);
-      Object.entries(backupData).forEach(([key, value]) => {
-        localStorage.setItem(key, value as string);
-      });
+      const validTypes = ['products', 'services', 'hero', 'about', 'images'];
+      for (const [key, value] of Object.entries(backupData)) {
+        const type = key.replace('_content', '');
+        if (validTypes.includes(type)) {
+          await saveContent(type, JSON.parse(value as string));
+        }
+      }
 
       logAdminAction('restore_backup', { backupId });
       setMessage({ type: 'success', text: '备份恢复成功！页面将刷新...' });
@@ -224,14 +224,16 @@ export default function DataManager() {
     setTimeout(() => setMessage(null), 3000);
   };
 
-  const clearAllData = () => {
+  const clearAllData = async () => {
     try {
       // Create backup first
-      createBackup();
+      await createBackup();
 
-      STORAGE_KEYS.forEach(key => {
-        localStorage.removeItem(key);
-      });
+      // Clear all content types via API (save empty)
+      const contentTypes = ['products', 'services', 'hero', 'about', 'images'];
+      for (const type of contentTypes) {
+        await saveContent(type, null);
+      }
 
       logAdminAction('clear_all_data', {});
       setMessage({ type: 'success', text: '数据已清空！页面将刷新...' });

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
+import { getContent, saveAndDeploy } from '@/lib/admin/api';
 
 interface ContactInfo {
   phone: string;
@@ -88,28 +89,25 @@ export default function AboutEditor() {
       return;
     }
 
-    // Load saved company info
-    const savedInfo = localStorage.getItem('about_content');
-    if (savedInfo) {
-      try {
-        setCompanyInfo({ ...defaultCompanyInfo, ...JSON.parse(savedInfo) });
-      } catch (e) {
-        console.error('Failed to load saved company info');
-      }
-    }
-    setIsLoading(false);
+    // Load saved company info from API
+    getContent<CompanyInfo>('about').then(data => {
+      if (data) setCompanyInfo({ ...defaultCompanyInfo, ...data });
+      setIsLoading(false);
+    }).catch(() => setIsLoading(false));
   }, [router]);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsSaving(true);
     setSaveMessage(null);
 
     try {
-      localStorage.setItem('about_content', JSON.stringify(companyInfo));
-      localStorage.setItem('about_content_updated', new Date().toISOString());
-      logAdminAction('save_about', { company: companyInfo.name });
-
-      setSaveMessage({ type: 'success', text: '保存成功！' });
+      const { saved, deployed } = await saveAndDeploy('about', companyInfo);
+      if (saved) {
+        logAdminAction('save_about', { company: companyInfo.name });
+        setSaveMessage({ type: 'success', text: deployed ? '保存成功，已触发重新部署！' : '保存成功！' });
+      } else {
+        setSaveMessage({ type: 'error', text: '保存失败，请重试' });
+      }
     } catch (error) {
       setSaveMessage({ type: 'error', text: '保存失败，请重试' });
     }

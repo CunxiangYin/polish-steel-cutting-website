@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
+import { getContent, saveAndDeploy } from '@/lib/admin/api';
 
 interface HeroContent {
   title: string;
@@ -52,28 +53,25 @@ export default function HeroEditor() {
       return;
     }
 
-    // Load saved content
-    const savedContent = localStorage.getItem('hero_content');
-    if (savedContent) {
-      try {
-        setContent({ ...defaultContent, ...JSON.parse(savedContent) });
-      } catch (e) {
-        console.error('Failed to load saved content');
-      }
-    }
-    setIsLoading(false);
+    // Load saved content from API
+    getContent<HeroContent>('hero').then(data => {
+      if (data) setContent({ ...defaultContent, ...data });
+      setIsLoading(false);
+    }).catch(() => setIsLoading(false));
   }, [router]);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsSaving(true);
     setSaveMessage(null);
 
     try {
-      localStorage.setItem('hero_content', JSON.stringify(content));
-      localStorage.setItem('hero_content_updated', new Date().toISOString());
-      logAdminAction('save_hero', { title: content.title });
-
-      setSaveMessage({ type: 'success', text: '保存成功！' });
+      const { saved, deployed } = await saveAndDeploy('hero', content);
+      if (saved) {
+        logAdminAction('save_hero', { title: content.title });
+        setSaveMessage({ type: 'success', text: deployed ? '保存成功，已触发重新部署！' : '保存成功！' });
+      } else {
+        setSaveMessage({ type: 'error', text: '保存失败，请重试' });
+      }
     } catch (error) {
       setSaveMessage({ type: 'error', text: '保存失败，请重试' });
     }

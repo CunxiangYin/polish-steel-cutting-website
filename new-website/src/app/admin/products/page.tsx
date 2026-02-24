@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
+import { getContent, saveAndDeploy } from '@/lib/admin/api';
 
 interface Product {
   id: string;
@@ -67,28 +68,25 @@ export default function ProductsEditor() {
       return;
     }
 
-    // Load saved products
-    const savedProducts = localStorage.getItem('products_content');
-    if (savedProducts) {
-      try {
-        setProducts(JSON.parse(savedProducts));
-      } catch (e) {
-        console.error('Failed to load saved products');
-      }
-    }
-    setIsLoading(false);
+    // Load saved products from API
+    getContent<Product[]>('products').then(data => {
+      if (data) setProducts(data);
+      setIsLoading(false);
+    }).catch(() => setIsLoading(false));
   }, [router]);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsSaving(true);
     setSaveMessage(null);
 
     try {
-      localStorage.setItem('products_content', JSON.stringify(products));
-      localStorage.setItem('products_content_updated', new Date().toISOString());
-      logAdminAction('save_products', { count: products.length });
-
-      setSaveMessage({ type: 'success', text: '保存成功！' });
+      const { saved, deployed } = await saveAndDeploy('products', products);
+      if (saved) {
+        logAdminAction('save_products', { count: products.length });
+        setSaveMessage({ type: 'success', text: deployed ? '保存成功，已触发重新部署！' : '保存成功！' });
+      } else {
+        setSaveMessage({ type: 'error', text: '保存失败，请重试' });
+      }
     } catch (error) {
       setSaveMessage({ type: 'error', text: '保存失败，请重试' });
     }

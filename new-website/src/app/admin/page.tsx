@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAuthenticated, logout, getSessionInfo, getAdminLogs } from '@/lib/admin/client-auth';
+import { getContent } from '@/lib/admin/api';
 import GlobalSearch from '@/components/admin/GlobalSearch';
 
 interface MenuItem {
@@ -45,17 +46,14 @@ export default function AdminDashboard() {
     return () => clearInterval(interval);
   }, [router]);
 
-  const loadStats = () => {
+  const loadStats = async () => {
     try {
-      const productsData = localStorage.getItem('products_content');
-      const products = productsData ? JSON.parse(productsData) : [];
-      const backupsData = localStorage.getItem('admin_backups');
-      const backups = backupsData ? JSON.parse(backupsData) : [];
+      const products = await getContent<unknown[]>('products');
       const logs = getAdminLogs();
 
       setStats({
-        products: products.length,
-        backups: backups.length,
+        products: products?.length || 0,
+        backups: 0,
         recentLogs: logs.filter(l => Date.now() - l.timestamp < 24 * 60 * 60 * 1000).length,
       });
     } catch {
@@ -348,9 +346,9 @@ export default function AdminDashboard() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
           </svg>
           <div>
-            <h3 className="font-medium text-amber-800">重要提示</h3>
+            <h3 className="font-medium text-amber-800">提示</h3>
             <p className="text-sm text-amber-700 mt-1">
-              当前编辑的内容保存在浏览器本地存储中。清除浏览器数据会丢失编辑内容。建议定期导出重要数据作为备份。
+              编辑内容保存在云端（Netlify Blobs），保存后会自动触发网站重新部署。
             </p>
           </div>
         </div>

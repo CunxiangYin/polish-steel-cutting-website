@@ -21,6 +21,16 @@
   to = "/.netlify/functions/auth-verify"
   status = 200
 
+[[redirects]]
+  from = "/api/content/*"
+  to = "/.netlify/functions/content/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/api/deploy"
+  to = "/.netlify/functions/deploy"
+  status = 200
+
 # 多语言重定向规则
 [[redirects]]
   from = "/"

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
+import { getContent, saveAndDeploy } from '@/lib/admin/api';
 
 interface Service {
   id: string;
@@ -58,28 +59,25 @@ export default function ServicesEditor() {
       return;
     }
 
-    // Load saved services
-    const savedServices = localStorage.getItem('services_content');
-    if (savedServices) {
-      try {
-        setServices(JSON.parse(savedServices));
-      } catch (e) {
-        console.error('Failed to load saved services');
-      }
-    }
-    setIsLoading(false);
+    // Load saved services from API
+    getContent<Service[]>('services').then(data => {
+      if (data) setServices(data);
+      setIsLoading(false);
+    }).catch(() => setIsLoading(false));
   }, [router]);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     setIsSaving(true);
     setSaveMessage(null);
 
     try {
-      localStorage.setItem('services_content', JSON.stringify(services));
-      localStorage.setItem('services_content_updated', new Date().toISOString());
-      logAdminAction('save_services', { count: services.length });
-
-      setSaveMessage({ type: 'success', text: '保存成功！' });
+      const { saved, deployed } = await saveAndDeploy('services', services);
+      if (saved) {
+        logAdminAction('save_services', { count: services.length });
+        setSaveMessage({ type: 'success', text: deployed ? '保存成功，已触发重新部署！' : '保存成功！' });
+      } else {
+        setSaveMessage({ type: 'error', text: '保存失败，请重试' });
+      }
     } catch (error) {
       setSaveMessage({ type: 'error', text: '保存失败，请重试' });
     }
