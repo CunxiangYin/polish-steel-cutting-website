@@ -5,24 +5,24 @@
   
   <!-- Homepage with all language versions -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Alternate language versions -->
-    <xhtml:link rel="alternate" hreflang="en" href="https://cute-jelly-dc03bf.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://cute-jelly-dc03bf.netlify.app/local-seo-optimization.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://cute-jelly-dc03bf.netlify.app/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://cute-jelly-dc03bf.netlify.app/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://cute-jelly-dc03bf.netlify.app/?lang=th"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://cute-jelly-dc03bf.netlify.app/?lang=vi"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://cute-jelly-dc03bf.netlify.app/?lang=id"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cute-jelly-dc03bf.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://punaise-equipment.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://punaise-equipment.netlify.app/local-seo-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://punaise-equipment.netlify.app/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://punaise-equipment.netlify.app/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://punaise-equipment.netlify.app/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://punaise-equipment.netlify.app/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://punaise-equipment.netlify.app/?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://punaise-equipment.netlify.app/"/>
     
     <!-- Images -->
     <image:image>
-      <image:loc>https://cute-jelly-dc03bf.netlify.app/logo-main.svg</image:loc>
+      <image:loc>https://punaise-equipment.netlify.app/logo-main.svg</image:loc>
       <image:title>Punaise Mechanical Equipment Logo</image:title>
       <image:caption>Professional steel cutting equipment manufacturer since 2005</image:caption>
     </image:image>
@@ -30,52 +30,52 @@
   
   <!-- Local SEO Chinese Page -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/local-seo-optimization.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/local-seo-optimization.html</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     
     <!-- Language alternates -->
-    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://cute-jelly-dc03bf.netlify.app/local-seo-optimization.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://cute-jelly-dc03bf.netlify.app/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cute-jelly-dc03bf.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-cn" href="https://punaise-equipment.netlify.app/local-seo-optimization.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://punaise-equipment.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://punaise-equipment.netlify.app/"/>
   </url>
   
   <!-- Blog -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/blog.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/blog.html</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Product Comparison -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/compare.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/compare.html</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Downloads Center -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/downloads.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/downloads.html</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Case Studies -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/case-studies.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/case-studies.html</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Suppliers -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/suppliers.html</loc>
+    <loc>https://punaise-equipment.netlify.app/suppliers.html</loc>
     <lastmod>2024-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -83,7 +83,7 @@
   
   <!-- Applications -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/applications.html</loc>
+    <loc>https://punaise-equipment.netlify.app/applications.html</loc>
     <lastmod>2024-12-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -91,36 +91,36 @@
   
   <!-- Product sections (virtual pages) -->
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/#products</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/#products</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/#about</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/#about</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/#features</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/#features</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/#contact</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/#contact</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://cute-jelly-dc03bf.netlify.app/#faq</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://punaise-equipment.netlify.app/#faq</loc>
+    <lastmod>2025-02-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
