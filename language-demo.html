@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switch Demo - Punaise Equipment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffffff, #00a8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .features {
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .features h2 {
+            margin-bottom: 15px;
+            color: #00a8ff;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .features li {
+            margin: 10px 0;
+            position: relative;
+        }
+        
+        .features li::before {
+            content: "✓";
+            color: #00ff88;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+        
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 20px 0;
+        }
+        
+        .lang-switch select {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        .lang-switch i {
+            color: #00a8ff;
+        }
+        
+        .demo-nav {
+            margin: 30px 0;
+        }
+        
+        .demo-nav a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.1);
+            padding: 12px 24px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+            display: inline-block;
+        }
+        
+        .demo-nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .status {
+            background: rgba(0,255,136,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 1px solid rgba(0,255,136,0.3);
+        }
+        
+        .status h3 {
+            color: #00ff88;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🌐 双语网站演示</h1>
+        
+        <div class="lang-switch">
+            <i class="fas fa-globe"></i>
+            <select id="demoLangSelector">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+        
+        <div class="features">
+            <h2>Language Features / 语言特性</h2>
+            <ul>
+                <li>Real-time language switching / 实时语言切换</li>
+                <li>Complete content translation / 完整内容翻译</li>
+                <li>SEO optimized meta data / SEO优化的元数据</li>
+                <li>LocalStorage preference memory / 本地存储偏好记忆</li>
+                <li>Professional bilingual content / 专业双语内容</li>
+                <li>Responsive design maintained / 响应式设计保持</li>
+            </ul>
+        </div>
+        
+        <div class="demo-nav">
+            <a href="index.html">
+                <i class="fas fa-arrow-left"></i>
+                返回主站 / Back to Main Site
+            </a>
+        </div>
+        
+        <div class="status">
+            <h3>Implementation Status / 实施状态</h3>
+            <p>✅ 双语系统已完全集成到主网站</p>
+            <p>✅ Bilingual system fully integrated into main website</p>
+            <p>🌟 默认英文，可切换中文 / Default English, switchable to Chinese</p>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <script>
+        // Simple demo language switching
+        document.getElementById('demoLangSelector').addEventListener('change', function(e) {
+            const lang = e.target.value;
+            
+            if (lang === 'zh') {
+                document.querySelector('h1').textContent = '🌐 双语网站演示系统';
+                document.querySelector('.status h3').textContent = '实施状态';
+                document.querySelector('.features h2').textContent = '语言特性';
+                alert('语言切换演示 - 主网站已支持完整的中英文切换！');
+            } else {
+                document.querySelector('h1').textContent = '🌐 Bilingual Website Demo';
+                document.querySelector('.status h3').textContent = 'Implementation Status';
+                document.querySelector('.features h2').textContent = 'Language Features';
+                alert('Language switch demo - Main website now supports full English/Chinese switching!');
+            }
+        });
+        
+        // Set current language based on main site preference
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        document.getElementById('demoLangSelector').value = savedLang;
+        
+        if (savedLang === 'zh') {
+            document.getElementById('demoLangSelector').dispatchEvent(new Event('change'));
+        }
+    </script>
+</body>
+</html>

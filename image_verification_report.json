@@ -1,0 +1,114 @@
+[
+  {
+    "product_id": "taiwan-yunghua-cutting-line",
+    "product_name": "台湾荣华钢材裁切生产线",
+    "image_file": "taiwan-yunghua-cutting-line.jpeg",
+    "image_exists": true,
+    "image_size": [
+      800,
+      599
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "钢材",
+      "裁切",
+      "生产线",
+      "分条机",
+      "金属",
+      "台湾荣华"
+    ]
+  },
+  {
+    "product_id": "steel-coil-cart",
+    "product_name": "钢卷移动台车",
+    "image_file": "steel-coil-cart.jpeg",
+    "image_exists": true,
+    "image_size": [
+      449,
+      600
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "钢卷",
+      "台车",
+      "移动",
+      "运载",
+      "安全装置"
+    ]
+  },
+  {
+    "product_id": "mechanical-coil-flipper",
+    "product_name": "机械式钢卷翻倒机",
+    "image_file": "mechanical-coil-flipper.jpeg",
+    "image_exists": true,
+    "image_size": [
+      800,
+      599
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "翻倒机",
+      "机械",
+      "钢卷",
+      "齿条",
+      "摩擦轮",
+      "翻转"
+    ]
+  },
+  {
+    "product_id": "steel-strip-cutter",
+    "product_name": "钢带剪断机",
+    "image_file": "steel-strip-cutter.jpeg",
+    "image_exists": true,
+    "image_size": [
+      800,
+      599
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "剪断机",
+      "钢带",
+      "切断",
+      "剪切",
+      "精密"
+    ]
+  },
+  {
+    "product_id": "jdc-belt-tensioner",
+    "product_name": "日本JDC皮带张紧器",
+    "image_file": "jdc-belt-tensioner.jpeg",
+    "image_exists": true,
+    "image_size": [
+      569,
+      600
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "JDC",
+      "皮带",
+      "张紧器",
+      "日本",
+      "专利",
+      "卷紧"
+    ]
+  },
+  {
+    "product_id": "hydraulic-nut",
+    "product_name": "液压螺母",
+    "image_file": "hydraulic-nut.jpeg",
+    "image_exists": true,
+    "image_size": [
+      800,
+      526
+    ],
+    "needs_verification": true,
+    "keywords": [
+      "液压",
+      "螺母",
+      "圆刀",
+      "紧固",
+      "夹具",
+      "分条机"
+    ]
+  }
+]

@@ -1,0 +1,230 @@
+{
+  "navigation": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "services": "Layanan",
+    "contact": "Kontak",
+    "getQuote": "Dapatkan Penawaran"
+  },
+  "hero": {
+    "title": "Produsen Peralatan Pemotongan Baja Profesional",
+    "subtitle": "Sebagai perusahaan dagang yang komprehensif, kami mengkhususkan diri dalam melayani pusat pemrosesan dan distribusi baja skala besar. Bisnis utama kami mencakup penjualan, instalasi, commissioning dan layanan purna jual peralatan pemotongan baja besar dan peralatan periferal, serta penjualan aksesori peralatan khusus, bahan habis pakai dan alat.",
+    "slogan": "Layanan Profesional, Komprehensif, dan Berdedikasi",
+    "getQuoteButton": "Dapatkan Penawaran Produk",
+    "consultButton": "Konsultasi Teknis"
+  },
+  "stats": {
+    "heritage": {
+      "number": "60+",
+      "label": "Tahun Warisan Teknis"
+    },
+    "partners": {
+      "number": "8+",
+      "label": "Mitra Inti"
+    },
+    "products": {
+      "number": "12+",
+      "label": "Lini Produk Utama"
+    },
+    "support": {
+      "number": "24/7",
+      "label": "Dukungan Teknis"
+    }
+  },
+  "products": {
+    "title": "Lini Produk Inti",
+    "subtitle": "Peralatan pemotongan dan pemrosesan baja profesional berdasarkan 60 tahun warisan teknis",
+    "badgeText": "Produk Inti",
+    "viewAll": "Lihat Semua Produk",
+    "getQuote": "Dapatkan Penawaran",
+    "getQuoteToast": "Menghasilkan penawaran untuk Anda...",
+    "viewAllToast": "Menampilkan semua informasi produk...",
+    "imageDisclaimer": "Gambar produk hanya untuk referensi, silakan hubungi kami untuk spesifikasi detail",
+    "categories": {
+      "steelCutting": "Peralatan Pemotongan Baja",
+      "peripheralEquipment": "Peralatan Periferal",
+      "specializedParts": "Suku Cadang Khusus",
+      "auxiliary": "Peralatan Pendukung"
+    },
+    "featured": {
+      "taiwanYunghua": {
+        "name": "Lini Produksi Pemotongan Baja Taiwan Yunghua",
+        "description": "Taiwan Yunghua Machinery Factory Co., Ltd. secara profesional mendesain dan memproduksi mesin pemotongan logam dan mesin slitting, dengan produk yang didistribusikan ke seluruh dunia selama enam puluh tahun, terus meningkatkan keterampilan R&D.",
+        "features": [
+          "Teknologi Canggih",
+          "Kualitas Sempurna",
+          "Layanan Cepat",
+          "Keahlian Terbaik"
+        ]
+      },
+      "largeEquipment": {
+        "name": "Peralatan Pemrosesan Pemotongan Baja Skala Besar",
+        "description": "Peralatan pemrosesan pemotongan baja skala besar profesional dengan teknologi pemotongan canggih, cocok untuk pemrosesan presisi berbagai material baja.",
+        "features": [
+          "Teknologi Pemotongan Canggih",
+          "Kemampuan Pemotongan Presisi Tinggi",
+          "Operasi Stabil dan Andal",
+          "Cocok untuk Berbagai Spesifikasi Baja"
+        ]
+      },
+      "steelCoilCart": {
+        "name": "Kereta Mobile Gulungan Baja",
+        "description": "Digunakan untuk mengangkut gulungan baja lebar, peralatan beroperasi dengan mulus dengan kebisingan rendah. Kereta dilengkapi dengan perangkat keamanan untuk mencegah gulungan baja terbalik.",
+        "features": [
+          "Operasi Halus, Kebisingan Rendah",
+          "Perangkat Keamanan Mencegah Terbalik",
+          "Kontrol Listrik, Operasi Mudah",
+          "Kecepatan Gerak 10-20M/MIN"
+        ]
+      },
+      "jdcTensioner": {
+        "name": "Tensioner Sabuk JDC Jepang",
+        "description": "Produk berteknologi tinggi berpaten dari Perusahaan JDC Jepang. Meningkatkan tegangan penggulungan, mencegah goresan permukaan pada gulungan baja, dan memastikan penggulungan yang rapi dan indah.",
+        "features": [
+          "Teknologi Paten Jepang",
+          "Meningkatkan Tegangan Penggulungan",
+          "Mencegah Goresan Permukaan",
+          "Penggulungan Rapi dan Indah"
+        ]
+      },
+      "hydraulicNut": {
+        "name": "Mur Hidrolik",
+        "description": "Aplikasi: Fixture pengikat pisau bundar mesin slitting logam. Dapat mencapai gaya pengencangan aksial 20-30 ton, mengurangi dampak mekanis pada poros pisau.",
+        "features": [
+          "Gaya Pengencangan Aksial 20-30 Ton",
+          "Distribusi Tekanan Seragam",
+          "Mengurangi Dampak Poros Pisau",
+          "Operasi Sederhana dan Nyaman"
+        ]
+      }
+    }
+  },
+  "services": {
+    "title": "Layanan Teknis Profesional",
+    "subtitle": "Menyediakan layanan pemeliharaan peralatan, modifikasi, dan dukungan teknis yang komprehensif",
+    "equipmentMaintenance": {
+      "name": "Perbaikan, Pemeliharaan & Modifikasi Peralatan",
+      "description": "Sesuai dengan periode pembelian peralatan pelanggan, kuantitas dan kapasitas pemrosesan, menyesuaikan rencana pemeliharaan bulanan, kuartalan, dan tahunan. Teknisi profesional melakukan inspeksi menyeluruh, debugging, perbaikan dan upgrade."
+    },
+    "dustProofShed": {
+      "name": "Pembuatan & Instalasi Gudang Anti Debu",
+      "description": "Berdasarkan kondisi workshop pelanggan dan kebutuhan produksi, mendesain, memproduksi dan menginstal sistem gudang anti debu profesional. Menggunakan material berkualitas tinggi dan teknologi canggih untuk mengontrol polusi debu secara efektif."
+    },
+    "grindingProcessing": {
+      "name": "Penggilingan Pisau Bundar & Roll Perata",
+      "description": "Menyediakan layanan penggilingan presisi profesional untuk pisau bundar dan roll perata. Menggunakan peralatan dan teknologi penggilingan canggih untuk memastikan akurasi dan kualitas permukaan alat dan roll."
+    },
+    "advantages": {
+      "professional": {
+        "title": "Teknologi Profesional",
+        "description": "60 tahun keahlian teknis yang diwariskan"
+      },
+      "comprehensive": {
+        "title": "Layanan Komprehensif",
+        "description": "Solusi peralatan satu atap"
+      },
+      "quality": {
+        "title": "Jaminan Kualitas",
+        "description": "Sistem kontrol kualitas yang ketat"
+      },
+      "support": {
+        "title": "Respons Tepat Waktu",
+        "description": "Hotline dukungan teknis 24 jam"
+      }
+    }
+  },
+  "about": {
+    "title": "Tentang Punaise",
+    "companyName": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "description": "Sebagai perusahaan dagang yang komprehensif, kami mengkhususkan diri dalam melayani pusat pemrosesan dan distribusi baja skala besar",
+    "coreValues": "Dengan \"Layanan Profesional, Komprehensif, dan Berdedikasi\" sebagai filosofi bisnis kami, kami menyediakan layanan teknis profesional kepada pelanggan, bekerja sama untuk pengembangan bersama",
+    "mission": "Misi Kami",
+    "missionDescription": "Untuk menyediakan peralatan pemrosesan baja berkualitas tertinggi dan layanan profesional kepada industri manufaktur logam, membantu pelanggan meningkatkan efisiensi produksi dan kualitas produk. Kami berkomitmen untuk menjadi mitra pemasok peralatan terpercaya Anda.",
+    "coreValuesTitle": "Nilai Inti",
+    "partnerships": "Kemitraan Utama",
+    "customers": "Kelompok Pelanggan Target",
+    "achievements": {
+      "title": "Pencapaian Pengembangan",
+      "items": [
+        "Kerjasama mendalam dengan Taiwan Yunghua Machinery Factory",
+        "Agen resmi Perusahaan JDC Jepang",
+        "Melayani grup perusahaan baja besar",
+        "Dukungan teknis mencakup seluruh negeri"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Dapatkan solusi peralatan profesional dan dukungan teknis",
+    "info": "Informasi Kontak",
+    "phone": {
+      "label": "Telepon",
+      "number": "0755-26443680"
+    },
+    "fax": {
+      "label": "Fax",
+      "number": "0755-26443750"
+    },
+    "mobile": {
+      "label": "Handphone",
+      "number": "+86 189-3864-9300",
+      "manager": "Manager Fu"
+    },
+    "email": {
+      "label": "Email",
+      "address": "466904802@qq.com"
+    },
+    "address": {
+      "label": "Alamat",
+      "location": "Ruang 608, Gedung Lizhi, No.1003 Jalan Nanxin, Distrik Nanshan, Shenzhen"
+    },
+    "commitment": {
+      "title": "Komitmen Layanan",
+      "description": "Dengan \"Layanan Profesional, Komprehensif, dan Berdedikasi\" sebagai filosofi bisnis kami, kami menyediakan layanan teknis profesional kepada pelanggan, bekerja sama untuk pengembangan bersama"
+    },
+    "form": {
+      "title": "Permintaan Penawaran Cepat",
+      "name": "Nama Anda",
+      "phone": "Telepon Kontak",
+      "email": "Alamat Email",
+      "company": "Nama Perusahaan",
+      "message": "Mohon deskripsikan kebutuhan peralatan atau masalah teknis Anda",
+      "submit": "Kirim Permintaan",
+      "submitSuccess": "Terima kasih atas permintaan Anda, kami akan menghubungi Anda dalam 24 jam!"
+    }
+  },
+  "footer": {
+    "company": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "tagline": "Pemasok Peralatan Pemotongan Baja Profesional",
+    "products": "Produk Utama",
+    "services": "Layanan Teknis",
+    "contactInfo": "Informasi Kontak",
+    "copyright": "Semua Hak Dilindungi",
+    "links": {
+      "privacy": "Kebijakan Privasi",
+      "terms": "Syarat Layanan",
+      "sitemap": "Peta Situs"
+    }
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "tryAgain": "Coba Lagi",
+    "close": "Tutup",
+    "confirm": "Konfirmasi",
+    "cancel": "Batal",
+    "features": "Fitur",
+    "applications": "Aplikasi",
+    "specifications": "Spesifikasi",
+    "products": " produk",
+    "readMore": "Baca Selengkapnya",
+    "contactUs": "Hubungi Kami",
+    "backToTop": "Kembali ke Atas"
+  },
+  "meta": {
+    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Produsen Peralatan Pemotongan Baja Profesional",
+    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. secara profesional menyediakan lini produksi pemotongan baja Taiwan Yunghua, peralatan pemrosesan pemotongan baja skala besar, kereta mobile gulungan baja, tensioner sabuk JDC Jepang dan produk lainnya untuk penjualan, instalasi commissioning dan layanan purna jual. 60 tahun warisan teknis, layanan profesional, komprehensif, berdedikasi.",
+    "keywords": "peralatan pemotongan baja,Taiwan Yunghua,peralatan pemrosesan baja,kereta gulungan baja,tensioner sabuk,mur hidrolik,Shenzhen Punaise"
+  }
+}

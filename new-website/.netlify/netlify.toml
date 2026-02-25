@@ -1,0 +1,242 @@
+functionsDirectory = "/Users/jasonyin/project/electromechanical-landing/new-website/netlify/functions"
+functionsDirectoryOrigin = "config"
+headersOrigin = "inline"
+redirectsOrigin = "inline"
+
+[build]
+publish = "/Users/jasonyin/project/electromechanical-landing/new-website/out"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "/Users/jasonyin/project/electromechanical-landing/new-website"
+command = "npm run build"
+functions = "/Users/jasonyin/project/electromechanical-landing/new-website/netlify/functions"
+
+[build.environment]
+NODE_VERSION = "20"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[images]
+remote_images = ["^(?:https:\\/\\/punaise-equipment\\.netlify\\.app(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$"]
+
+[functions]
+
+[functions."*"]
+node_bundler = "esbuild"
+
+[[plugins]]
+origin = "default"
+package = "@netlify/plugin-nextjs"
+
+[plugins.inputs]
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Content-Security-Policy = "default-src 'self' https://embed.tawk.to https://va.tawk.to wss://va.tawk.to https://*.tawk.to wss://*.tawk.to; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.tawk.to https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://embed.tawk.to; img-src 'self' data: https: https://embed.tawk.to https://va.tawk.to https://*.tawk.to https://www.google-analytics.com; font-src 'self' data: https://embed.tawk.to; connect-src 'self' https://embed.tawk.to https://va.tawk.to wss://va.tawk.to https://*.tawk.to wss://*.tawk.to https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com; frame-src https://embed.tawk.to https://va.tawk.to https://*.tawk.to; media-src https://embed.tawk.to https://va.tawk.to https://*.tawk.to;"
+
+[[headers]]
+for = "*.js"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "*.css"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "*.woff2"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/zh/"
+
+[headers.values]
+Link = "<https://punaise-equipment.netlify.app/zh/>; rel=\"alternate\"; hreflang=\"zh\", <https://punaise-equipment.netlify.app/en/>; rel=\"alternate\"; hreflang=\"en\", <https://punaise-equipment.netlify.app/th/>; rel=\"alternate\"; hreflang=\"th\", <https://punaise-equipment.netlify.app/vi/>; rel=\"alternate\"; hreflang=\"vi\", <https://punaise-equipment.netlify.app/ms/>; rel=\"alternate\"; hreflang=\"ms\", <https://punaise-equipment.netlify.app/id/>; rel=\"alternate\"; hreflang=\"id\", <https://punaise-equipment.netlify.app/es/>; rel=\"alternate\"; hreflang=\"es\", <https://punaise-equipment.netlify.app/pt/>; rel=\"alternate\"; hreflang=\"pt\", <https://punaise-equipment.netlify.app/zh/>; rel=\"alternate\"; hreflang=\"x-default\""
+
+[[headers]]
+for = "/_next/static/*"
+
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+from = "/api/auth/login"
+to = "/.netlify/functions/auth-login"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/api/auth/verify"
+to = "/.netlify/functions/auth-verify"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/"
+to = "/zh/"
+status = 302.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/zh/*"
+to = "/zh/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/en/*"
+to = "/en/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/th/*"
+to = "/th/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/vi/*"
+to = "/vi/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/ms/*"
+to = "/ms/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/id/*"
+to = "/id/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/es/*"
+to = "/es/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/pt/*"
+to = "/pt/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/_next/image/"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200.0
+force = false
+
+[redirects.query]
+url = ":url"
+w = ":width"
+q = ":quality"
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/_ipx/*"
+to = "/.netlify/images?url=:url&w=:width&q=:quality"
+status = 200.0
+force = false
+
+[redirects.query]
+url = ":url"
+w = ":width"
+q = ":quality"
+
+[redirects.conditions]
+
+[redirects.headers]

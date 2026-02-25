@@ -1,0 +1,230 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "title": "Professional Steel Cutting Equipment Manufacturer",
+    "subtitle": "As a comprehensive trading enterprise, we specialize in serving large steel processing and distribution centers. Our main business includes sales, installation, commissioning and after-sales service of large steel cutting equipment and peripheral equipment, and sales of special equipment accessories, consumables and tools.",
+    "slogan": "Professional, Comprehensive, Dedicated Service",
+    "getQuoteButton": "Get Product Quote",
+    "consultButton": "Technical Consultation"
+  },
+  "stats": {
+    "heritage": {
+      "number": "60+",
+      "label": "Years of Technical Heritage"
+    },
+    "partners": {
+      "number": "8+",
+      "label": "Core Partners"
+    },
+    "products": {
+      "number": "12+", 
+      "label": "Main Product Lines"
+    },
+    "support": {
+      "number": "24/7",
+      "label": "Technical Support"
+    }
+  },
+  "products": {
+    "title": "Core Product Lines",
+    "subtitle": "Professional steel cutting and processing equipment based on 60 years of technical heritage",
+    "badgeText": "Core Products",
+    "viewAll": "View All Products",
+    "getQuote": "Get Quote",
+    "getQuoteToast": "Generating quote for you...",
+    "viewAllToast": "Displaying all product information...",
+    "imageDisclaimer": "Product images are for reference only, please contact us for detailed specifications",
+    "categories": {
+      "steelCutting": "Steel Cutting Equipment",
+      "peripheralEquipment": "Peripheral Equipment",
+      "specializedParts": "Specialized Parts",
+      "auxiliary": "Auxiliary Equipment"
+    },
+    "featured": {
+      "taiwanYunghua": {
+        "name": "Taiwan Yunghua Steel Cutting Production Line",
+        "description": "Taiwan Yunghua Machinery Factory Co., Ltd. professionally designs and manufactures metal cutting machines and slitting machines, with products distributed worldwide for sixty years, continuously improving R&D skills.",
+        "features": [
+          "Advanced Technology",
+          "Perfect Quality",
+          "Fast Service",
+          "Exquisite Craftsmanship"
+        ]
+      },
+      "largeEquipment": {
+        "name": "Large Scale Steel Cutting Processing Equipment", 
+        "description": "Professional large-scale steel cutting processing equipment with advanced cutting technology, suitable for precision processing of various steel materials.",
+        "features": [
+          "Advanced Cutting Technology",
+          "High Precision Cutting Capability",
+          "Stable and Reliable Operation",
+          "Suitable for Various Steel Specifications"
+        ]
+      },
+      "steelCoilCart": {
+        "name": "Steel Coil Mobile Cart",
+        "description": "Used for transporting wide steel coils, equipment runs smoothly with low noise. Cart is equipped with safety devices to prevent steel coil rollover.",
+        "features": [
+          "Smooth Operation, Low Noise",
+          "Safety Devices Prevent Rollover",
+          "Electrical Control, Easy Operation",
+          "Moving Speed 10-20M/MIN"
+        ]
+      },
+      "jdcTensioner": {
+        "name": "Japan JDC Belt Tensioner",
+        "description": "Patented high-tech product from Japan JDC Company. Increases coiling tension, prevents surface scratches on steel coils, and ensures neat, beautiful coiling.",
+        "features": [
+          "Japanese Patent Technology",
+          "Increases Coiling Tension", 
+          "Prevents Surface Scratches",
+          "Neat and Beautiful Coiling"
+        ]
+      },
+      "hydraulicNut": {
+        "name": "Hydraulic Nut",
+        "description": "Application: Metal slitting machine circular blade fastening fixture. Can achieve 20-30 tons axial clamping force, reduce mechanical impact on blade shaft.",
+        "features": [
+          "20-30 Tons Axial Clamping Force",
+          "Uniform Pressure Distribution",
+          "Reduces Blade Shaft Impact",
+          "Simple and Convenient Operation"
+        ]
+      }
+    }
+  },
+  "services": {
+    "title": "Professional Technical Services",
+    "subtitle": "Providing comprehensive equipment maintenance, modification and technical support services",
+    "equipmentMaintenance": {
+      "name": "Equipment Repair, Maintenance & Modification",
+      "description": "According to customer's equipment purchase period, quantity and processing capacity, customize monthly, quarterly, and annual maintenance plans. Professional technicians conduct comprehensive inspection, debugging, repair and upgrading."
+    },
+    "dustProofShed": {
+      "name": "Dust-proof Shed Manufacturing & Installation",
+      "description": "Based on customer's workshop conditions and production requirements, design, manufacture and install professional dust-proof shed systems. Using high-quality materials and advanced technology to effectively control dust pollution."
+    },
+    "grindingProcessing": {
+      "name": "Circular Blade & Leveling Roll Grinding",
+      "description": "Providing professional precision grinding services for circular blades and leveling rolls. Using advanced grinding equipment and technology to ensure accuracy and surface quality of tools and rolls."
+    },
+    "advantages": {
+      "professional": {
+        "title": "Professional Technology",
+        "description": "60 years of inherited technical expertise"
+      },
+      "comprehensive": {
+        "title": "Comprehensive Service",
+        "description": "One-stop equipment solutions"
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "Strict quality control system"
+      },
+      "support": {
+        "title": "Timely Response",
+        "description": "24-hour technical support hotline"
+      }
+    }
+  },
+  "about": {
+    "title": "About Punaise",
+    "companyName": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "description": "As a comprehensive trading enterprise, we specialize in serving large steel processing and distribution centers",
+    "coreValues": "With \"Professional, Comprehensive, Dedicated Service\" as our business philosophy, we provide professional technical services to customers, working together for mutual development",
+    "mission": "Our Mission",
+    "missionDescription": "To provide the highest quality steel processing equipment and professional services to the metal manufacturing industry, helping customers improve production efficiency and product quality. We are committed to becoming your trusted equipment supply partner.",
+    "coreValuesTitle": "Core Values",
+    "partnerships": "Key Partnerships",
+    "customers": "Target Customer Groups",
+    "achievements": {
+      "title": "Development Achievements",
+      "items": [
+        "Deep cooperation with Taiwan Yunghua Machinery Factory",
+        "Qualified agent of Japan JDC Company",
+        "Serving large steel enterprise groups",
+        "Technical support covering nationwide"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get professional equipment solutions and technical support",
+    "info": "Contact Information",
+    "phone": {
+      "label": "Phone",
+      "number": "0755-26443680"
+    },
+    "fax": {
+      "label": "Fax",
+      "number": "0755-26443750"
+    },
+    "mobile": {
+      "label": "Mobile",
+      "number": "+86 189-3864-9300",
+      "manager": "Manager Fu"
+    },
+    "email": {
+      "label": "Email",
+      "address": "466904802@qq.com"
+    },
+    "address": {
+      "label": "Address",
+      "location": "Room 608, Lizhi Building, No.1003 Nanxin Road, Nanshan District, Shenzhen"
+    },
+    "commitment": {
+      "title": "Service Commitment",
+      "description": "With \"Professional, Comprehensive, Dedicated Service\" as our business philosophy, we provide professional technical services to customers, working together for mutual development"
+    },
+    "form": {
+      "title": "Quick Quote Inquiry",
+      "name": "Your Name",
+      "phone": "Contact Phone",
+      "email": "Email Address",
+      "company": "Company Name",
+      "message": "Please describe your equipment requirements or technical issues",
+      "submit": "Submit Inquiry",
+      "submitSuccess": "Thank you for your inquiry, we will contact you within 24 hours!"
+    }
+  },
+  "footer": {
+    "company": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "tagline": "Professional Steel Cutting Equipment Supplier",
+    "products": "Main Products",
+    "services": "Technical Services",
+    "contactInfo": "Contact Information",
+    "copyright": "All Rights Reserved",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "sitemap": "Site Map"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "tryAgain": "Try Again", 
+    "close": "Close",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "features": "Features",
+    "applications": "Applications",
+    "specifications": "Specifications",
+    "products": " products",
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "backToTop": "Back to Top"
+  },
+  "meta": {
+    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Professional Steel Cutting Equipment Manufacturer",
+    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. professionally provides Taiwan Yunghua steel cutting production lines, large-scale steel cutting processing equipment, steel coil mobile carts, Japan JDC belt tensioners and other products' sales, installation commissioning and after-sales service. 60 years of technical heritage, professional, comprehensive, dedicated service.",
+    "keywords": "steel cutting equipment,Taiwan Yunghua,steel processing equipment,steel coil cart,belt tensioner,hydraulic nut,Shenzhen Punaise"
+  }
+}

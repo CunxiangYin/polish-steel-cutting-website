@@ -1,0 +1,230 @@
+{
+  "navigation": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "products": "Produtos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "getQuote": "Solicitar Orçamento"
+  },
+  "hero": {
+    "title": "Fabricante Profissional de Equipamentos de Corte de Aço",
+    "subtitle": "Como empresa comercial abrangente, especializamo-nos em servir grandes centros de processamento e distribuição de aço. Nosso negócio principal inclui vendas, instalação, comissionamento e serviços pós-venda de equipamentos de corte de aço de grande porte e equipamentos periféricos, bem como vendas de acessórios especializados, consumíveis e ferramentas.",
+    "slogan": "Serviço Profissional, Abrangente e Dedicado",
+    "getQuoteButton": "Solicitar Orçamento do Produto",
+    "consultButton": "Consulta Técnica"
+  },
+  "stats": {
+    "heritage": {
+      "number": "60+",
+      "label": "Anos de Herança Técnica"
+    },
+    "partners": {
+      "number": "8+",
+      "label": "Parceiros Principais"
+    },
+    "products": {
+      "number": "12+",
+      "label": "Linhas de Produto Principais"
+    },
+    "support": {
+      "number": "24/7",
+      "label": "Suporte Técnico"
+    }
+  },
+  "products": {
+    "title": "Linhas de Produto Principais",
+    "subtitle": "Equipamentos profissionais de corte e processamento de aço baseados em 60 anos de herança técnica",
+    "badgeText": "Produtos Principais",
+    "viewAll": "Ver Todos os Produtos",
+    "getQuote": "Solicitar Orçamento",
+    "getQuoteToast": "Gerando orçamento para você...",
+    "viewAllToast": "Exibindo todas as informações do produto...",
+    "imageDisclaimer": "Imagens de produtos são apenas para referência, entre em contato conosco para especificações detalhadas",
+    "categories": {
+      "steelCutting": "Equipamentos de Corte de Aço",
+      "peripheralEquipment": "Equipamentos Periféricos",
+      "specializedParts": "Peças Especializadas",
+      "auxiliary": "Equipamentos Auxiliares"
+    },
+    "featured": {
+      "taiwanYunghua": {
+        "name": "Linha de Produção de Corte de Aço Taiwan Yunghua",
+        "description": "Taiwan Yunghua Machinery Factory Co., Ltd. projeta e fabrica profissionalmente máquinas de corte de metal e máquinas de fendimento, com produtos distribuídos mundialmente por sessenta anos, melhorando continuamente as habilidades de P&D.",
+        "features": [
+          "Tecnologia Avançada",
+          "Qualidade Perfeita",
+          "Serviço Rápido",
+          "Artesanato Requintado"
+        ]
+      },
+      "largeEquipment": {
+        "name": "Equipamentos de Processamento de Corte de Aço de Grande Escala",
+        "description": "Equipamentos profissionais de processamento de corte de aço de grande escala com tecnologia de corte avançada, adequados para processamento de precisão de vários materiais de aço.",
+        "features": [
+          "Tecnologia de Corte Avançada",
+          "Capacidade de Corte de Alta Precisão",
+          "Operação Estável e Confiável",
+          "Adequado para Várias Especificações de Aço"
+        ]
+      },
+      "steelCoilCart": {
+        "name": "Carrinho Móvel de Bobinas de Aço",
+        "description": "Usado para transportar bobinas de aço largas, o equipamento opera suavemente com baixo ruído. O carrinho está equipado com dispositivos de segurança para prevenir o tombamento das bobinas de aço.",
+        "features": [
+          "Operação Suave, Baixo Ruído",
+          "Dispositivos de Segurança Previnem Tombamento",
+          "Controle Elétrico, Operação Fácil",
+          "Velocidade de Movimento 10-20M/MIN"
+        ]
+      },
+      "jdcTensioner": {
+        "name": "Tensor de Correia JDC do Japão",
+        "description": "Produto de alta tecnologia patenteado da Empresa JDC do Japão. Aumenta a tensão de enrolamento, previne arranhões na superfície das bobinas de aço, e garante enrolamento ordenado e bonito.",
+        "features": [
+          "Tecnologia Patenteada Japonesa",
+          "Aumenta a Tensão de Enrolamento",
+          "Previne Arranhões na Superfície",
+          "Enrolamento Ordenado e Bonito"
+        ]
+      },
+      "hydraulicNut": {
+        "name": "Porca Hidráulica",
+        "description": "Aplicação: Fixador de fixação de lâmina circular de máquina de fendimento de metal. Pode alcançar força de fixação axial de 20-30 toneladas, reduzir impacto mecânico no eixo da lâmina.",
+        "features": [
+          "Força de Fixação Axial de 20-30 Toneladas",
+          "Distribuição Uniforme de Pressão",
+          "Reduz Impacto do Eixo da Lâmina",
+          "Operação Simples e Conveniente"
+        ]
+      }
+    }
+  },
+  "services": {
+    "title": "Serviços Técnicos Profissionais",
+    "subtitle": "Fornecendo serviços abrangentes de manutenção de equipamentos, modificação e suporte técnico",
+    "equipmentMaintenance": {
+      "name": "Reparo, Manutenção e Modificação de Equipamentos",
+      "description": "De acordo com o período de compra do equipamento do cliente, quantidade e capacidade de processamento, personalizar planos de manutenção mensal, trimestral e anual. Técnicos profissionais conduzem inspeção abrangente, depuração, reparo e atualização."
+    },
+    "dustProofShed": {
+      "name": "Fabricação e Instalação de Galpão à Prova de Poeira",
+      "description": "Baseado nas condições da oficina do cliente e requisitos de produção, projetar, fabricar e instalar sistemas profissionais de galpão à prova de poeira. Usando materiais de alta qualidade e tecnologia avançada para controlar efetivamente a poluição por poeira."
+    },
+    "grindingProcessing": {
+      "name": "Retificação de Lâminas Circulares e Rolos Niveladores",
+      "description": "Fornecendo serviços profissionais de retificação de precisão para lâminas circulares e rolos niveladores. Usando equipamentos e tecnologia de retificação avançados para garantir precisão e qualidade da superfície de ferramentas e rolos."
+    },
+    "advantages": {
+      "professional": {
+        "title": "Tecnologia Profissional",
+        "description": "60 anos de experiência técnica herdada"
+      },
+      "comprehensive": {
+        "title": "Serviço Abrangente",
+        "description": "Soluções de equipamentos completas"
+      },
+      "quality": {
+        "title": "Garantia de Qualidade",
+        "description": "Sistema rigoroso de controle de qualidade"
+      },
+      "support": {
+        "title": "Resposta Oportuna",
+        "description": "Linha direta de suporte técnico 24 horas"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre a Punaise",
+    "companyName": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "description": "Como empresa comercial abrangente, especializamo-nos em servir grandes centros de processamento e distribuição de aço",
+    "coreValues": "Com \"Serviço Profissional, Abrangente e Dedicado\" como nossa filosofia de negócios, fornecemos serviços técnicos profissionais aos clientes, trabalhando juntos para desenvolvimento mútuo",
+    "mission": "Nossa Missão",
+    "missionDescription": "Fornecer equipamentos de processamento de aço da mais alta qualidade e serviços profissionais para a indústria de fabricação de metais, ajudando clientes a melhorar a eficiência de produção e qualidade do produto. Estamos comprometidos em nos tornar seu parceiro confiável de fornecimento de equipamentos.",
+    "coreValuesTitle": "Valores Fundamentais",
+    "partnerships": "Parcerias Principais",
+    "customers": "Grupos de Clientes Alvo",
+    "achievements": {
+      "title": "Conquistas de Desenvolvimento",
+      "items": [
+        "Cooperação profunda com Taiwan Yunghua Machinery Factory",
+        "Agente qualificado da Empresa JDC do Japão",
+        "Servindo grandes grupos empresariais de aço",
+        "Suporte técnico cobrindo todo o país"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato Conosco",
+    "subtitle": "Obtenha soluções profissionais de equipamentos e suporte técnico",
+    "info": "Informações de Contato",
+    "phone": {
+      "label": "Telefone",
+      "number": "0755-26443680"
+    },
+    "fax": {
+      "label": "Fax",
+      "number": "0755-26443750"
+    },
+    "mobile": {
+      "label": "Celular",
+      "number": "+86 189-3864-9300",
+      "manager": "Gerente Fu"
+    },
+    "email": {
+      "label": "E-mail",
+      "address": "466904802@qq.com"
+    },
+    "address": {
+      "label": "Endereço",
+      "location": "Sala 608, Edifício Lizhi, No.1003 Estrada Nanxin, Distrito Nanshan, Shenzhen"
+    },
+    "commitment": {
+      "title": "Compromisso de Serviço",
+      "description": "Com \"Serviço Profissional, Abrangente e Dedicado\" como nossa filosofia de negócios, fornecemos serviços técnicos profissionais aos clientes, trabalhando juntos para desenvolvimento mútuo"
+    },
+    "form": {
+      "title": "Consulta de Orçamento Rápida",
+      "name": "Seu Nome",
+      "phone": "Telefone de Contato",
+      "email": "Endereço de E-mail",
+      "company": "Nome da Empresa",
+      "message": "Por favor descreva seus requisitos de equipamento ou problemas técnicos",
+      "submit": "Enviar Consulta",
+      "submitSuccess": "Obrigado por sua consulta, entraremos em contato dentro de 24 horas!"
+    }
+  },
+  "footer": {
+    "company": "Shenzhen Punaise Mechanical Equipment Co., Ltd.",
+    "tagline": "Fornecedor Profissional de Equipamentos de Corte de Aço",
+    "products": "Produtos Principais",
+    "services": "Serviços Técnicos",
+    "contactInfo": "Informações de Contato",
+    "copyright": "Todos os Direitos Reservados",
+    "links": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Serviço",
+      "sitemap": "Mapa do Site"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "tryAgain": "Tentar Novamente",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "features": "Características",
+    "applications": "Aplicações",
+    "specifications": "Especificações",
+    "products": " produtos",
+    "readMore": "Ler Mais",
+    "contactUs": "Entre em Contato",
+    "backToTop": "Voltar ao Topo"
+  },
+  "meta": {
+    "title": "Shenzhen Punaise Mechanical Equipment Co., Ltd. - Fabricante Profissional de Equipamentos de Corte de Aço",
+    "description": "Shenzhen Punaise Mechanical Equipment Co., Ltd. fornece profissionalmente linhas de produção de corte de aço Taiwan Yunghua, equipamentos de processamento de corte de aço de grande escala, carrinhos móveis de bobinas de aço, tensores de correia JDC do Japão e outros produtos para vendas, instalação, comissionamento e serviços pós-venda. 60 anos de herança técnica, serviço profissional, abrangente e dedicado.",
+    "keywords": "equipamentos de corte de aço,Taiwan Yunghua,equipamentos de processamento de aço,carrinho de bobinas de aço,tensor de correia,porca hidráulica,Shenzhen Punaise"
+  }
+}
