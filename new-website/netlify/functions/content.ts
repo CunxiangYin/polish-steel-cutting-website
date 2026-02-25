@@ -1,27 +1,24 @@
 import type { Handler, HandlerEvent, HandlerResponse } from '@netlify/functions';
 import { getStore } from '@netlify/blobs';
+import jwt from 'jsonwebtoken';
 
 const VALID_TYPES = ['products', 'services', 'hero', 'about', 'images'];
-
-function verifyToken(token: string, secret: string): { valid: boolean; payload?: Record<string, unknown> } {
-  try {
-    const parts = token.split('.');
-    if (parts.length !== 3) return { valid: false };
-    const [header, payload, signature] = parts;
-    const expectedSignature = Buffer.from(`${header}.${payload}.${secret}`).toString('base64url');
-    if (signature !== expectedSignature) return { valid: false };
-    const decodedPayload = JSON.parse(Buffer.from(payload, 'base64url').toString());
-    if (decodedPayload.exp && Date.now() > decodedPayload.exp) return { valid: false };
-    return { valid: true, payload: decodedPayload };
-  } catch {
-    return { valid: false };
-  }
-}
 
 function getAuthToken(event: HandlerEvent): string | null {
   const authHeader = event.headers['authorization'];
   if (authHeader?.startsWith('Bearer ')) return authHeader.substring(7);
   return null;
+}
+
+function verifyAuth(token: string): boolean {
+  const jwtSecret = process.env.JWT_SECRET;
+  if (!jwtSecret) return false;
+  try {
+    jwt.verify(token, jwtSecret, { algorithms: ['HS256'] });
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 function response(statusCode: number, body: object): HandlerResponse {
@@ -38,12 +35,10 @@ function response(statusCode: number, body: object): HandlerResponse {
 }
 
 const handler: Handler = async (event) => {
-  // Handle CORS preflight
   if (event.httpMethod === 'OPTIONS') {
     return response(200, {});
   }
 
-  // Extract content type from path: /api/content/:type
   const pathParts = event.path.replace(/^\/\.netlify\/functions\/content\/?/, '').split('/').filter(Boolean);
   const contentType = pathParts[0];
 
@@ -67,10 +62,8 @@ const handler: Handler = async (event) => {
   }
 
   if (event.httpMethod === 'PUT') {
-    // Require auth for writes
     const token = getAuthToken(event);
-    const jwtSecret = process.env.JWT_SECRET;
-    if (!token || !jwtSecret || !verifyToken(token, jwtSecret).valid) {
+    if (!token || !verifyAuth(token)) {
       return response(401, { error: 'Unauthorized' });
     }
 
