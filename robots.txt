@@ -1,5 +1,5 @@
 # Robots.txt for Punaise Mechanical Equipment
-# https://cute-jelly-dc03bf.netlify.app/
+# https://punaise-equipment.netlify.app/
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /*.min.js$
 Disallow: /*.min.css$
 
 # Sitemap location
-Sitemap: https://cute-jelly-dc03bf.netlify.app/sitemap.xml
+Sitemap: https://punaise-equipment.netlify.app/sitemap.xml
 
 # Crawl delay (in seconds)
 Crawl-delay: 1
