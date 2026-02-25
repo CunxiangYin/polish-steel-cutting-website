@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "node scripts/prebuild.mjs",
+    "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -28,7 +29,7 @@
     "clsx": "^2.1.1",
     "jsonwebtoken": "^9.0.3",
     "lucide-react": "^0.562.0",
-    "next": "16.1.1",
+    "next": "^16.1.6",
     "next-intl": "^4.6.1",
     "next-themes": "^0.4.6",
     "react": "19.2.3",
