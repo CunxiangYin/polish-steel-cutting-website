@@ -1,46 +1,8 @@
+# 主站构建配置 - 使用 new-website 子目录
 [build]
-  publish = "."
-  
+  base = "new-website"
+  publish = "out"
+  command = "npm run build"
+
 [build.environment]
-  NODE_VERSION = "18"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/sw.js"
-  [headers.values]
-    Cache-Control = "no-cache, no-store, must-revalidate"
-
-[[headers]]
-  for = "/manifest.json"
-  [headers.values]
-    Content-Type = "application/manifest+json"
-    Cache-Control = "public, max-age=86400"
-
-# Redirect rules
-[[redirects]]
-  from = "/home"
-  to = "/"
-  status = 301
-
-[[redirects]]
-  from = "/contact-us"
-  to = "/#contact"
-  status = 301
+  NODE_VERSION = "20"

@@ -37,6 +37,24 @@
   to = "/zh/"
   status = 302
 
+# Admin SPA 回退规则
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# 图片上传 API
+[[redirects]]
+  from = "/api/upload"
+  to = "/.netlify/functions/upload"
+  status = 200
+
+# 图片服务 API
+[[redirects]]
+  from = "/api/image/*"
+  to = "/.netlify/functions/image/:splat"
+  status = 200
+
 # SPA 回退规则 - 支持 Next.js 动态路由
 [[redirects]]
   from = "/zh/*"

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isAuthenticated, logAdminAction } from '@/lib/admin/client-auth';
-import { getContent, saveAndDeploy } from '@/lib/admin/api';
+import { getContent, saveAndDeploy, uploadImage } from '@/lib/admin/api';
 import ImageCropper from '@/components/admin/ImageCropper';
 import { getExtensionFromMime, getMimeType } from '@/utils/admin/imageCrop';
 
@@ -199,16 +199,45 @@ export default function ImagesManagementPage() {
     setIsSaving(false);
   };
 
-  const handleAddImage = () => {
-    if (!formData.name.trim() || !formData.path.trim()) {
-      alert('请填写图片名称和路径');
+  const handleAddImage = async () => {
+    if (!formData.name.trim()) {
+      alert('请填写图片名称');
+      return;
+    }
+
+    setIsSaving(true);
+    let imagePath = formData.path;
+
+    // 如果有选择文件，先上传
+    if (selectedFile && previewUrl) {
+      // 从 previewUrl (blob URL) 获取裁剪后的图片数据
+      const resp = await fetch(previewUrl);
+      const blob = await resp.blob();
+
+      const safeName = formData.name.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, '-').replace(/-+/g, '-');
+      const ext = selectedFile.name.split('.').pop() || 'jpg';
+      const fileName = `${safeName}-${Date.now()}.${ext}`;
+
+      const result = await uploadImage(blob, fileName, formData.category);
+      if (result.success && result.path) {
+        imagePath = result.path;
+      } else {
+        alert(result.error || '图片上传失败');
+        setIsSaving(false);
+        return;
+      }
+    }
+
+    if (!imagePath.trim()) {
+      alert('请选择图片或填写图片路径');
+      setIsSaving(false);
       return;
     }
 
     const newImage: ImageItem = {
       id: `img-${Date.now()}`,
       name: formData.name,
-      path: formData.path,
+      path: imagePath,
       category: formData.category,
       description: formData.description,
       size: formData.size,
@@ -217,9 +246,10 @@ export default function ImagesManagementPage() {
     };
 
     const newImages = [...images, newImage];
-    saveImages(newImages);
+    await saveImages(newImages);
     logAdminAction('add_image', { name: newImage.name });
 
+    setIsSaving(false);
     setShowAddModal(false);
     resetForm();
   };

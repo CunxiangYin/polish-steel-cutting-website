@@ -65,3 +65,39 @@ export async function saveAndDeploy(type: string, data: unknown): Promise<{ save
   }
   return { saved, deployed };
 }
+
+// Image Upload API
+export async function uploadImage(
+  file: File | Blob,
+  fileName: string,
+  category: string = 'other'
+): Promise<{ success: boolean; path?: string; error?: string }> {
+  try {
+    // Convert file to base64
+    const buffer = await file.arrayBuffer();
+    const base64 = btoa(
+      new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), '')
+    );
+
+    const res = await fetch('/api/upload', {
+      method: 'POST',
+      headers: authHeaders(),
+      body: JSON.stringify({
+        fileName,
+        fileData: base64,
+        contentType: file.type || 'image/jpeg',
+        category,
+      }),
+    });
+
+    const json = await res.json();
+    if (!res.ok) {
+      return { success: false, error: json.error || '上传失败' };
+    }
+
+    return { success: true, path: json.path };
+  } catch (error) {
+    console.error('Upload error:', error);
+    return { success: false, error: '网络错误' };
+  }
+}
