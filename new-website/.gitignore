@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# prebuild override files (generated from Netlify Blobs at build time)
+src/data/products-override.json
+src/data/services-override.json
